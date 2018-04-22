@@ -1,0 +1,20 @@
+section_foreign_authors
+=> nrel_main_idtf:
+	[Раздел. Зарубежные писатели.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+	person_Stephen_Edwin_King;
+	person_Erich_Maria_Remarque;
+	person_Ray_Douglas_Bradbury;
+	person_Oscar_Wilde;
+	person_John_Tolkien;
+	person_Arthur_Conan_Doyle;
+	person_Francis_Scott_Fitzgerald;
+	person_Ernest_Hemingway;	
+	person_George_Orwell;
+	person_Daniel_Kiz;
+	person_Chuck_Palahniuk;
+	person_Jane_Austen;
+	person_Joan_Rowling;;
+
+section_foreign_authors = [*^"file://section_foreign_authors.scsi"*];;
