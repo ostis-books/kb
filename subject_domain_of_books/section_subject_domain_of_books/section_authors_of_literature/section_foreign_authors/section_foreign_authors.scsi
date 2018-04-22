@@ -1,0 +1,566 @@
+person_Arthur_Conan_Doyle
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Артур Конан Дойл]
+            (* <- lang_ru;; *);
+  
+
+    => nrel_date_of_birth:
+        date_22_05_1859
+            (*
+                => nrel_main_idtf:
+                    [22 мая 1859 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_07_07_1930
+            (*
+                => nrel_main_idtf:
+                    [7 июля 1930 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_detective;;
+            -> concept_fantasy;;
+            -> concept_science_fiction;;
+            -> concept_historical_novel;;
+        *);;
+
+
+person_Chuck_Palahniuk
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Чак Паланик]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_21_02_1962
+            (*
+                => nrel_main_idtf:
+                    [21 февраля 1962 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> genre_horror;;
+            -> genre_satire;;
+        *);;
+
+
+person_Ernest_Hemingway
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Эрнест Хемингуэй]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_21_07_1899
+            (*
+                => nrel_main_idtf:
+                    [21 июля 1899 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_02_07_1961
+            (*
+                => nrel_main_idtf:
+                    [2 июля 1961 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_autobiography;;
+            -> concept_novel;;
+            -> concept_short_novel;;
+            -> concept_docudrama;;
+        *);;
+
+
+person_Francis_Scott_Fitzgerald
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Фрэнсис Скотт Фицджеральд]
+            (* <- lang_ru;; *);
+
+
+    => nrel_date_of_birth:
+        date_24_09_1896
+            (*
+                => nrel_main_idtf:
+                    [24 сентября 1896 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_21_12_1940
+            (*
+                => nrel_main_idtf:
+                    [21 декабря 1940 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_drama;;
+            -> concept_novel;;
+            -> concept_narration;;
+        *);;
+
+person_George_Orwell
+    => nrel_main_idtf:
+        [Джордж Оруэлл]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_25_06_1903
+            (*
+                => nrel_main_idtf:
+                    [25 июня 1903 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britain;
+
+    => nrel_date_of_death:
+        date_02_07_1950
+            (*
+                => nrel_main_idtf:
+                    [21 января 1950 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_journalism;;
+            -> concept_prose;;
+            -> concept_critic;;
+            -> concept_antiutopia;;
+        *);;
+
+person_Jane_Austen
+    => nrel_main_idtf:
+        [Джейн Остин]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_09_08_1927
+            (*
+                => nrel_main_idtf:
+                    [16 декабря 1775 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britan;
+
+    => nrel_date_of_death:
+        date_15_06_2014
+            (*
+                => nrel_main_idtf:
+                    [18 июля 1817) года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britan;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_romantic_novel;;
+
+        *);;
+
+
+person_Joan_Rowling
+    <- concept_person;
+    <- concept_female;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Джоан Роулинг]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_31_07_1965
+            (*
+                => nrel_main_idtf:
+                    [31 июля 1965 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Great_Britan;
+
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_criminal_novel;;
+            -> concept_fantasy;;
+            -> concept_tragicomedy;;
+        *);;
+
+
+person_John_Tolkien 
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Джон Рональд Руэл Толкин]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Джон Толкин]
+            (* <- lang_ru;; *);
+    
+    => nrel_date_of_birth:
+        date_03_01_1892
+            (*
+                => nrel_main_idtf:
+                    [3 января 1892 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_South_Africa;
+
+    => nrel_date_of_death:
+        date_02_09_1973
+            (*
+                => nrel_main_idtf:
+                    [2 сентября 1973 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_fantasy;;
+            -> concept_poetry;;
+        *);;
+
+
+person_Oscar_Wilde
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Оскар Уайльд]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [С.З.З]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Себастьян Мельмот]
+            (* <- lang_ru;; *);
+
+    => nrel_date_of_birth:
+        date_16_10_1854
+            (*
+                => nrel_main_idtf:
+                    [16 октября 1854 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Ireland;
+
+    => nrel_date_of_death:
+        date_30_11_1900
+            (*
+                => nrel_main_idtf:
+                    [30 ноября 1900 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_France;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+            -> lang_french;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_essay;;
+            -> concept_military;;
+            -> concept_psychological;;
+            -> concept_comedy;;
+            -> concept_tragedy;;
+            -> concept_drama;;
+            -> concept_fairy_tale;;
+            -> concept_novel;;
+            -> concept_poem;;
+            -> concept_narration;;
+        *);;
+
+
+person_Ray_Douglas_Bradbury
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Рэй Дуглас Брэдбери]
+            (* <- lang_ru;; *);
+
+
+    => nrel_date_of_birth:
+        date_22_08_1920
+            (*
+                => nrel_main_idtf:
+                    [22 августа 1920 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_05_06_2012
+            (*
+                => nrel_main_idtf:
+                    [5 июня 2012 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+    
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_horror;;
+            -> concept_science_fiction;;
+            -> concept_fantasy;;
+            -> concept_psychological;;
+        *);;
+
+
+person_Stephen_Edwin_King
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Стивен Эдвин Кинг]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Ричард Бахман]
+            (* <- lang_ru;; *);
+        [Джон Свифен]
+            (* <- lang_ru;; *);
+
+    => nrel_date_of_birth:
+        date_21_09_1947
+            (*
+                => nrel_main_idtf:
+                    [21 сентября 1947 года]
+                        (* <- lang_ru;; *);;
+            *);
+    => nrel_place_of_birth:
+        country_USA;
+    
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_thriller;;
+            -> concept_horror;;
+            -> concept_science_fiction;;
+            -> concept_epistle;;
+            -> concept_detective;;
+            -> concept_fantasy;;
+            -> concept_postapokalipsis;;
+            -> concept_gotic;;
+        *);;
+
+
+person_Daniel_Kiz
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Дэниел Киз]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_09_08_1927
+            (*
+                => nrel_main_idtf:
+                    [9 августа 1927 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_USA;
+
+    => nrel_date_of_death:
+        date_15_06_2014
+            (*
+                => nrel_main_idtf:
+                    [15 июня 2014 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_USA;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_en;;
+        *);
+
+    <= nrel_genres: ...
+        (*
+            -> concept_science_fiction;;
+        *);;
+
+
+person_Erich_Maria_Remarque
+    <- concept_person;
+    <- concept_male;
+    <- concept_writer;
+
+    => nrel_main_idtf:
+        [Эрих Мария Ремарк]
+            (* <- lang_ru;; *);
+    => nrel_idtf:
+        [Эрих Пауль Ремарк]
+            (* <- lang_ru;; *);
+    
+
+    => nrel_date_of_birth:
+        date_22_06_1898
+            (*
+                => nrel_main_idtf:
+                    [22 июня 1898 года]
+                        (* <- lang_ru;; *);;
+            *);
+            
+    => nrel_place_of_birth:
+        country_Germany;
+
+    => nrel_date_of_death:
+        date_25_09_1970
+            (*
+                => nrel_main_idtf:
+                    [25 сентября 1970 года]
+                        (* <- lang_ru;; *);;
+            *);
+
+    => nrel_place_of_death:
+            country_Switzerland;
+
+    <= nrel_languages: ...
+        (*
+            -> lang_german;;
+        *);
+    <= nrel_genres: ...
+        (*
+            -> concept_essay;;
+            -> concept_military;;
+            -> concept_psychological;;
+        *);;
+
+
+
