@@ -1,0 +1,11 @@
+subject_domain_of_books
+=> nrel_main_idtf:
+	[Предметная область библиографии]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+	subject_domain_of_authors_of_literature
+	};;

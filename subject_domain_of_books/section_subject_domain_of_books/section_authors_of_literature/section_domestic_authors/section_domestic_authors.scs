@@ -1,0 +1,14 @@
+section_domestic_authors
+=> nrel_main_idtf:
+	[Раздел. Писатели русской литературы.]
+		(* <- lang_ru;; *);
+->rrel_key_sc_element:
+	person_Pushkin_Aleksandr_Sergeevich;
+	person_Turgenev_Ivan_Sergeevich;
+	person_Tolstoy_Lev_Nikolaevich;
+	person_Gogol_Nikolai_Vasilievich;
+	person_Chehov_Anton_Pavlovich;
+	person_Lermontov_Mikhail_Yuryevich;;
+
+
+section_domestic_authors = [*^"file://section_domestic_authors.scsi"*];;
