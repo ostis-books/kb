@@ -1,0 +1,241 @@
+sc_node_not_relation -> critical_realism_in_literature;;
+concept_literary_movement -> critical_realism_in_literature;;
+
+critical_realism_in_literature
+	=> nrel_main_idtf:
+		[Критический реализм в литературе] (* <-lang_ru;; *);
+	=> nrel_systems_idtf:
+		[critical_realism_in_literature];;
+
+critical_realism_in_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Критический реализм в литературе)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/critical_realism_in_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> critical_realism_in_literature;;
+critical_realism_in_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [середина XIX векa] (* <- lang_ru;; *);;
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [конец XIX векa] (* <- lang_ru;; *);;
+		*);;
+
+critical_realism_in_literature => nrel_main_features: 
+	...
+	(*
+		-> literary_typification;;
+		-> principle_of_historicism;;
+	*);;
+
+	
+
+
+
+sc_node_not_relation -> modernism_in_literature;;
+concept_literary_movement -> modernism_in_literature;;
+
+modernism_in_literature
+	=> nrel_main_idtf:
+		[Модернизм в литературе] (* <-lang_ru;; *);
+	=> nrel_systems_idtf:
+		[modernism_in_literature];;
+
+modernism_in_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Модернизм в литературе)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/modernism_in_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> modernism_in_literature;;
+modernism_in_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [конец XIX векa] (* <- lang_ru;; *);;
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [середина XX векa] (* <- lang_ru;; *);;
+		*);;
+
+modernism_in_literature => nrel_main_features: 
+	...
+	(*
+		-> stream_of_consciousness;;
+	*);;
+
+
+
+
+sc_node_not_relation -> romanticism_in_literature;;
+concept_literary_movement -> romanticism_in_literature;;
+
+romanticism_in_literature
+	=> nrel_main_idtf:
+		[Романтизм в литературе] (* <-lang_ru;; *);
+	=> nrel_systems_idtf:
+		[romanticism_in_literature];;
+
+romanticism_in_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			=> nrel_main_idtf:[время начала];;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Романтизм в литературе)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/romanticism_in_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> romanticism_in_literature;;
+romanticism_in_literature 
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [конец XVIII века] (* <- lang_ru;; *);;
+
+		*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [начало XIX века] (* <- lang_ru;; *);;
+		*);;
+
+romanticism_in_literature => nrel_main_features: 
+	...
+	(*
+		-> unity_of_man_and_nature;;
+	*);;
+
+
+
+
+sc_node_not_relation -> sentimentalism_in_literature;;
+concept_literary_movement -> sentimentalism_in_literature;;
+
+sentimentalism_in_literature
+	=> nrel_main_idtf:
+		[Сентиментализм в литературе] (* <-lang_ru;; *);
+	=> nrel_systems_idtf:
+		[sentimentalism_in_literature];;
+
+sentimentalism_in_literature
+	<- rrel_key_sc_element:
+		... 
+		(*
+			<- concept_clarification;;
+		    -> nrel_main_idtf: [Поясн.(Сентиментализм в литературе)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/sentimentalism_in_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> sentimentalism_in_literature;;
+sentimentalism_in_literature 
+	<- ...
+		(*
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [вторая половина XVIII векa] (* <- lang_ru;; *);;
+			*);
+	<- ...
+		(*
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [начало XIX векa] (* <- lang_ru;; *);;
+		*);;
+
+sentimentalism_in_literature => nrel_main_features: 
+	...
+	(*
+		-> individualization_of_person;;
+	*);;
+
+
+
+sc_node_not_relation -> classicism_in_literature;;
+concept_literary_movement -> classicism_in_literature;;
+
+classicism_in_literature
+	=> nrel_main_idtf:
+		[Классицизм в литературе] (* <-lang_ru;; *);
+	=> nrel_systems_idtf:
+		[classicism_in_literature];;
+
+classicism_in_literature
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Классицизм в литературе)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/classicism_in_literature.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+temporary_entity -> classicism_in_literature;;
+classicism_in_literature 
+	<- ...
+		(*	
+			=> nrel_main_idtf:[время начала];;
+			<- exact_value;;
+			<- begin;;
+			=> nrel_main_idtf: [XVII век] (* <- lang_ru;; *);;
+		*);
+	<- ...
+		(*
+			=> nrel_main_idtf:[время конца];;
+			<- exact_value;;
+			<- completion;;
+			=> nrel_main_idtf: [XVIII век] (* <- lang_ru;; *);;
+		*);;
+
+classicism_in_literature => nrel_main_features: 
+	...
+	(*
+		-> classical_unities;;
+		-> division_of_heroes;;
+		-> hierarchy_of_genres;;
+	*);;
+
+
+
