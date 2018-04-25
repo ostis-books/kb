@@ -36,7 +36,7 @@ char_Dorian_Gray
             (*
                 => nrel_main_idtf:
                     [Описание персонажа(Дориан Грей)] (* <-lang_ru;; *);;
-                <= sc_text_translation: 
+                <= nrel_sc_text_translation: 
                     ...
                     (*
                         -> "file://content/content_htmls/characters/char_Dorian_Gray.html" (* <-lang_ru;; *);;
@@ -55,7 +55,7 @@ char_Basil_Hallward
             (*
                 => nrel_main_idtf:
                     [Описание персонажа(Бэзил Холлуорд)] (* <-lang_ru;; *);;
-                <= sc_text_translation: 
+                <= nrel_sc_text_translation: 
                     ...
                     (*
                         -> "file://content/content_htmls/characters/char_Basil_Hallward.html" (* <-lang_ru;; *);;
@@ -74,7 +74,7 @@ char_Lord_Henry
             (*
                 => nrel_main_idtf:
                     [Описание персонажа(Лорд Генри Уоттон)] (* <-lang_ru;; *);;
-                <= sc_text_translation: 
+                <= nrel_sc_text_translation: 
                     ...
                     (*
                         -> "file://content/content_htmls/characters/char_Lord_Henry.html" (* <-lang_ru;; *);;
@@ -93,7 +93,7 @@ char_Sibyl_Vane
             (*
                 => nrel_main_idtf:
                     [Описание персонажа(Сибила Вэйн)] (* <-lang_ru;; *);;
-                <= sc_text_translation: 
+                <= nrel_sc_text_translation: 
                     ...
                     (*
                         -> "file://content/content_htmls/characters/char_Sibyl_Vane.html" (* <-lang_ru;; *);;
@@ -112,7 +112,7 @@ char_James_Vane
             (*
                 => nrel_main_idtf:
                     [Описание персонажа(Джеймс Вэйн)] (* <-lang_ru;; *);;
-                <= sc_text_translation: 
+                <= nrel_sc_text_translation: 
                     ...
                     (*
                         -> "file://content/content_htmls/characters/char_James_Vane.html" (* <-lang_ru;; *);;
@@ -120,13 +120,13 @@ char_James_Vane
             *);;
 
 
-plot -> .book_picture_of_Dorian_Gray_plot
+book_picture_of_Dorian_Gray => nrel_plot: 
+    .book_picture_of_Dorian_Gray_plot
     (*
         => nrel_main_idtf: [Сюжет. "Портрет Дориана Грея"] (* <-lang_ru;; *);;
         -> .book_picture_of_Dorian_Gray_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Знакомство главных персонажей] (* <-lang_ru;; *);;
-                -> rrel_key_sc_element: book_picture_of_Dorian_Gray;;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
