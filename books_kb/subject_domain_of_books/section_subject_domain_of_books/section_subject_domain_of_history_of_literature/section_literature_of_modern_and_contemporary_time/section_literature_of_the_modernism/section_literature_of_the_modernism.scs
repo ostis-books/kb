@@ -7,7 +7,4 @@ section_literature_of_the_modernism
 			...
 			(* 
 			-> rrel_example: "file://content/content_htmls/section_literature_of_the_modernism.html" (* <-lang_ru;; *);;
-			*);
-
-	-> rrel_key_sc_element:
-		book_sobachye_syerdtsye;;
+			*);;
