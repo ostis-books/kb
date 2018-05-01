@@ -14,7 +14,8 @@ sc_agent_of_search_book_by_template
 	{
 		question_initiated;
 		question;
-		question_search_book_by_template
+		question_search_book_by_template;
+		answer_search_book_by_template_not_found
 	};
 => nrel_inclusion: 
 	.c_realization_of_search_book_by_template
