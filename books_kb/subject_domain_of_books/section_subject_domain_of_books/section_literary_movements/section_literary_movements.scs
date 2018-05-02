@@ -1,8 +1,11 @@
 section_literary_movements
 	=> nrel_main_idtf:
 		[Раздел. Литературные направления]
-			(* <- lang_ru;; *);
-	
+			(* <- lang_ru;; *);;
+
+	 section_literary_movements =  [*^"file://section_literary_movements.scsi"*];;
+
+section_literary_movements
 	-> rrel_key_sc_element:	
 		literary_movement;
 		nrel_main_features;

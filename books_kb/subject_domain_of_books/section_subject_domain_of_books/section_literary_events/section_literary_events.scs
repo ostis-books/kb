@@ -1,0 +1,21 @@
+section_literary_events
+	=> nrel_main_idtf:
+		[Раздел. Литературные события]
+			(* <- lang_ru;; *);;
+	
+section_literary_events =  [*^"file://section_literary_events.scsi"*];;
+
+section_literary_events
+	-> rrel_key_sc_element:	
+		literary_event;
+		event_death;
+		event_murder;
+		event_suicide;
+		event_love;
+		event_deceit;
+		event_attempted_murder;
+		event_death_of_the_protagonist;
+		event_acquaintance;
+		event_mischief;
+		event_breakup;
+		event_finality;;

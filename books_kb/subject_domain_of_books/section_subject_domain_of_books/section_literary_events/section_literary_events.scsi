@@ -1,0 +1,344 @@
+literary_event 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[литературное событие] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[литературное действие] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(литературное событие)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/literary_event.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+
+
+event_death
+	<- literary_event;
+	=> nrel_main_idtf: 
+		[смерть] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[гибель] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[кончина] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(смерть)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_death.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+
+
+event_murder
+	<- literary_event;
+	<- event_death;
+	=> nrel_main_idtf: 
+		[убийство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[смертоубийство] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(убийство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_murder.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
+
+event_suicide 
+	<- literary_event;
+	<- event_death;
+	=> nrel_main_idtf: 
+		[самоубийство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[суицид] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(самоубийство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_suicide.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+
+
+event_love 
+	<- literary_event;
+	=> nrel_main_idtf: 
+		[любовь] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[влюбленность] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(любовь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_love.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+
+
+event_deceit
+	<- literary_event;
+	=> nrel_main_idtf:
+		[обман] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[ложь] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[хитрость] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[уловка] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(обман)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_deceit.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
+
+event_attempted_murder
+	<- literary_event;
+	=> nrel_main_idtf:
+		[покушение на убийство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[попытка убийства] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(покушение на убийство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_attempted_murder.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+
+
+event_death_of_the_protagonist
+	<- literary_event;
+	<- event_death;
+	=> nrel_main_idtf:
+		[смерть главного героя] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[смерть протагониста] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[смерть главного персонажа] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(смерть главного героя)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_death_of_the_protagonist.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					->  main_character;
+						event;;
+				*);;
+		*);;
+
+
+
+event_acquaintance
+	<- literary_event;
+	=> nrel_main_idtf:
+		[знакомство] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(знакомство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_acquaintance.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+
+
+event_mischief
+	<- literary_event;
+	=> nrel_main_idtf:
+		[шалость] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[озорство]
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[проделка]
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[баловство]
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[выходка]
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(шалость)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_mischief.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
+
+event_breakup
+	<- literary_event;
+	=> nrel_main_idtf:
+		[расставание] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[разрыв отношений]
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[разлука]
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(расставание)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_breakup.html" (* <-lang_ru;; *);;
+				*);;
+			<= using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+
+
+event_finality
+	<- literary_event;
+	=> nrel_main_idtf:
+		[завершение] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[развязка]
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[окончание]
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(завершение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_finality.html" (* <-lang_ru;; *);;
+				*);;
+		*);;

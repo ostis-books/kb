@@ -44,7 +44,7 @@ nrel_main_features
 					-> literary_work;
 						writer;;
 				*);;
-		*);;
+		*);
 
 	=> nrel_second_domain: literary_movement;
 	=> nrel_first_domain: 
@@ -110,6 +110,7 @@ critical_realism_in_literature
 critical_realism_in_literature <= nrel_main_features: 
 	...
 	(*
+		
 		-> literary_typification;;
 		-> historicism;;
 	*);;
@@ -218,8 +219,8 @@ sentimentalism_in_literature
 	<- rrel_key_sc_element:
 		... 
 		(*
-			<- concept_clarification;;
-		    -> nrel_main_idtf: [Поясн.(Сентиментализм в литературе)] (* <-lang_ru;; *);;
+			<- explanation;;
+		    => nrel_main_idtf: [Поясн.(Сентиментализм в литературе)] (* <-lang_ru;; *);;
 		    <= nrel_sc_text_translation:
 				...
 				(* 
@@ -361,8 +362,7 @@ postmodernism_in_literature
 					->  literary_work;
 						nrel_author;
 						genre_novel;
-						genre_parody;
-						modernism_in_literature;;
+						genre_parody;;
 				*);;
 		*);
 

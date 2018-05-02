@@ -1,0 +1,6 @@
+sc_node_not_relation -> historicism (*
+	=> nrel_main_idtf:[историзм](*<-lang_ru;;*);;
+*);;
+sc_node_not_relation -> literary_typification (*
+	=> nrel_main_idtf:[литературная типизация](*<-lang_ru;;*);;
+*);;
