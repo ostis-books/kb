@@ -31,3 +31,29 @@ question_search_book_by_template
 		(* <- lang_ru;; *);
 	[action. find books by template]
 		(* <- lang_en;;	*);;
+
+answer_search_book_by_template_not_found
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ответ. книги не найдены]
+		(* <- lang_ru;; *);
+	[answer. books not found]
+		(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+	[Книги, соответствующие заданным критериям, не найдены.]
+		(* <- lang_ru;; *);
+	[Book that meet the specified criteria are not found.]
+		(* <- lang_en;;	*);;
+
+answer_search_book_by_template_not_template
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ответ. аргумент не является шаблоном поиска]
+		(* <- lang_ru;; *);
+	[answer. argument isn't a search pattern]
+		(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+	[Аргумент действия не является шаблоном поиска книг.]
+		(* <- lang_ru;; *);
+	[Action's argument is not a book search pattern.]
+		(* <- lang_en;;	*);;

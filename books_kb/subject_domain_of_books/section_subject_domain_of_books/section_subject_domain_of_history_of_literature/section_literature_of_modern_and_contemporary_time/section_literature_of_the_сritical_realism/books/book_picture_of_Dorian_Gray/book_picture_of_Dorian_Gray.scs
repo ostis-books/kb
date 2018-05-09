@@ -214,6 +214,7 @@ book_picture_of_Dorian_Gray => nrel_plot:
                 => nrel_plot_sequence: 
                     .book_picture_of_Dorian_Gray_event_6;;      
             *);; 
+
         -> .book_picture_of_Dorian_Gray_event_6
             (*
                 => nrel_main_idtf: [Событие №6. Смерть Дориана Грея] (* <-lang_ru;; *);;
