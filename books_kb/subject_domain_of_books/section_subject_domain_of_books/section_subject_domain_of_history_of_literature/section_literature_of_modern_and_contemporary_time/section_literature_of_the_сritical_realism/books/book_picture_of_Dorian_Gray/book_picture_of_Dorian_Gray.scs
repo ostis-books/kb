@@ -28,7 +28,6 @@ char_Dorian_Gray
         => nrel_main_idtf: 
             [Дориан Грей] (* <-lang_ru;; *);
         <- lit_person;
-        <- main_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -47,7 +46,6 @@ char_Basil_Hallward
         => nrel_main_idtf: 
             [Бэзил Холлуорд] (* <-lang_ru;; *);
         <- lit_person;
-        <- main_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -66,7 +64,6 @@ char_Lord_Henry
         => nrel_main_idtf: 
             [Лорд Генри Уоттон] (* <-lang_ru;; *);
         <- lit_person;
-        <- main_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -85,7 +82,6 @@ char_Sibyl_Vane
         => nrel_main_idtf: 
             [Сибила Вэйн] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- female_character;
         <- rrel_key_sc_element:
@@ -104,7 +100,6 @@ char_James_Vane
         => nrel_main_idtf: 
             [Джеймс Вэйн] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -213,13 +208,12 @@ book_picture_of_Dorian_Gray => nrel_plot:
                     <- event_murder;;
                     <= nrel_participants:... 
                     (*
-                        -> char_Dorian_Gray;
-                           char_Basil_Hallward;;
+                        -> rrel_killer: char_Dorian_Gray;;
+                        -> rrel_victim: char_Basil_Hallward;;
                     *);;         
-                    => nrel_plot_sequence: 
-                        .book_picture_of_Dorian_Gray_event_6;;      
+                => nrel_plot_sequence: 
+                    .book_picture_of_Dorian_Gray_event_6;;      
             *);; 
-
         -> .book_picture_of_Dorian_Gray_event_6
             (*
                 => nrel_main_idtf: [Событие №6. Смерть Дориана Грея] (* <-lang_ru;; *);;

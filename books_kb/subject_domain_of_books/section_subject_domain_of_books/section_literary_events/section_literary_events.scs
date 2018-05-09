@@ -18,4 +18,7 @@ section_literary_events
 		event_acquaintance;
 		event_mischief;
 		event_breakup;
+		event_medical_action;
+		event_operation;
+		event_medical_examination;
 		event_finality;;

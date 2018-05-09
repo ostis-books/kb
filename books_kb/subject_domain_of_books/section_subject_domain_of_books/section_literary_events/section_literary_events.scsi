@@ -17,7 +17,7 @@ literary_event
 				(* 
 		            -> rrel_example: "file://content/content_htmls/literary_event.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					-> lit_person;;
@@ -48,7 +48,7 @@ event_death
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_death.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					->  lit_person;
@@ -102,7 +102,7 @@ event_suicide
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_suicide.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					-> lit_person;;
@@ -130,7 +130,7 @@ event_love
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_love.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					-> lit_person;;
@@ -187,7 +187,7 @@ event_attempted_murder
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_attempted_murder.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					-> lit_person;;
@@ -219,7 +219,7 @@ event_death_of_the_protagonist
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_death_of_the_protagonist.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					->  main_character;
@@ -245,7 +245,7 @@ event_acquaintance
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_acquaintance.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					->  lit_person;
@@ -309,7 +309,7 @@ event_breakup
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_breakup.html" (* <-lang_ru;; *);;
 				*);;
-			<= using_constants:
+			<= nrel_using_constants:
 				...
 				(*
 					->  lit_person;
@@ -342,3 +342,101 @@ event_finality
 		            -> rrel_example: "file://content/content_htmls/event_finality.html" (* <-lang_ru;; *);;
 				*);;
 		*);;
+
+
+
+event_medical_action
+	<- literary_event;
+	=> nrel_main_idtf:
+		[медицинское действие] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(медицинское действие)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_medical_action.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event;
+						nrel_participants;
+						rrel_doctor;
+						rrel_patient;;
+				*);;
+		*);;
+
+
+
+event_operation
+	<- literary_event;
+	<- event_medical_action;
+	=> nrel_main_idtf:
+		[операция] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[хирургическое вмешательство] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[операти́вное вмеша́тельство] 
+			(* <-lang_ru;; *);	
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(операция)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_operation.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event;
+						rrel_doctor;
+						rrel_patient;;
+				*);;
+		*);;
+
+
+
+event_medical_examination
+	<- literary_event;
+	<- event_medical_action;
+	=> nrel_main_idtf:
+		[медицинский осмотр] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[медицинское обследование] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[медосмотр] 
+			(* <-lang_ru;; *);	
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(медицинский осмотр)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_medical_examination.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						rrel_doctor;
+						rrel_patient;;
+				*);;
+		*);;
+
+

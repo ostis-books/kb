@@ -50,7 +50,6 @@ char_Polygraph_Polygraphovich_Sharikov
             [Полиграф Полиграфович Шариков]
                 (* <-lang_ru;; *);
         <- lit_person;
-        <- main_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -70,7 +69,6 @@ char_Philip_Philipovich_Preobrazhensky
         => nrel_main_idtf: 
             [Филипп Филиппович Преображенский] (* <-lang_ru;; *);
         <- lit_person;
-        <- main_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -89,7 +87,6 @@ char_Ivan_Arnoldovich_Bormental
         => nrel_main_idtf: 
             [Иван Арнольдович Борменталь] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -108,7 +105,6 @@ char_Zinaida_Prokofyevna_Bunina
         => nrel_main_idtf: 
             [Зинаида Прокофьевна Бунина] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- female_character;
         <- rrel_key_sc_element:
@@ -127,7 +123,6 @@ char_Klim_Grigorievich_Chugunkin
         => nrel_main_idtf: 
             [Клим Григорьевич Чугункин] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
@@ -146,7 +141,6 @@ char_dvornik_Fedor
         => nrel_main_idtf: 
             [дворник Фёдор] (* <-lang_ru;; *);
         <- lit_person;
-        <- background_character;
         <- person;
         <- male_character;
         <- rrel_key_sc_element:
