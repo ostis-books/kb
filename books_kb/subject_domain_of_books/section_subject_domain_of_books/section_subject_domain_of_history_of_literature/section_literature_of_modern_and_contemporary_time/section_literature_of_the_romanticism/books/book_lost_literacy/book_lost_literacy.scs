@@ -1,0 +1,161 @@
+//Пропавшая грамота ,гоголь
+book_lost_literacy
+=> nrel_main_idtf: 
+        ["Пропавшая грамота"]
+            (* <- lang_ru;; *);
+<- book;
+<- genre_tale;
+=> nrel_author:
+    person_Gogol_Nikolai_Vasilievich;
+=> nrel_languages_of_work:
+    lang_ru;
+=> nrel_publication_date:
+    year_1829;;
+
+book_lost_literacy
+<= nrel_characters:
+    .book_lost_literacy_characters
+    (*
+        -> rrel_main_character:
+            char_ded;
+            char_kozak;;
+        ->  char_zaporozhec;
+            char_shinkar;;
+    *);;
+
+char_ded
+         => nrel_main_idtf: 
+            [Дед] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- male_character;;
+
+char_kozak
+        => nrel_main_idtf: 
+            [Козак] (* <-lang_ru;; *);
+        <- lit_person;
+        <- main_character;
+        <- person;
+        <- concept_male_character;;
+    
+char_zaporozhec
+        => nrel_main_idtf: 
+            [Запорожец] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male_character;;
+
+char_shinkar
+        => nrel_main_idtf: 
+            [Шинкарь] (* <-lang_ru;; *);
+        <- lit_person;
+        <- background_character;
+        <- person;
+        <- male_character;;
+
+book_lost_literacy => nrel_plot:
+    .book_lost_literacy_plot
+    (*
+      => nrel_main_idtf: [Сюжет. "Пропавшая грамота"] 
+                (* <-lang_ru;; *);;
+        -> key_sc_element: book_lost_literacy ;;
+        -> .book_lost_literacy_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Часть 1] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_kozak;
+                           char_zaporozhec;;
+                    *);;  
+                    => nrel_plot_sequence:                          
+                          book_lost_literacy_event_2;;                    
+            *);;
+
+        -> .book_lost_literacy_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Часть 2] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_ded;;
+                    *);;             
+                    => nrel_plot_sequence:                          
+                          book_lost_literacy_event_3;;          
+            *);;
+
+        -> .book_lost_literacy_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Часть 3] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <- event_mischief;;
+                    <= nrel_main_participants: ... 
+                    (*
+                        -> char_ded;
+                           char_kozak;;
+                    *);;    
+                    => nrel_plot_sequence:                          
+                          book_lost_literacy_event_4;;                   
+            *);;
+
+        -> .book_lost_literacy_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Часть 4] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_main_participants: ... 
+                    (*
+                         -> char_ded;
+                            char_zaporozhec;
+                            char_kozak;;                 
+                    *);;         
+                    => nrel_plot_sequence:                          
+                          book_lost_literacy_event_5;;              
+            *);;
+        -> .book_lost_literacy_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Часть 5] 
+                                    (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> rrel_example: "file://content/content_htmls/events/book_lost_literacy_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mischief;;
+                    <- event_finality;;
+                    <= nrel_main_participants: ... 
+                    (*
+                         -> char_ded;
+                            char_zaporozhec;
+                            char_kozak;;                 
+                    *);;                      
+            *);;
+
+    *);;
+
