@@ -440,3 +440,258 @@ event_medical_examination
 		*);;
 
 
+event_holiday
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Каникулы] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[выходные] 
+			(* <-lang_ru;; *);	
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(каникулы)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_holiday.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_memories
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Воспоминания] 
+			(* <-lang_ru;; *);	
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(воспоминания)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_memories.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_cash_award
+	<- literary_event;
+	=> nrel_main_idtf:
+		[денежное вознаграждение] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[премия] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[выигрыш] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(денежное вознаграждение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_cash_award.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_comparison
+	<- literary_event;
+	=> nrel_main_idtf:
+		[сравнение] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[сопостовление] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сравнение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_comparison.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+
+event_duel
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Дуэль] 
+			(* <-lang_ru;; *);	
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(дуэль)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_duel.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_fair
+	<- literary_event;
+	=> nrel_main_idtf:
+		[базар] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[ярмарка] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- explanation;;
+			=> nrel_main_idtf: [Поясн.(базар)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_fair.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_wedding
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Свадьба] 
+			(* <-lang_ru;; *);	
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(свадьба)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_wedding.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_battle
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Сражение] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[битва] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сражение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_battle.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_arrival_of_guests
+	<- literary_event;
+	=> nrel_main_idtf:
+		[Событие. Прибытиие гостей] 
+			(* <-lang_ru;; *);	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(прибытие гостей)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_arrival_of_guests.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;
+						event;;
+				*);;
+		*);;
+
+event_discomfort
+	<- literary_event;
+	=> nrel_main_idtf:
+		[неприязнь] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[неловкое чувство] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(неприязнь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_discomfort.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+

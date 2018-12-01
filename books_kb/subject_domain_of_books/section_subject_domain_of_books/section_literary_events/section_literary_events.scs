@@ -21,4 +21,14 @@ section_literary_events
 		event_medical_action;
 		event_operation;
 		event_medical_examination;
-		event_finality;;
+		event_finality;
+		event_holiday;
+		event_memories;
+		event_cash_award;
+		event_comparison;
+		event_duel;
+		event_fair;
+		event_wedding;
+		event_battle;
+		event_arrival_of_guests;
+		event_discomfort;;
