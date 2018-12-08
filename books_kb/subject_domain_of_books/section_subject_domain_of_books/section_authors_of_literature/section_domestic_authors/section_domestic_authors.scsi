@@ -312,7 +312,10 @@ person_Maxim_Gorky
         ->lang_ru;;
     *);;
 
+
 person_Krylov_Ivan_Andreyevich
+
+
     <- person;
     <- male;
     <- writer;
@@ -606,6 +609,7 @@ person_Platonov_Andrey
     (*
         ->lang_ru;;
     *);;
+
 
 person_Nabokov_Vladimir_Vladimirovich
         
@@ -1392,12 +1396,7 @@ person_Kuzmin_Mikhail_Sergeyevich
         -> genre_prose;;
         -> genre_narrative;;
         -> genre_novel;;
-    *);
 
-    <= nrel_languages_of_work:...
-    (*
-        -> lang_ru;;
-    *);;
 
 person_Herzen_Aleksandr_Ivanovich
     <- person;
