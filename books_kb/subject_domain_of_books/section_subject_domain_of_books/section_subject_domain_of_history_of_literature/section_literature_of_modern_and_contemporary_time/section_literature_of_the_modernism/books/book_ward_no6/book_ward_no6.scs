@@ -204,7 +204,6 @@ book_ward_no6 => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. Палата №6] 
                 (* <-lang_ru;; *);;
-        -> concept_events;;
         -> .book_ward_no6_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Знакомство и описание больных] 
@@ -226,7 +225,7 @@ book_ward_no6 => nrel_plot:
 
         -> .book_ward_no6_event_2
             (*
-                => nrel_main_idtf: [Событие №2 ] 
+                => nrel_main_idtf: [Событие №2. Преображение Рагина] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -245,7 +244,7 @@ book_ward_no6 => nrel_plot:
             *);;
         -> .book_ward_no6_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Последнее действие] 
+                => nrel_main_idtf: [Событие №3. Стычка с конкурентом] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
