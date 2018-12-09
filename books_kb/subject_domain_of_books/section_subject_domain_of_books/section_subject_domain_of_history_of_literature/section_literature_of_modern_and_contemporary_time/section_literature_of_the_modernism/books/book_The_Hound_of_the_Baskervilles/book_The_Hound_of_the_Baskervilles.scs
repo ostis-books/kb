@@ -214,15 +214,13 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
         => nrel_main_idtf: [Сюжет. "Собака Баскервилей"] (* <-lang_ru;; *);;
         -> .book_The_Hound_of_the_Baskervilles_event_1
             (*
-                => nrel_main_idtf: [Событие №1] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №1. Новый заказ] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_1.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_acquaintance;;
-                    <- event_attempted_murder;;
-                    <- event_murder;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Sherlock_Holmes;
@@ -236,15 +234,13 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
 
         -> .book_The_Hound_of_the_Baskervilles_event_2
             (*
-                => nrel_main_idtf: [Событие №2] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №2. Семейная легенда] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_2.html" (* <-lang_ru;; *);;
                     *);;
-                     <- event_murder;;
                      <- event_memories;;
-                     <- event_death;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Baskerville_dog;
@@ -256,16 +252,13 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
 
         -> .book_The_Hound_of_the_Baskervilles_event_3
             (*
-                => nrel_main_idtf: [Событие №3] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №3. Расследование начинается] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_3.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_acquaintance;;
                     <- event_snooping;;
-                    <- event_mischief;;
-                    <- event_investigation;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Sherlock_Holmes;
@@ -280,17 +273,12 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
 
         -> .book_The_Hound_of_the_Baskervilles_event_4
             (*
-                => nrel_main_idtf: [Событие №4] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №4. Дело раскрыто] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_4.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_acquaintance;;
-                    <- event_snooping;;
-                    <- event_discomfort;;
-                    <- event_deceit;;
-                    <- event_attempted_murder;;
                     <- event_finality;;
                     <= nrel_participants:... 
                     (*

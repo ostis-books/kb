@@ -216,15 +216,13 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
         => nrel_main_idtf: [Сюжет. "На Западном фронте без перемен"] (* <-lang_ru;; *);;
         -> .book_all_quiet_on_the_Western_Front_event_1
             (*
-                => nrel_main_idtf: [Событие №1] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №1. Война] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_1.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_murder;;
-                    <- event_death;;
-                    <- event_operation;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -240,14 +238,12 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
 
         -> .book_all_quiet_on_the_Western_Front_event_2
             (*
-                => nrel_main_idtf: [Событие №2] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №2. Фронт] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_2.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_murder;;
-                    <- event_death;;
                     <- event_gas_attack;;
                     <= nrel_participants:... 
                     (*
@@ -261,14 +257,12 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
 
         -> .book_all_quiet_on_the_Western_Front_event_3
             (*
-                => nrel_main_idtf: [Событие №3] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №3. Сражение] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_3.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_murder;;
-                    <- event_death;;
                     <- event_battle;;
                     <= nrel_participants:... 
                     (*
@@ -282,14 +276,13 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
 
         -> .book_all_quiet_on_the_Western_Front_event_4
             (*
-                => nrel_main_idtf: [Событие №4] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №4. Отпуск] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_4.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_holiday;;
-
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -301,17 +294,13 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
 
         -> .book_all_quiet_on_the_Western_Front_event_5
             (*
-                => nrel_main_idtf: [Событие №5] (* <-lang_ru;; *);;
+                => nrel_main_idtf: [Событие №5. На Западном фронте без перемен] (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_5.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_death_of_the_protagonist;;
-                    <- event_finality;;
-                    <- event_amputation;;
-                    <- event_death;;
-
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
