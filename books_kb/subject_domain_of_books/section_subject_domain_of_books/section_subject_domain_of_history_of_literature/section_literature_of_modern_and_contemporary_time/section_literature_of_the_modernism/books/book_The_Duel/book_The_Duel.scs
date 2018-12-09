@@ -144,17 +144,15 @@ book_The_Duel=> nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Дуэль"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_The_Duel;;
         -> .book_The_Duel_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Глава 1] 
+                => nrel_main_idtf: [Событие №1. История жизни] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> rrel_example: "file://content/content_htmls/events/book_The_Duel_event_1.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_breakup;;
                     <- event_deceit;;
                     <= nrel_main_participants: ... 
                     (*
@@ -168,7 +166,7 @@ book_The_Duel=> nrel_plot:
 
         -> .book_The_Duel_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Глава 2] 
+                => nrel_main_idtf: [Событие №2. Бытовые конфликты] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -176,7 +174,6 @@ book_The_Duel=> nrel_plot:
                         -> rrel_example: "file://content/content_htmls/events/book_The_Duel_event_2.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_comparison;;
-                    <- event_deceit;;
                     <= nrel_main_participants: ... 
                     (*
                         -> char_laevskiy;
@@ -188,7 +185,7 @@ book_The_Duel=> nrel_plot:
 
         -> .book_The_Duel_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Глава 3] 
+                => nrel_main_idtf: [Событие №3. Заговор] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -209,14 +206,13 @@ book_The_Duel=> nrel_plot:
 
         -> .book_The_Duel_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Глава 4] 
+                => nrel_main_idtf: [Событие №4. Кризис главного героя] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
                         -> rrel_example: "file://content/content_htmls/events/book_The_Duel_event_4.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_mischief;;
                     <- event_deceit;;
                     <= nrel_main_participants: ... 
                     (*
@@ -231,7 +227,7 @@ book_The_Duel=> nrel_plot:
             *);;
         -> .book_The_Duel_event_5
             (*
-                => nrel_main_idtf: [Событие №5. Глава 5] 
+                => nrel_main_idtf: [Событие №5. Дуэль] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -252,7 +248,7 @@ book_The_Duel=> nrel_plot:
             *);;
         -> .book_The_Duel_event_6
             (*
-                => nrel_main_idtf: [Событие №6. Глава 6] 
+                => nrel_main_idtf: [Событие №6. Примиренение] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
