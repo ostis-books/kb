@@ -44,10 +44,9 @@ book_Vanka => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Ванька"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_Vanka ;;
         -> .book_Vanka_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Глава 1] 
+                => nrel_main_idtf: [Событие №1. Воспоминания Ваньки] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -65,7 +64,7 @@ book_Vanka => nrel_plot:
 
         -> .book_Vanka_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Глава 2] 
+                => nrel_main_idtf: [Событие №2. Ванька отправляет письмо] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
