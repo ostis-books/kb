@@ -225,10 +225,9 @@ book_The_Government_Inspector => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. Ревизор ] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_The_Government_Inspector;;
         -> .book_The_Government_Inspector_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Действие 1] 
+                => nrel_main_idtf: [Событие №1. Новость о прибытии ревизора] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -247,7 +246,7 @@ book_The_Government_Inspector => nrel_plot:
 
         -> .book_The_Government_Inspector_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Действие 2] 
+                => nrel_main_idtf: [Событие №2. Хлестаков притворяется ревизором] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -266,7 +265,7 @@ book_The_Government_Inspector => nrel_plot:
 
         -> .book_The_Government_Inspector_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Действие 3] 
+                => nrel_main_idtf: [Событие №3. Хлестаков в гостях у городничего] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -280,15 +279,14 @@ book_The_Government_Inspector => nrel_plot:
                            char_Mariya_Antonovna;
                            char_Hlestakov;;                  
                     *);; 
-                    <- event_deceit ;;
-                    <- event_mischief;;
+                    <- event_deceit;;
                     => nrel_plot_sequence:
                                 .book_The_Government_Inspector_event_4;;                      
             *);;
 
         -> .book_The_Government_Inspector_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Действие 4] 
+                => nrel_main_idtf: [Событие №4. Взятки] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -310,12 +308,12 @@ book_The_Government_Inspector => nrel_plot:
 
         -> .book_The_Government_Inspector_event_5
             (*
-                => nrel_main_idtf: [Событие №5. Действие 5] 
+                => nrel_main_idtf: [Событие №5. Раскрытие Хлестакова] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
                     (* 
-                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_2.html" (* <-lang_ru;; *);;
+                        -> rrel_example: "file://content/content_htmls/events/book_The_Government_Inspector_event_5.html" (* <-lang_ru;; *);;
                     *);;
                     <= nrel_main_participants: ... 
                     (*
