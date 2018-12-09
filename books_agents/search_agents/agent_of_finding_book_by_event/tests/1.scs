@@ -1,0 +1,4 @@
+test_1
+	-> event_murder;
+	-> event_love;
+	-> event_suicide;;

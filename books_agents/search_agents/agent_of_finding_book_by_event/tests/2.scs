@@ -1,0 +1,5 @@
+test_2
+	=> nrel_main_idtf:
+		[Test 2] (* <- lang_ru;; *);
+
+	-> event_mischief;;
