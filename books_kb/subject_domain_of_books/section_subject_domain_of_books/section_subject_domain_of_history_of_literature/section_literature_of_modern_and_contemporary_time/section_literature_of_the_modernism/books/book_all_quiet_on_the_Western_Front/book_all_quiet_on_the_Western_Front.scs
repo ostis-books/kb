@@ -222,7 +222,9 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_1.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_1;;
+                    <- event_murder;;
+                    <- event_death;;
+                    <- event_operation;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -244,7 +246,9 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_2.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_2;;
+                    <- event_murder;;
+                    <- event_death;;
+                    <- event_gas_attack;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -263,7 +267,9 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_3.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_3;;
+                    <- event_murder;;
+                    <- event_death;;
+                    <- event_battle;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -282,7 +288,8 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_4.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_4;;
+                    <- event_holiday;;
+
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;
@@ -301,7 +308,10 @@ book_all_quiet_on_the_Western_Front => nrel_plot:
                         -> "file://content/content_htmls/events/book_all_quiet_on_the_Western_Front_event_5.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_death_of_the_protagonist;;
-                    <- event_5;;
+                    <- event_finality;;
+                    <- event_amputation;;
+                    <- event_death;;
+
                     <= nrel_participants:... 
                     (*
                         ->  char_Paul_Baumer;

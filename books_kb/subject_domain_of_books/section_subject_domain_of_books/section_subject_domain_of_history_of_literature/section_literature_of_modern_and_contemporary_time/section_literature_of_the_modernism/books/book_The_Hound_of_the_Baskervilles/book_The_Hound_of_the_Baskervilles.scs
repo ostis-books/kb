@@ -220,7 +220,9 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_1.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_1;;
+                    <- event_acquaintance;;
+                    <- event_attempted_murder;;
+                    <- event_murder;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Sherlock_Holmes;
@@ -240,7 +242,9 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_2.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_2;;
+                     <- event_murder;;
+                     <- event_memories;;
+                     <- event_death;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Baskerville_dog;
@@ -258,7 +262,10 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_3.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_3;;
+                    <- event_acquaintance;;
+                    <- event_snooping;;
+                    <- event_mischief;;
+                    <- event_investigation;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Sherlock_Holmes;
@@ -279,7 +286,12 @@ book_The_Hound_of_the_Baskervilles => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_The_Hound_of_the_Baskervilles_event_4.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_4;;
+                    <- event_acquaintance;;
+                    <- event_snooping;;
+                    <- event_discomfort;;
+                    <- event_deceit;;
+                    <- event_attempted_murder;;
+                    <- event_finality;;
                     <= nrel_participants:... 
                     (*
                         ->  char_Sherlock_Holmes;
