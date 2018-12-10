@@ -60,6 +60,7 @@ event_death
 
 event_murder
 	<- literary_event;
+	=> nrel_age_limit: [18];
 	<- event_death;
 	=> nrel_main_idtf: 
 		[убийство] 
@@ -84,6 +85,7 @@ event_murder
 
 event_suicide 
 	<- literary_event;
+	=> nrel_age_limit: [18];
 	<- event_death;
 	=> nrel_main_idtf: 
 		[самоубийство] 
@@ -113,6 +115,7 @@ event_suicide
 
 event_love 
 	<- literary_event;
+	=> nrel_age_limit: [12];
 	=> nrel_main_idtf: 
 		[любовь] 
 			(* <-lang_ru;; *);
@@ -170,6 +173,7 @@ event_deceit
 
 event_attempted_murder
 	<- literary_event;
+	=> nrel_age_limit: [16];
 	=> nrel_main_idtf:
 		[покушение на убийство] 
 			(* <-lang_ru;; *);
@@ -198,6 +202,7 @@ event_attempted_murder
 
 event_death_of_the_protagonist
 	<- literary_event;
+	=> nrel_age_limit: [14];
 	<- event_death;
 	=> nrel_main_idtf:
 		[смерть главного героя] 
@@ -231,6 +236,7 @@ event_death_of_the_protagonist
 
 event_acquaintance
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[знакомство] 
 			(* <-lang_ru;; *);
@@ -289,6 +295,7 @@ event_mischief
 
 event_breakup
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
 		[расставание] 
 			(* <-lang_ru;; *);
@@ -443,7 +450,7 @@ event_medical_examination
 event_holiday
 	<- literary_event;
 	=> nrel_main_idtf:
-		[Событие. Каникулы] 
+		[каникулы] 
 			(* <-lang_ru;; *);
 	=> nrel_idtf:
 		[выходные] 
@@ -470,7 +477,7 @@ event_holiday
 event_memories
 	<- literary_event;
 	=> nrel_main_idtf:
-		[Событие. Воспоминания] 
+		[воспоминания] 
 			(* <-lang_ru;; *);	
 	
 	<- rrel_key_sc_element:
@@ -551,7 +558,7 @@ event_comparison
 event_duel
 	<- literary_event;
 	=> nrel_main_idtf:
-		[Событие. Дуэль] 
+		[дуэль] 
 			(* <-lang_ru;; *);	
 
 	
@@ -621,7 +628,7 @@ event_wedding
 event_battle
 	<- literary_event;
 	=> nrel_main_idtf:
-		[Событие. Сражение] 
+		[сражение] 
 			(* <-lang_ru;; *);	
 	=> nrel_idtf:
 		[битва] 
@@ -648,7 +655,7 @@ event_battle
 event_arrival_of_guests
 	<- literary_event;
 	=> nrel_main_idtf:
-		[Событие. Прибытиие гостей] 
+		[прибытиие гостей] 
 			(* <-lang_ru;; *);	
 	<- rrel_key_sc_element:
 		...
