@@ -1,5 +1,5 @@
-test_2
+agent_of_finding_book_by_event_test_2
 	=> nrel_main_idtf:
-		[Test 2] (* <- lang_ru;; *);
+		[Test 2 for finding books by events] (* <- lang_ru;; *);
 
 	-> event_mischief;;

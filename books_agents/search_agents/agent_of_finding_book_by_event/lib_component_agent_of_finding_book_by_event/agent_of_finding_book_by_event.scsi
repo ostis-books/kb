@@ -326,7 +326,7 @@ scp_program -> agent_of_finding_book_by_event
             -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
 
             => nrel_goto: .agent_of_finding_book_by_event_form_answer;;
-        *);;
+        *);;        	 
 
         -> .agent_of_finding_book_by_event_operator_elements_books_found
         (*
