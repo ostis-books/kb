@@ -86,7 +86,6 @@ book_Evenings_on_a_Farm_Near_Dikanka =>nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. Вечера на хуторе близ диканьки] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_Evenings_on_a_Farm_Near_Dikanka;;
         -> .book_Evenings_on_a_Farm_Near_Dikanka_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Сорочинская ярмарка] 
@@ -97,7 +96,7 @@ book_Evenings_on_a_Farm_Near_Dikanka =>nrel_plot:
                         -> rrel_example: "file://content/content_htmls/events/book_Evenings_on_a_Farm_Near_Dikanka_event_1.html" (* <-lang_ru;; *);;
                     *);;
                     <- event_fair;;
-                     => nrel_plot_sequence:
+                    => nrel_plot_sequence:
                                 .book_Evenings_on_a_Farm_Near_Dikanka_event_2;;                      
             *);;
 
