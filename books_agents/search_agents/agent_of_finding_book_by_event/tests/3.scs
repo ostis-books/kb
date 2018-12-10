@@ -1,9 +1,0 @@
-agent_of_finding_book_by_event_test_3
-	=> nrel_main_idtf:
-		[Test 3 for finding books by events] (* <- lang_ru;; *);
-
-	-> event_mischief;
-	-> event_murder;
-	-> event_love;
-	-> event_suicide;
-	-> event_operation;;
