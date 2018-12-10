@@ -8,7 +8,8 @@ ui_menu_na_books
 
 <= nrel_ui_commands_decomposition:
 	{
+		ui_menu_find_books_by_location;
 		ui_menu_search_book_by_template;
 		ui_menu_search_book_by_characters;
-    ui_menu_file_for_finding_similar_books
+    		ui_menu_file_for_finding_similar_books
 	};;

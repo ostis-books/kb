@@ -12,6 +12,15 @@ book_Mumu
 => nrel_publication_date:
     year_1852;;
 
+book_Mumu
+=> nrel_location:
+    .book_Mumu_location
+    (*
+        -> country_Russian_empire;;
+        -> Moscow;;
+
+    *);;
+
 // ПЕРСОНАЖИ
 book_Mumu
 => nrel_characters:

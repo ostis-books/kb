@@ -12,6 +12,34 @@ book_Lady_with_a_dog
 => nrel_publication_date:
     year_1898;;
 
+book_Lady_with_a_dog
+=> nrel_location:
+    .book_Lady_with_a_dog_location
+    (*
+        -> Moscow;;
+        -> Yalta;;
+        -> contry_Russia;;
+        -> contry_Ukraine;;
+    *);;
+
+Moscow
+<- locale;
+    => nrel_main_idtf: [Москва]
+		(* <- lang_ru;; *);;
+Yalta
+<- locale;
+    => nrel_main_idtf: [Ялта]
+		(* <- lang_ru;; *);;
+country_Russia
+<- locale;
+    => nrel_main_idtf: [Россия]
+		(* <- lang_ru;; *);;
+conutry_Ukraine
+<- locale;
+    => nrel_main_idtf: [Украина]
+		(* <- lang_ru;; *);;
+
+
 // ПЕРСОНАЖИ
 book_Lady_with_a_dog
 <= nrel_characters:

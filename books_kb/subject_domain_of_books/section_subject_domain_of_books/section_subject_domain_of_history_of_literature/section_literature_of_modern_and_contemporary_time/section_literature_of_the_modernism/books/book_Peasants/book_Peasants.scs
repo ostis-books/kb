@@ -27,6 +27,20 @@ book_Peasants
             char_Denis;;
     *);;
 
+book_Peasants
+=> nrel_location:
+    .book_Peasants_location
+    (*
+        -> Zhukovo_village;;
+        -> country_Russia;;
+        -> Moscow;;
+    *);;
+
+Zhukovo_village
+<- locale;
+    => nrel_main_idtf: [деревня Жуково]
+		(* <- lang_ru;; *);;
+
 char_Chikildev
         => nrel_main_idtf: 
             [Николай Чикильдеев] (* <-lang_ru;; *);

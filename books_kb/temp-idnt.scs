@@ -1,3 +1,8 @@
+
+country_Russia
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [Россия](*<-lang_ru;;*);;
+
 country_USA 
 <- sc_node_norole_relation;
 => nrel_main_idtf: [США](*<-lang_ru;;*);;
@@ -188,3 +193,9 @@ detective
 short_story
 <- sc_node_norole_relation;
 => nrel_main_idtf: [новелла] (*<- lang_ru;;*);;
+
+locale
+=> nrel_main_idtf:
+	[место действий]
+		(* <- lang_ru;; *);;
+

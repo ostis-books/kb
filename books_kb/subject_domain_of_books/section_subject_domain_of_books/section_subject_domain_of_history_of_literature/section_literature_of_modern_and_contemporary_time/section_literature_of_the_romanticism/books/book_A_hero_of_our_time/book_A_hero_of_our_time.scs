@@ -27,6 +27,21 @@ book_A_hero_of_our_time
            char_Azamat;;
     *);;
 
+book_A_hero_of_our_time
+=> nrel_location:
+    .book_A_hero_of_our_time_location
+    (*
+        -> Caucasus;;
+        -> Pyatigorsk;;
+        -> country_Russian_empire;;      
+    *);;
+
+Pyatigorsk
+<- locale;
+    => nrel_main_idtf: [Пятигорск]
+		(* <- lang_ru;; *);;
+
+
 char_Pechorin
         => nrel_main_idtf: 
             [Печорин] (* <-lang_ru;; *);

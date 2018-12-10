@@ -24,6 +24,23 @@ book_picture_of_Dorian_Gray
                char_James_Vane;;
         *);;
 
+book_picture_of_Dorian_Gray
+=> nrel_location:
+    .book_picture_of_Dorian_Gray_location
+    (*
+        -> London;;
+        -> country_England;;
+    *);;
+
+London
+<- locale;
+    => nrel_main_idtf: [Лондон]
+		(* <- lang_ru;; *);;
+country_England
+<- locale;
+    => nrel_main_idtf: [Англия]
+		(* <- lang_ru;; *);;
+
 char_Dorian_Gray
         => nrel_main_idtf: 
             [Дориан Грей] (* <-lang_ru;; *);

@@ -11,6 +11,33 @@ book_ward_no6
 => nrel_publication_date:
     year_1892;;
 
+
+book_sobbook_ward_no6achye_syerdtsye
+=> nrel_location:
+    .book_ward_no6_location
+    (*
+        -> Moscow;;
+        -> Warsaw;;
+        -> country_Poland;;
+        -> Petersburg;;
+        -> country_Russian_empire;;
+    *);;
+
+Petersburg  
+<- locale;
+    => nrel_main_idtf: [Петербург]
+		(* <- lang_ru;; *);;
+
+country_Poland  
+<- locale;
+    => nrel_main_idtf: [Польша]
+		(* <- lang_ru;; *);;
+
+Warsaw
+<- locale;
+    => nrel_main_idtf: [Варшава]
+		(* <- lang_ru;; *);;
+
 // ПЕРСОНАЖИ
 book_ward_no6
 <= nrel_characters:

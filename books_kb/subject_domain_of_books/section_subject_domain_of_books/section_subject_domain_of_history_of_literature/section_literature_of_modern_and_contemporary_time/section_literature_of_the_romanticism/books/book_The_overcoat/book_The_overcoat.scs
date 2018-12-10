@@ -12,6 +12,14 @@ book_The_overcoat
 => nrel_publication_date:
     year_1843;;
 
+book_The_overcoat
+=> nrel_location:
+    .book_The_overcoat_location
+    (*
+        -> country_Russian_empire;;
+        -> Petersburg;;
+    *);;
+
 // ПЕРСОНАЖИ
 book_The_overcoat
 <= nrel_characters:

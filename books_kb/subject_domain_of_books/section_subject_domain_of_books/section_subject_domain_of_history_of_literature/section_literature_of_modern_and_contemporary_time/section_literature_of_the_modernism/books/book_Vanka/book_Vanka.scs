@@ -20,6 +20,13 @@ book_Vanka
             char_Vanka_Zhukov;;
     *);;
 
+book_Vanka
+=> nrel_location:
+    .book_Vanka_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
 char_Vanka_Zhukov
         => nrel_main_idtf: 
             [Ванька Жуков] (* <-lang_ru;; *);

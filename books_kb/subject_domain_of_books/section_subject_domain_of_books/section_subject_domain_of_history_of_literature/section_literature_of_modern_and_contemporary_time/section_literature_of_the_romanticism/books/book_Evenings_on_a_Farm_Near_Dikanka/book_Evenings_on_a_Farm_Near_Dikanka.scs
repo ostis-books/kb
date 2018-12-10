@@ -12,6 +12,33 @@ book_Evenings_on_a_Farm_Near_Dikanka
 => nrel_publication_date:
     year_1843;;
 
+book_Evenings_on_a_Farm_Near_Dikanka
+=> nrel_location:
+    .book_Evenings_on_a_Farm_Near_Dikanka_location
+    (*
+        -> Sorochinsky_fair;;
+        -> country_Russian_empire;;
+        -> country_Ukraine;;
+        -> Konotop;;
+        -> Dikanka;;
+        -> Petersburg;;
+    *);;
+
+Dikanka
+<- locale;
+    => nrel_main_idtf: [Диканька]
+		(* <- lang_ru;; *);;
+Konotop
+<- locale;
+    => nrel_main_idtf: [Конотоп]
+		(* <- lang_ru;; *);;
+
+Sorochinsky_fair
+<- locale;
+    => nrel_main_idtf: [Сорочинская ярмарка]
+		(* <- lang_ru;; *);;
+
+
 // ПЕРСОНАЖИ
 book_Evenings_on_a_Farm_Near_Dikanka
 <= nrel_characters:

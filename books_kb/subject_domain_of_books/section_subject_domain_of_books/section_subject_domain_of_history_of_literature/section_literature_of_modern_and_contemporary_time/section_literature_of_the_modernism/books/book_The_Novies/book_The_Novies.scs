@@ -13,6 +13,25 @@ book_The_Novies
 => nrel_publication_date:
     year_1840;;
 
+book_The_Novies
+=> nrel_location:
+    .book_The_Novies_location
+    (*
+        -> Mtskhet;;
+        -> country_Georgia;;
+    *);;
+
+country_Georgia
+<- locale;
+    => nrel_main_idtf: [Грузия]
+		(* <- lang_ru;; *);;
+
+Mtskhet
+<- locale;
+    => nrel_main_idtf: [Мцхет]
+		(* <- lang_ru;; *);;
+
+
 // ПЕРСОНАЖИ
 book_The_Novies
 <= nrel_characters:
