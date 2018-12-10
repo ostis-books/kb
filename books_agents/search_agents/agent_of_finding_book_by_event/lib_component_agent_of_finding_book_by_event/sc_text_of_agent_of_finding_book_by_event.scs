@@ -3,4 +3,4 @@ sc_text_of_agent_of_finding_book_by_event
 	agent_of_finding_book_by_event;
 <- scp_program_sc_text;;
 
-sc_text_of_agent_of_calculating_perimeter_of_polygon = [*^"file://agent_of_finding_book_by_event.scsi"*];;
+sc_text_of_agent_of_finding_book_by_event = [*^"file://agent_of_finding_book_by_event.scsi"*];;
