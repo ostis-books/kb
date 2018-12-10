@@ -953,7 +953,6 @@ event_truce
 
 event_fainting
 	<- literary_event;
-	<- event_medical_action;
 	=> nrel_main_idtf:
 		[обморок] 
 			(* <-lang_ru;; *);	
@@ -977,7 +976,6 @@ event_fainting
 
 event_forgiveness
 	<- literary_event;
-	<- event_medical_action;
 	=> nrel_main_idtf:
 		[прощение] 
 			(* <-lang_ru;; *);	
@@ -1001,7 +999,6 @@ event_forgiveness
 
 event_moving
 	<- literary_event;
-	<- event_medical_action;
 	=> nrel_main_idtf:
 		[переезд] 
 			(* <-lang_ru;; *);	
@@ -1122,7 +1119,7 @@ event_investigation
 event_theft
 	<- literary_event;
 	=> nrel_main_idtf:
-		[расследование] 
+		[кража] 
 			(* <-lang_ru;; *);	
 	=> nrel_idtf:
 		[хищение] 

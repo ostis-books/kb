@@ -32,7 +32,6 @@ section_literary_events
 		event_battle;
 		event_arrival_of_guests;
 		event_discomfort;
-
 		event_amputation;
 		event_funeral;
 		event_military_service;
@@ -47,7 +46,7 @@ section_literary_events
 		event_forgiveness;
 		event_moving;
 		event_seduction;
-		event_snooping
+		event_snooping;
 		event_hallucination;
 		event_investigation;
 		event_theft;
