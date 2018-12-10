@@ -6,11 +6,6 @@ lib_component_agent_append_general_info_to_pattern
 <- library_of_platform_dependent_reusable_components; 
 <- library_of_atomic_reusable_components;
 
-/*
-=> nrel_attendant_component: 
-	lib_component_ui_menu_search_book_by_template; 
-*/
-
 -> rrel_key_sc_element: 
 	.c_realization_of_append_general_info_to_pattern;
 

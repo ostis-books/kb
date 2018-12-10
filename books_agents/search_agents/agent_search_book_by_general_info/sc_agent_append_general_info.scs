@@ -23,8 +23,8 @@ sc_agent_append_general_info_to_pattern
 
 		<= nrel_sc_agent_program: 
 		{
-			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search/agents/books/search_book_general_info.cpp; syntax=cpp] (* => nrel_format: format_github_source_link;; *);
-			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search/agents/books/search_book_general_info.h; syntax=cpp] (* => nrel_format: format_github_source_link;; *)
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_general_info.cpp; syntax=cpp] (* => nrel_format: format_github_source_link;; *);
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_general_info.h; syntax=cpp] (* => nrel_format: format_github_source_link;; *)
 		};;
 
 		-> sc_agent_append_general_info_to_pattern_agent_c

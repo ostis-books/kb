@@ -21,14 +21,11 @@ sc_agent_append_character_to_pattern
 	(*
 		<- platform_dependent_abstract_sc_agent;;
 
-		// TODO: fix github link
-		/*
 		<= nrel_sc_agent_program: 
 		{
-			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search/agents/books/search_book_character.cpp; syntax=cpp] (* => nrel_format: format_github_source_link;; *);
-			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search/agents/books/search_book_character.h; syntax=cpp] (* => nrel_format: format_github_source_link;; *)
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_append_character.cpp; syntax=cpp] (* => nrel_format: format_github_source_link;; *);
+			[owner=ostis-books; repo=sc-machine; path= sc-kpm/search-books/search_book_append_character.h; syntax=cpp] (* => nrel_format: format_github_source_link;; *)
 		};;
-		*/
 
 		-> sc_agent_append_character_to_pattern_agent_c
 			(* <- active_sc_agent;; *);;
