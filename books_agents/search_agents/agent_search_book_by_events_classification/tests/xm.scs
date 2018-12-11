@@ -1,0 +1,3 @@
+test_xm	-> rrel_event_class_el: event_murder;
+	-> rrel_person_role: rrel_killer;
+	-> rrel_person_sex: male;;

@@ -1,0 +1,45 @@
+sc_node_role_relation -> rrel_event_class_el;;
+rrel_event_class_el 
+	=> nrel_main_idtf:
+		[класс события'] 
+			(* <-lang_ru;; *);
+	<- role_relation;;
+
+
+
+sc_node_role_relation -> rrel_person_role;;
+rrel_person_role 
+	=> nrel_main_idtf:
+		[роль персонажа'] 
+			(* <-lang_ru;; *);
+	
+	<- role_relation;;
+
+
+
+
+
+sc_node_role_relation -> rrel_person_sex;;
+rrel_person_sex 
+	=> nrel_main_idtf:
+		[пол персонажа'] 
+			(* <-lang_ru;; *);
+	
+	<- role_relation;;
+
+
+
+events_classes ->event_death;
+		->event_murder;
+		->event_suicide;
+		->event_love;
+		->event_deceit;
+		->event_attempted_murder;
+		->event_death_of_the_protagonist;
+		->event_acquaintance;
+		->event_mischief;
+		->event_breakup;
+		->event_medical_action;
+		->event_operation;
+		->event_medical_examination;
+		->event_finality;;
