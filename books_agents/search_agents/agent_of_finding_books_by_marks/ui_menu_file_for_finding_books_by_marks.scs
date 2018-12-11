@@ -1,0 +1,36 @@
+ui_menu_file_for_finding_books_by_marks<-ui_user_command_class_atom;
+ui_user_command_class_view_kb;;
+// Указываем русский идентификатор нашей операции в меню
+ui_menu_file_for_finding_books_by_marks => nrel_main_idtf:
+[Поиск рекомендуемых книг на основании оценок]
+(* <- lang_ru;; *);;
+// Указываем английский идентификатор нашей операции в меню
+ui_menu_file_for_finding_books_by_marks => nrel_main_idtf:
+[Search for recommended books based on ratings]
+(* <- lang_en;; *);;
+// Указываем шаблон нашей команды
+ui_menu_file_for_finding_books_by_marks => ui_nrel_command_template:
+[*
+question_of_finding_books_by_marks _-> ._question_of_finding_books_by_marks_instance
+(*
+_-> ui_arg_1;;
+*);;
+._question_of_finding_books_by_marks_instance _<- question;;
+*];;
+// Указываем текстовый шаблон команды на русском языке
+ui_menu_file_for_finding_books_by_marks => ui_nrel_command_lang_template:
+[Список рекомендуемых книг]
+(* <- lang_ru;; *);;
+// Указываем текстовый шаблон команды на английском языке
+ui_menu_file_for_finding_illustrations => ui_nrel_command_lang_template:
+[List of recommended books]
+(* <- lang_en;; *);;
+
+
+ui_na_various_objects <- ui_user_command_class_noatom;
+=> nrel_main_idtf: [Команды для произвольных объектов] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Commands for various objects] (* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+{
+ui_menu_file_for_finding_books_by_marks
+};;

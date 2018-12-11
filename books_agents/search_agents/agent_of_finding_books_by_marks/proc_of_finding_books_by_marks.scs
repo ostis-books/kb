@@ -1,0 +1,714 @@
+scp_program -> proc_of_finding_books_by_marks
+	(*
+		-> rrel_params: .proc_of_finding_books_by_marks_params
+		(*
+			-> rrel_1: rrel_in: _param;;
+			-> rrel_2: rrel_in: _answer;;
+		*);;
+
+	-> rrel_operators: .proc_of_finding_books_by_marks_operator_set
+		(*
+//находим все книги и заносим в множество
+			-> rrel_init: .proc_of_finding_books_by_marks_print_00
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [Находим все книги и заносим в множество];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_1A;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_1A
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: book;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _sb;;
+
+				-> rrel_set_3: rrel_assign: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_print_01A;;
+				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_print_01A
+			(*
+				<- printEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_print_01B;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_print_01B
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [Создаем множество книг аут];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_1B;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_1B
+			(*
+				<- genEl;;				
+				-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _books_set_out;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_print_02;;
+			*);;
+
+// проверяем есть ли поиск по оценка сюжета nrel_plot_mark
+
+			-> .proc_of_finding_books_by_marks_print_02
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [ищем значение оценка сюжета nrel_plot_mark];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2A;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2A
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_param;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot_mark;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2B;;
+				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2B 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _p1;;
+			=> nrel_then: .proc_of_finding_books_by_marks_print_03;;
+			=> nrel_else: .proc_of_finding_books_by_marks_print_04;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_print_03
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [если нашли переходим к сортировке множества книг по оценка сюжета nrel_plot_mark];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_3A;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_print_04
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [иначе ищем значение погружения в историю nrel_dip_mark];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2C;;
+			*);;
+// проверяем есть ли поиск по погружения в историю nrel_dip_mark
+			-> .proc_of_finding_books_by_marks_operator_switch_2C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_param;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p2;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dip_mark;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2D;;
+				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2D 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _p2;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_4A;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_switch_2E;;
+			*);;	
+		
+// проверяем есть ли поиск по итоговая оценка nrel_narrative_mark
+			-> .proc_of_finding_books_by_marks_operator_switch_2E
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_param;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p3;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_narrative_mark;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2F;;
+				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2F 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _p3;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_5A;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_switch_2G;;
+			*);;
+
+// проверяем есть ли поиск по оценка персонажей nrel_character_mark
+			-> .proc_of_finding_books_by_marks_operator_switch_2G
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_param;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p4;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_character_mark;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2H;;
+				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2H 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _p4;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_6A;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_switch_2I;;
+			*);;
+
+// проверяем есть ли поиск по оценка атмосферы nrel_world_mark
+			-> .proc_of_finding_books_by_marks_operator_switch_2I
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_param;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p5;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_world_mark;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2J;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_switch_2J 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _p5;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_7A;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_return;;
+			*);;
+
+
+// сортировка по оценка сюжета nrel_plot_mark
+			-> .proc_of_finding_books_by_marks_operator_3A
+			(*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _b1;;
+				
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_3C;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_3H;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_3C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_b1;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p1b1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot_mark;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_3D;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_3F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_3D
+			(*
+				<- stringIfEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p1b1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_3E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_3D1;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_3D1
+			(*
+				<- stringIfGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p1b1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_3E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_3F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_3E
+			(*
+				<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_3F;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_3F
+			(*
+				<- eraseElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_erase: _arc_p1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_print_06;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_print_06
+			(*
+				<- printEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_3A;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_3H
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_3I;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_3I
+			(*
+				<- eraseSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_erase: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+				
+				=> nrel_goto: .proc_of_finding_books_by_marks_print_05;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_print_05
+			(*
+				<- print;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [иначе ищем значение погружения в историю nrel_dip_mark];;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2C;;
+			*);;
+
+// сортировка по погружения в историю nrel_dip_mark
+			-> .proc_of_finding_books_by_marks_operator_4A
+			(*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4B;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_4B 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _b1;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_4C;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_4H;;
+			*);;
+
+			
+
+			-> .proc_of_finding_books_by_marks_operator_4C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_b1;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p2b1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dip_mark;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4D;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_4D
+			(*
+				<- stringIfEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p2;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p2b1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_4E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_4D1;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_4D1
+			(*
+				<- stringIfGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p2b1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p2;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_4E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_4F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_4E
+			(*
+				<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4F;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_4F
+			(*
+				<- eraseElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4G;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_4G
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4A;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_4H
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_4I;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_4I
+			(*
+				<- eraseSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el2;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2E;;				
+			*);;
+
+// сортировка по итоговая оценка nrel_narrative_mark
+			-> .proc_of_finding_books_by_marks_operator_5A
+			(*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5B;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5B 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _b1;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_5C;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_5H;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_b1;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p3b1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_narrative_mark;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5D;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_5D
+			(*
+				<- stringIfEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p3;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p3b1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_5E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_5D1;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5D1
+			(*
+				<- stringIfGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p3b1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p3;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_5E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_5F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_5E
+			(*
+				<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5F;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5F
+			(*
+				<- eraseElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5G;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5G
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5A;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_5H
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_5I;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_5I
+			(*
+				<- eraseSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el2;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2G;;				
+			*);;
+
+
+//сортировка по оценка персонажей nrel_character_mark
+			-> .proc_of_finding_books_by_marks_operator_6A
+			(*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6B;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6B 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _b1;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_6C;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_6H;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_b1;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p4b1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_character_mark;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6D;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_6D
+			(*
+				<- stringIfEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p4;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p4b1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_6E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_6D1;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6D1
+			(*
+				<- stringIfGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p4b1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p4;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_6E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_6F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_6E
+			(*
+				<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6F;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6F
+			(*
+				<- eraseElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6G;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6G
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6A;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_6H
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_6I;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_6I
+			(*
+				<- eraseSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el2;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_switch_2I;;				
+			*);;
+
+//сортировка по оценка атмосферы nrel_world_mark
+			-> .proc_of_finding_books_by_marks_operator_7A
+			(*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7B;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7B 
+			(*
+			<- ifVarAssign;;
+			-> rrel_1: _b1;;
+			=> nrel_then: .proc_of_finding_books_by_marks_operator_7C;;
+			=> nrel_else: .proc_of_finding_books_by_marks_operator_7H;;
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7C
+			(*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var:_b1;;
+				-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _p5b1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_character_mark;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7D;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_7D
+			(*
+				<- stringIfEq;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p5;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p5b1;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_7E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_7D1;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7D1
+			(*
+				<- stringIfGr;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _p5b1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _p5;;
+				=> nrel_then: .proc_of_finding_books_by_marks_operator_7E;;
+				=> nrel_else: .proc_of_finding_books_by_marks_operator_7F;;
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_7E
+			(*
+				<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7F;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7F
+			(*
+				<- eraseElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _b1;;				
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7G;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7G
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _b1;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7A;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_7H
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _books_set_in;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_7I;;				
+			*);;
+
+
+			-> .proc_of_finding_books_by_marks_operator_7I
+			(*
+				<- eraseSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				-> rrel_2: rrel_assign: rrel_scp_var: rrel_erase: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el2;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_2K;;				
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_2K
+			(*
+				<- searchSetStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+				-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_2L;;			
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_2L
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_out;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_2M;;		
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_2M
+			(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _books_set_in;;
+				=> nrel_goto: .proc_of_finding_books_by_marks_operator_return;;		
+			*);;
+
+			-> .proc_of_finding_books_by_marks_operator_return
+			(*
+				<- return;;
+			*);;
+		*);;
+	*);;
