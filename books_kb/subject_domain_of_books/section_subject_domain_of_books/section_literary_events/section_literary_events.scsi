@@ -28,6 +28,7 @@ literary_event
 
 event_death
 	<- literary_event;
+	=> nrel_age_limit: [16];
 	=> nrel_main_idtf: 
 		[смерть] 
 			(* <-lang_ru;; *);
@@ -60,6 +61,7 @@ event_death
 
 event_murder
 	<- literary_event;
+	=> nrel_age_limit: [18];
 	<- event_death;
 	=> nrel_main_idtf: 
 		[убийство] 
@@ -84,6 +86,7 @@ event_murder
 
 event_suicide 
 	<- literary_event;
+	=> nrel_age_limit: [18];
 	<- event_death;
 	=> nrel_main_idtf: 
 		[самоубийство] 
@@ -113,6 +116,7 @@ event_suicide
 
 event_love 
 	<- literary_event;
+	=> nrel_age_limit: [12];
 	=> nrel_main_idtf: 
 		[любовь] 
 			(* <-lang_ru;; *);
@@ -141,6 +145,7 @@ event_love
 
 event_deceit
 	<- literary_event;
+	=> nrel_age_limit: [12];
 	=> nrel_main_idtf:
 		[обман] 
 			(* <-lang_ru;; *);
@@ -170,6 +175,7 @@ event_deceit
 
 event_attempted_murder
 	<- literary_event;
+	=> nrel_age_limit: [16];
 	=> nrel_main_idtf:
 		[покушение на убийство] 
 			(* <-lang_ru;; *);
@@ -198,6 +204,7 @@ event_attempted_murder
 
 event_death_of_the_protagonist
 	<- literary_event;
+	=> nrel_age_limit: [14];
 	<- event_death;
 	=> nrel_main_idtf:
 		[смерть главного героя] 
@@ -231,6 +238,7 @@ event_death_of_the_protagonist
 
 event_acquaintance
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[знакомство] 
 			(* <-lang_ru;; *);
@@ -254,9 +262,9 @@ event_acquaintance
 		*);;
 
 
-
 event_mischief
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
 		[шалость] 
 			(* <-lang_ru;; *);
@@ -289,6 +297,7 @@ event_mischief
 
 event_breakup
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
 		[расставание] 
 			(* <-lang_ru;; *);
@@ -321,6 +330,7 @@ event_breakup
 
 event_finality
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[завершение] 
 			(* <-lang_ru;; *);
@@ -347,6 +357,7 @@ event_finality
 
 event_medical_action
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[медицинское действие] 
 			(* <-lang_ru;; *);
@@ -375,6 +386,7 @@ event_medical_action
 
 event_operation
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	<- event_medical_action;
 	=> nrel_main_idtf:
 		[операция] 
@@ -409,6 +421,7 @@ event_operation
 
 event_medical_examination
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	<- event_medical_action;
 	=> nrel_main_idtf:
 		[медицинский осмотр] 
@@ -442,8 +455,9 @@ event_medical_examination
 
 event_holiday
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
-		[Событие. Каникулы] 
+		[каникулы] 
 			(* <-lang_ru;; *);
 	=> nrel_idtf:
 		[выходные] 
@@ -469,8 +483,9 @@ event_holiday
 
 event_memories
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
-		[Событие. Воспоминания] 
+		[воспоминания] 
 			(* <-lang_ru;; *);	
 	
 	<- rrel_key_sc_element:
@@ -493,6 +508,7 @@ event_memories
 
 event_cash_award
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[денежное вознаграждение] 
 			(* <-lang_ru;; *);	
@@ -523,6 +539,7 @@ event_cash_award
 
 event_comparison
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[сравнение] 
 			(* <-lang_ru;; *);	
@@ -550,8 +567,9 @@ event_comparison
 
 event_duel
 	<- literary_event;
+	=> nrel_age_limit: [12];
 	=> nrel_main_idtf:
-		[Событие. Дуэль] 
+		[дуэль] 
 			(* <-lang_ru;; *);	
 
 	
@@ -575,6 +593,7 @@ event_duel
 
 event_fair
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
 		[базар] 
 			(* <-lang_ru;; *);	
@@ -596,8 +615,9 @@ event_fair
 
 event_wedding
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
-		[Событие. Свадьба] 
+		[cвадьба] 
 			(* <-lang_ru;; *);	
 	
 	<- rrel_key_sc_element:
@@ -620,8 +640,9 @@ event_wedding
 
 event_battle
 	<- literary_event;
+	=> nrel_age_limit: [12];
 	=> nrel_main_idtf:
-		[Событие. Сражение] 
+		[сражение] 
 			(* <-lang_ru;; *);	
 	=> nrel_idtf:
 		[битва] 
@@ -647,8 +668,9 @@ event_battle
 
 event_arrival_of_guests
 	<- literary_event;
+	=> nrel_age_limit: [2];
 	=> nrel_main_idtf:
-		[Событие. Прибытиие гостей] 
+		[прибытиие гостей] 
 			(* <-lang_ru;; *);	
 	<- rrel_key_sc_element:
 		...
@@ -670,6 +692,7 @@ event_arrival_of_guests
 
 event_discomfort
 	<- literary_event;
+	=> nrel_age_limit: [6];
 	=> nrel_main_idtf:
 		[неприязнь] 
 			(* <-lang_ru;; *);	
