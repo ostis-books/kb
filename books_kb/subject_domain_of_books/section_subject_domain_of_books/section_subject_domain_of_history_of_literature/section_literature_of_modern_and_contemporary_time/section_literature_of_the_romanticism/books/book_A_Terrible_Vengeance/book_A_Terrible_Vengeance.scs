@@ -95,10 +95,9 @@ book_A_Terrible_Vengeance =>nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. Страшная месть] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_A_Terrible_Vengeance;;
         -> .book_A_Terrible_Vengeance_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Часть 1] 
+                => nrel_main_idtf: [Событие №1. Ссора Данило и тестя] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -118,7 +117,7 @@ book_A_Terrible_Vengeance =>nrel_plot:
 
         -> .book_A_Terrible_Vengeance_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Часть 2] 
+                => nrel_main_idtf: [Событие №2. Раскрытие колдуна] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -139,7 +138,7 @@ book_A_Terrible_Vengeance =>nrel_plot:
 
         -> .book_A_Terrible_Vengeance_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Часть 3] 
+                => nrel_main_idtf: [Событие №3. Нападение ляхов] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -159,7 +158,7 @@ book_A_Terrible_Vengeance =>nrel_plot:
 
         -> .book_A_Terrible_Vengeance_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Часть 4] 
+                => nrel_main_idtf: [Событие №4. Песнь старца] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...

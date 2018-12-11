@@ -23,7 +23,7 @@ book_Demon
 // ПЕРСОНАЖИ
 book_Demon
 <= nrel_characters:
-    .book_A_hero_of_our_time_characters
+    .book_Demon_characters
     (*
         -> rrel_main_character:
             char_Tamara;
@@ -71,10 +71,9 @@ book_Demon => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Демон"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_Demon;;
         -> .book_Demon_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Часть 1] 
+                => nrel_main_idtf: [Событие №1. Полет Демона] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -92,7 +91,7 @@ book_Demon => nrel_plot:
 
         -> .book_Demon_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Часть 2] 
+                => nrel_main_idtf: [Событие №2. Влюбленность Демона] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -112,7 +111,7 @@ book_Demon => nrel_plot:
 
         -> .book_Demon_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Часть 3] 
+                => nrel_main_idtf: [Событие №3. Тамара отказывает всем женихам] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -130,7 +129,7 @@ book_Demon => nrel_plot:
 
         -> .book_Demon_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Часть 4] 
+                => nrel_main_idtf: [Событие №4. Влюбленность Тамары] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -148,7 +147,7 @@ book_Demon => nrel_plot:
 
         -> .book_Demon_event_5
             (*
-                => nrel_main_idtf: [Событие №5. Часть 5] 
+                => nrel_main_idtf: [Событие №5. Знакомство Демона и Тамары] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -167,7 +166,7 @@ book_Demon => nrel_plot:
 
         -> .book_Demon_event_6
             (*
-                => nrel_main_idtf: [Событие №6. Часть 6] 
+                => nrel_main_idtf: [Событие №6. Смерть Тамары] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...

@@ -75,10 +75,9 @@ book_The_Portrait =>nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. Портрет] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_The_Portrait;;
         -> .book_The_Portrait_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Часть 1] 
+                => nrel_main_idtf: [Событие №1. Покупка портрета] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -97,7 +96,7 @@ book_The_Portrait =>nrel_plot:
 
         -> .book_The_Portrait_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Часть 2] 
+                => nrel_main_idtf: [Событие №2. Правда о портрете] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -117,7 +116,7 @@ book_The_Portrait =>nrel_plot:
 
         -> .book_The_Portrait_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Часть 3] 
+                => nrel_main_idtf: [Событие №3. История создания портрета] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
