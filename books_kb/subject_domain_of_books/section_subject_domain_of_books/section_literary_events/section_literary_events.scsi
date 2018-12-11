@@ -53,7 +53,7 @@ event_death
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -230,7 +230,7 @@ event_death_of_the_protagonist
 				...
 				(*
 					->  main_character;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -257,7 +257,7 @@ event_acquaintance
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -322,7 +322,7 @@ event_breakup
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -375,7 +375,7 @@ event_medical_action
 			<= nrel_using_constants:
 				...
 				(*
-					->  event;
+					->  literary_event;
 						nrel_participants;
 						rrel_doctor;
 						rrel_patient;;
@@ -411,7 +411,7 @@ event_operation
 			<= nrel_using_constants:
 				...
 				(*
-					->  event;
+					->  literary_event;
 						rrel_doctor;
 						rrel_patient;;
 				*);;
@@ -477,7 +477,7 @@ event_holiday
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -502,7 +502,7 @@ event_memories
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -533,7 +533,7 @@ event_cash_award
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -587,7 +587,7 @@ event_duel
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -634,7 +634,7 @@ event_wedding
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -662,7 +662,7 @@ event_battle
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 
@@ -686,7 +686,7 @@ event_arrival_of_guests
 				...
 				(*
 					->  lit_person;
-						event;;
+						literary_event;;
 				*);;
 		*);;
 

@@ -205,13 +205,52 @@ detective
 => nrel_main_idtf: [детектив] (*<- lang_ru;;*);;
 
 short_story
-
-<- sc_node_norole_relation;
+<- sc_node_not_relation;
+<- genre;
 => nrel_main_idtf: [новелла] (*<- lang_ru;;*);;
+
+event_treachery
+<- sc_node_not_relation;
+<- literary_event;
+=> nrel_main_idtf: [предательство] (*<- lang_ru;;*);;
+
+individualization_in_literature
+<- sc_node_not_relation;
+=> nrel_main_idtf: [индивидуализация] (*<- lang_ru;;*);;
+
+unity_of_man_and_nature
+<- sc_node_not_relation;
+=> nrel_main_idtf: [единение человека и природы] (*<- lang_ru;;*);;
+
+stream_of_consciousness
+<- sc_node_not_relation;
+=> nrel_main_idtf: [поток сознания] (*<- lang_ru;;*);;
+
+literary_typification
+<- sc_node_not_relation;
+=> nrel_main_idtf: [литературная типификация] (*<- lang_ru;;*);;
+
+historicism
+<- sc_node_not_relation;
+=> nrel_main_idtf: [историзм] (*<- lang_ru;;*);;
+
+hierarchy_of_genres
+<- sc_node_not_relation;
+=> nrel_main_idtf: [иерархия жанров] (*<- lang_ru;;*);;
+
+division_of_heroes
+<- sc_node_not_relation;
+=> nrel_main_idtf: [деление героев] (*<- lang_ru;;*);;
+
+classical_unities
+<- sc_node_not_relation;
+=> nrel_main_idtf: [классические единства] (*<- lang_ru;;*);;
+
+authenticity
+<- sc_node_not_relation;
+=> nrel_main_idtf: [подлинность] (*<- lang_ru;;*);;
 
 locale
 => nrel_main_idtf:
 	[место действий]
 		(* <- lang_ru;; *);;
-
-
