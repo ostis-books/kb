@@ -64,10 +64,9 @@ book_Lady_with_a_dog => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Дама с собачкой"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_Lady_with_a_dog ;;
         -> .book_Lady_with_a_dog_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Глава 1] 
+                => nrel_main_idtf: [Событие №1. Знакомство Гурова и Анны] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -86,7 +85,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Глава 2] 
+                => nrel_main_idtf: [Событие №2. Расставание Гурова и Анны] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -104,7 +103,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Глава 3] 
+                => nrel_main_idtf: [Событие №3. Гуров ищет Анну] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -123,7 +122,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Глава 4] 
+                => nrel_main_idtf: [Событие №4. Тайные встречи] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
