@@ -67,7 +67,7 @@ nrel_genre_work
     *);;
 
 genre_biography
-
+<- genre;
 <- sc_node_not_relation;
 
 => nrel_main_idtf:
@@ -169,7 +169,7 @@ futurism
         *);;
     *);;
 genre_article
-
+<- genre;
 <- sc_node_not_relation;
 
 => nrel_main_idtf:
@@ -210,6 +210,7 @@ genre_article
     *);;
 
 genre_dystopia
+<- genre;
 <- sc_node_not_relation;
 
 => nrel_main_idtf:
@@ -245,6 +246,7 @@ genre_dystopia
     *);;
 
 genre_feuilleton
+<- genre;
 <- sc_node_not_relation;
 
 => nrel_main_idtf:
@@ -267,6 +269,7 @@ genre_feuilleton
     *);;
 
 genre_miniature
+<- genre;
 <- sc_node_not_relation;
 
 => nrel_main_idtf:
@@ -293,6 +296,7 @@ genre_miniature
     *);;
 
 genre_speculative_fiction
+<- genre;
 => nrel_main_idtf:
             [фантастика] (* <- lang_ru;; *);;
 
@@ -508,6 +512,7 @@ censorship <- rrel_key_sc_element: Definition_censorship
 		*);;
 	*);;
 sc_node_not_relation -> genre_criminal_prose;;
+genre -> genre_criminal_prose;;
 
 genre_criminal_prose => nrel_main_idtf:
         [криминальная проза](*<-lang_ru;;*);;
@@ -531,6 +536,7 @@ genre_criminal_prose <- rrel_key_sc_element: Definition_genre_criminal_prose
 	*);;
 
 sc_node_not_relation -> genre_docudrama;;
+genre -> genre_docudrama;;
 
 genre_docudrama => nrel_main_idtf:
         [документальный проза](*<-lang_ru;;*);;
@@ -556,6 +562,7 @@ genre_docudrama <- rrel_key_sc_element: Definition_genre_docudrama
 	*);;
 
 sc_node_not_relation -> genre_fantasy;;
+genre -> genre_fantasy;;
 
 genre_fantasy => nrel_main_idtf:
         [фэнтези](*<-lang_ru;;*);;
@@ -580,6 +587,7 @@ genre_fantasy <- rrel_key_sc_element: Definition_genre_fantasy
 
 
 sc_node_not_relation -> genre_gotic;;
+genre -> genre_gotic;;
 
 genre_gotic => nrel_main_idtf:
         [готическая литература](*<-lang_ru;;*);;
@@ -604,6 +612,7 @@ genre_gotic <- rrel_key_sc_element: Definition_genre_gotic
 	*);;
 
 sc_node_not_relation -> genre_horror;;
+genre -> genre_horror;;
 
 genre_horror => nrel_main_idtf:
         [ужас](*<-lang_ru;;*);;
@@ -630,6 +639,7 @@ genre_horror <- rrel_key_sc_element: Definition_genre_horror
 
 
 sc_node_not_relation -> genre_military;;
+genre -> genre_military;;
 
 genre_military => nrel_main_idtf:
         [военная проза](*<-lang_ru;;*);;
@@ -654,6 +664,7 @@ genre_military <- rrel_key_sc_element: Definition_genre_military
 	*);;
 
 sc_node_not_relation -> genre_postapokalipsis;;
+genre -> genre_postapokalipsis;;
 
 genre_postapokalipsis => nrel_main_idtf:
         [постапокалипсис](*<-lang_ru;;*);;
@@ -678,6 +689,7 @@ genre_postapokalipsis <- rrel_key_sc_element: Definition_genre_postapokalipsis
 	*);;
 
 sc_node_not_relation -> genre_romantic_prose;;
+genre -> genre_romantic_prose;;
 
 genre_romantic_prose => nrel_main_idtf:
         [любовная проза](*<-lang_ru;;*);;
@@ -702,6 +714,7 @@ genre_romantic_prose <- rrel_key_sc_element: Definition_genre_romantic_prose
 	*);;
 
 sc_node_not_relation -> genre_science_fiction;;
+genre -> genre_science_fiction;;
 
 genre_science_fiction => nrel_main_idtf:
         [научная фантастика](*<-lang_ru;;*);;
@@ -726,6 +739,7 @@ genre_science_fiction <- rrel_key_sc_element: Definition_genre_science_fiction
 
 
 sc_node_not_relation -> genre_thriller;;
+genre -> genre_thriller;;
 
 genre_thriller => nrel_main_idtf:
         [триллер](*<-lang_ru;;*);;
@@ -1272,25 +1286,3 @@ nrel_circulation => nrel_definitional_domain:
     -> value;;
 	*);;
    		 *);;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

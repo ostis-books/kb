@@ -67,10 +67,31 @@ scp_program -> agent_of_finding_similar_books
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .agent_of_finding_similar_books_operator_call_proc;;
+			=> nrel_goto: .agent_of_finding_similar_books_operator_gen_node;;
 		*);;
 
-	-> .agent_of_finding_similar_books_operator_call_proc
+        -> .agent_of_finding_similar_books_operator_gen_node
+        (*
+            <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _similar_books;;
+
+            => nrel_goto: .agent_of_finding_similar_books_operator_find_author;;
+        *);;
+       
+        -> .agent_of_finding_similar_books_operator_find_author
+        (*
+            <- searchElStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _book;;
+            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book_author;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc;;
+            -> rrel_5: rrel_fixed:  rrel_scp_const: nrel_author;;
+
+            => nrel_goto: .agent_of_finding_similar_books_operator_call_proc;;
+        *);;
+	    -> .agent_of_finding_similar_books_operator_call_proc
 		(*
 			<- call;;
 
@@ -78,7 +99,8 @@ scp_program -> agent_of_finding_similar_books
 			-> rrel_2: rrel_fixed: rrel_scp_const: ...
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _book;;
-					-> rrel_2: rrel_assign: rrel_scp_var: _similar_books;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _book_author;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _similar_books;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _agent_of_finding_similar_books_descriptor;;
 
