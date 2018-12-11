@@ -10,5 +10,8 @@ ui_menu_na_books
 	{
 		ui_menu_search_book_by_template;
 		ui_menu_search_book_by_characters;
-    ui_menu_file_for_finding_similar_books
+    ui_menu_file_for_finding_similar_books;
+    ui_menu_find_event_by_classification;
+ui_menu_file_for_finding_books_by_events_classification
+
 	};;
