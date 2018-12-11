@@ -34,7 +34,7 @@ char_Paul_Baumer
             [Пауль Боймер] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -52,7 +52,7 @@ char_Albert_Kropp
             [Альберт Кропп] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -70,7 +70,7 @@ char_Haie_Westhus
             [Хайе Вестхус] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -88,7 +88,7 @@ char_Friedrich_Muller
             [Фредерик Мюллер] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -106,7 +106,7 @@ char_Stanislaus_Kat_Katczinsky
             [Станислав Катчинский (Кат)] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -124,7 +124,7 @@ char_Tjaden
             [Тьяден] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -142,7 +142,7 @@ char_Kantorek
             [Канторек] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -160,7 +160,7 @@ char_Himmelstoss
             [Химмельштос] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -178,7 +178,7 @@ char_Franz_Kemmerich
             [Франц Кеммерих] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -196,7 +196,7 @@ char_Joseph_Behm
             [Иозеф Бем] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*

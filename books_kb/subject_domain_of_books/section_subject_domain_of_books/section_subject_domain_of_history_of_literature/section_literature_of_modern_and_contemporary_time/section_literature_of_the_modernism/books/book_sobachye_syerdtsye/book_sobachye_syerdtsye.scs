@@ -32,7 +32,7 @@ char_Sharik
         <- lit_person;
         <- main_character;
         <- dog;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -52,7 +52,7 @@ char_Polygraph_Polygraphovich_Sharikov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -72,7 +72,7 @@ char_Philip_Philipovich_Preobrazhensky
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -91,7 +91,7 @@ char_Ivan_Arnoldovich_Bormental
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -110,7 +110,7 @@ char_Zinaida_Prokofyevna_Bunina
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -129,7 +129,7 @@ char_Klim_Grigorievich_Chugunkin
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -148,7 +148,7 @@ char_dvornik_Fedor
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
