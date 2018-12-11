@@ -20,11 +20,6 @@ book_The_Portrait
         -> Schukin_yard;;
     *);;
 
-Schukin_yard
-<- locale;
-    => nrel_main_idtf: [Щукин двор]
-		(* <- lang_ru;; *);;
-
 
 // ПЕРСОНАЖИ
 book_The_Portrait

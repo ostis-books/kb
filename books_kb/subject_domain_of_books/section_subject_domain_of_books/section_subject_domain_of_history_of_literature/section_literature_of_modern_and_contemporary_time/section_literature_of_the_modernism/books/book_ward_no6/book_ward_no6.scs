@@ -23,20 +23,6 @@ book_sobbook_ward_no6achye_syerdtsye
         -> country_Russian_empire;;
     *);;
 
-Petersburg  
-<- locale;
-    => nrel_main_idtf: [Петербург]
-		(* <- lang_ru;; *);;
-
-country_Poland  
-<- locale;
-    => nrel_main_idtf: [Польша]
-		(* <- lang_ru;; *);;
-
-Warsaw
-<- locale;
-    => nrel_main_idtf: [Варшава]
-		(* <- lang_ru;; *);;
 
 // ПЕРСОНАЖИ
 book_ward_no6

@@ -21,16 +21,6 @@ book_The_Duel
         -> Caucasus;;
     *);;
 
-Caucasus
-<- locale;
-    => nrel_main_idtf: [Кавказ]
-		(* <- lang_ru;; *);;
-
-Black_sea
-<- locale;
-    => nrel_main_idtf: [Черное море]
-		(* <- lang_ru;; *);;
-
 
 // ПЕРСОНАЖИ
 book_The_Duel

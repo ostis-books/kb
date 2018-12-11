@@ -21,16 +21,6 @@ book_The_Novies
         -> country_Georgia;;
     *);;
 
-country_Georgia
-<- locale;
-    => nrel_main_idtf: [Грузия]
-		(* <- lang_ru;; *);;
-
-Mtskhet
-<- locale;
-    => nrel_main_idtf: [Мцхет]
-		(* <- lang_ru;; *);;
-
 
 // ПЕРСОНАЖИ
 book_The_Novies

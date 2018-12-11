@@ -20,14 +20,6 @@ book_Fathers_and_Sons
         -> Nikolskoe;;
     *);;
 
-Marino
-<- locale;
-    => nrel_main_idtf: [усадьба Марьино]
-		(* <- lang_ru;; *);;
-Nikolskoe
-<- locale;
-    => nrel_main_idtf: [усадьба Никольское]
-		(* <- lang_ru;; *);;
 
 
 // ПЕРСНАЖИ

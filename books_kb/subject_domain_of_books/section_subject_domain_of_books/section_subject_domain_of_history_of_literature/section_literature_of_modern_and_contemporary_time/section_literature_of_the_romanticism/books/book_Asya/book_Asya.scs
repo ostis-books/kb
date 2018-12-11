@@ -20,14 +20,7 @@ book_Asya
         -> country_Germany;;
     *);;
 
-country_Germany
-<- locale;
-    => nrel_main_idtf: [Германия]
-		(* <- lang_ru;; *);;
-gorod_N
-<- locale;
-    => nrel_main_idtf: [город N.]
-		(* <- lang_ru;; *);;
+
 
 
 // ПЕРСОНАЖИ

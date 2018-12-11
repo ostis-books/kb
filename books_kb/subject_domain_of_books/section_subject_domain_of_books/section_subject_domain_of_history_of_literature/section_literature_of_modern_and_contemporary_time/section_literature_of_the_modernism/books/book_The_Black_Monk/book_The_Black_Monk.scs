@@ -33,26 +33,6 @@ book_The_Black_Monk
         -> Sevastopol;;
     *);;
     
-Sevastopol
-<- locale;
-    => nrel_main_idtf: [Севастополь]
-		(* <- lang_ru;; *);;
-
-country_Ukraine
-<- locale;
-    => nrel_main_idtf: [Украина]
-		(* <- lang_ru;; *);;
-
-Crimea
-<- locale;
-    => nrel_main_idtf: [Крым]
-		(* <- lang_ru;; *);;
-
-estate_Borisovka
-<- locale;
-    => nrel_main_idtf: [имение Борисовка]
-		(* <- lang_ru;; *);;
-
 
 char_Kovrigin
         => nrel_main_idtf: 

@@ -36,10 +36,6 @@ book_Peasants
         -> Moscow;;
     *);;
 
-Zhukovo_village
-<- locale;
-    => nrel_main_idtf: [деревня Жуково]
-		(* <- lang_ru;; *);;
 
 char_Chikildev
         => nrel_main_idtf: 

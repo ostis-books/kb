@@ -24,19 +24,6 @@ book_Evenings_on_a_Farm_Near_Dikanka
         -> Petersburg;;
     *);;
 
-Dikanka
-<- locale;
-    => nrel_main_idtf: [Диканька]
-		(* <- lang_ru;; *);;
-Konotop
-<- locale;
-    => nrel_main_idtf: [Конотоп]
-		(* <- lang_ru;; *);;
-
-Sorochinsky_fair
-<- locale;
-    => nrel_main_idtf: [Сорочинская ярмарка]
-		(* <- lang_ru;; *);;
 
 
 // ПЕРСОНАЖИ

@@ -20,19 +20,6 @@ book_A_Terrible_Vengeance
         -> Gluhovo;;
     *);;
 
-country_Ukraine
-<- locale;
-    => nrel_main_idtf: [Украина]
-		(* <- lang_ru;; *);;
-Gluhovo
-<- locale;
-    => nrel_main_idtf: [Глухово]
-		(* <- lang_ru;; *);;
-Kiev
-<- locale;
-    => nrel_main_idtf: [Киев]
-		(* <- lang_ru;; *);;
-
 
 // ПЕРСОНАЖИ
 book_A_Terrible_Vengeance

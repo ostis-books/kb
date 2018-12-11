@@ -34,10 +34,6 @@ book_The_man_in_The_Case
         -> Mironositskoe_village;;
     *);;
 
-Mironositskoe_village
-<- locale;
-    => nrel_main_idtf: [село Мироносицкое]
-		(* <- lang_ru;; *);;
 
 
 char_Gimalayski

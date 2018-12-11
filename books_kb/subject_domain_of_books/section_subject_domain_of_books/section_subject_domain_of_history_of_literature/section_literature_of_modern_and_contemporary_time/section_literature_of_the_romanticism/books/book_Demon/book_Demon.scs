@@ -19,10 +19,7 @@ book_Demon
         -> Caucasus;;
         -> country_Georgia;;
     *);;
-country_Georgia
-<- locale;
-    => nrel_main_idtf: [Грузия]
-		(* <- lang_ru;; *);;
+
 // ПЕРСОНАЖИ
 book_Demon
 <= nrel_characters:
