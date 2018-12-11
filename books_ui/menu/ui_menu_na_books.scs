@@ -12,5 +12,7 @@ ui_menu_na_books
 		ui_menu_search_book_by_characters;
    	ui_menu_file_for_finding_similar_books;
 		ui_menu_file_for_agent_of_define_age_limit;
-		ui_menu_file_for_recommending_books
+		ui_menu_file_for_recommending_books;
+    ui_menu_search_the_smallest_year_of_book;
+		ui_menu_search_the_largest_year_of_book
 	};;
