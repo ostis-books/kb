@@ -60,10 +60,9 @@ book_lost_literacy => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Пропавшая грамота"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_lost_literacy ;;
         -> .book_lost_literacy_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Часть 1] 
+                => nrel_main_idtf: [Событие №1. Истори дьяка] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -83,7 +82,7 @@ book_lost_literacy => nrel_plot:
 
         -> .book_lost_literacy_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Часть 2] 
+                => nrel_main_idtf: [Событие №2. Разговор с шинкарем] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -101,7 +100,7 @@ book_lost_literacy => nrel_plot:
 
         -> .book_lost_literacy_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Часть 3] 
+                => nrel_main_idtf: [Событие №3. Знакомство с нежитью] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -121,7 +120,7 @@ book_lost_literacy => nrel_plot:
 
         -> .book_lost_literacy_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Часть 4] 
+                => nrel_main_idtf: [Событие №4. Игра в карты с ведьмой] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -140,7 +139,7 @@ book_lost_literacy => nrel_plot:
             *);;
         -> .book_lost_literacy_event_5
             (*
-                => nrel_main_idtf: [Событие №5. Часть 5] 
+                => nrel_main_idtf: [Событие №5. Возвращение] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
