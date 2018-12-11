@@ -115,7 +115,6 @@ book_The_Black_Monk => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Чёрных монах"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_The_Black_Monk;;
         -> .book_The_Black_Monk_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Глава 1] 
@@ -133,7 +132,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Tanya_Pesotckaya;;
                     *);;        
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_2;;       
+                                .book_The_Black_Monk_event_2;;       
             *);;
 
         -> .book_The_Black_Monk_event_2
@@ -153,7 +152,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Monah;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_3;;
+                                .book_The_Black_Monk_event_3;;
             *);;
 
         -> .book_The_Black_Monk_event_3
@@ -172,7 +171,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Tanya_Pesotckaya;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_4;;
+                                .book_The_Black_Monk_event_4;;
             *);;
 
             -> .book_The_Black_Monk_event_4
@@ -192,7 +191,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Egor_Pesotckiy;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_5;;
+                                .book_The_Black_Monk_event_5;;
             *);;
 
             -> .book_The_Black_Monk_event_5
@@ -211,7 +210,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Tanya_Pesotckaya;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_6;;
+                                .book_The_Black_Monk_event_6;;
             *);;
 
             -> .book_The_Black_Monk_event_6
@@ -230,7 +229,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Tanya_Pesotckaya;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_7;;
+                                .book_The_Black_Monk_event_7;;
             *);;
 
             -> .book_The_Black_Monk_event_7
@@ -249,7 +248,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Monah;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_8;;
+                                .book_The_Black_Monk_event_8;;
             *);;
 
             -> .book_The_Black_Monk_event_8
@@ -269,7 +268,7 @@ book_The_Black_Monk => nrel_plot:
                            char_Tanya_Pesotckaya;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_Black_Monk_event_9;;
+                                .book_The_Black_Monk_event_9;;
             *);;
         
             -> .book_The_Black_Monk_event_9

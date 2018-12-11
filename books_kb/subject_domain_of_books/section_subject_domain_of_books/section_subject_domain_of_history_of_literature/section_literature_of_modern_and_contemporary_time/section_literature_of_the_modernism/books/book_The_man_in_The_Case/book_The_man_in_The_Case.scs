@@ -150,12 +150,11 @@ char_Varenka
                     *);;
             *);;
 
-book_The_man_in_The_Case_plot => nrel_plot:
+book_The_man_in_The_Case => nrel_plot:
     .book_The_man_in_The_Case_plot
     (*
       => nrel_main_idtf: [Сюжет. "Человек в футляре"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_The_man_in_The_Case;;
         -> .book_The_man_in_The_Case_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Жизнь в футляре ] 
@@ -171,7 +170,7 @@ book_The_man_in_The_Case_plot => nrel_plot:
                         -> char_Belikov;;
                     *);;        
                     => nrel_plot_sequence:                
-                                book_The_man_in_The_Case_event_2;;       
+                                .book_The_man_in_The_Case_event_2;;       
             *);;
 
         -> .book_The_man_in_The_Case_event_2
@@ -190,7 +189,7 @@ book_The_man_in_The_Case_plot => nrel_plot:
                            char_Varenka;;
                     *);;  
                     => nrel_plot_sequence:                
-                                book_The_man_in_The_Case_event_3;;
+                                .book_The_man_in_The_Case_event_3;;
             *);;
 
         -> .book_The_man_in_The_Case_event_3
@@ -210,7 +209,7 @@ book_The_man_in_The_Case_plot => nrel_plot:
                            char_Varenka;;
                     *);;        
                     => nrel_plot_sequence:                
-                                book_The_man_in_The_Case_event_4;;              
+                                .book_The_man_in_The_Case_event_4;;              
             *);;
 
         -> .book_The_man_in_The_Case_event_4
@@ -229,7 +228,7 @@ book_The_man_in_The_Case_plot => nrel_plot:
                            char_Varenka;;
                     *);;   
                     => nrel_plot_sequence:                
-                                book_The_man_in_The_Case_event_5;;              
+                                .book_The_man_in_The_Case_event_5;;              
             *);;
             
 

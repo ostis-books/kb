@@ -133,7 +133,6 @@ book_Viy => nrel_plot:
 (*
       => nrel_main_idtf: [Сюжет. "Вий"] 
                 (* <-lang_ru;; *);;
-        -> key_sc_element: book_Viy;;
         -> .book_Viy_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Каникулы] 
