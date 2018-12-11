@@ -26,6 +26,14 @@ book_sobachye_syerdtsye
                char_dvornik_Fedor;;
         *);;
 
+
+book_sobachye_syerdtsye
+=> nrel_location:
+    .book_sobachye_syerdtsye_location
+    (*
+        -> Moscow;;
+    *);;
+
 char_Sharik
         => nrel_main_idtf: 
             [Шарик] (* <-lang_ru;; *);
@@ -160,7 +168,6 @@ char_dvornik_Fedor
                         -> "file://content/content_htmls/characters/char_dvornik_Fedor.html" (* <-lang_ru;; *);;
                     *);;
             *);;
-
 
 book_sobachye_syerdtsye => nrel_plot: 
     .book_sobachye_syerdtsye_plot

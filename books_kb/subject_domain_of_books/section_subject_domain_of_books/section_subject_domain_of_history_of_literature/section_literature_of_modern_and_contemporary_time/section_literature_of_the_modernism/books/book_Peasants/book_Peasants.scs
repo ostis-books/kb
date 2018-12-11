@@ -27,6 +27,16 @@ book_Peasants
             char_Denis;;
     *);;
 
+book_Peasants
+=> nrel_location:
+    .book_Peasants_location
+    (*
+        -> Zhukovo_village;;
+        -> country_Russia;;
+        -> Moscow;;
+    *);;
+
+
 char_Chikildev
         => nrel_main_idtf: 
             [Николай Чикильдеев] (* <-lang_ru;; *);

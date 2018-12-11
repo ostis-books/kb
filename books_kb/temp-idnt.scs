@@ -1,3 +1,8 @@
+
+country_Russia
+<- sc_node_norole_relation;
+=> nrel_main_idtf: [Россия](*<-lang_ru;;*);;
+
 country_USA 
 <- sc_node_not_relation;
 => nrel_main_idtf: [США](*<-lang_ru;;*);;
@@ -244,3 +249,8 @@ classical_unities
 authenticity
 <- sc_node_not_relation;
 => nrel_main_idtf: [подлинность] (*<- lang_ru;;*);;
+
+locale
+=> nrel_main_idtf:
+	[место действий]
+		(* <- lang_ru;; *);;

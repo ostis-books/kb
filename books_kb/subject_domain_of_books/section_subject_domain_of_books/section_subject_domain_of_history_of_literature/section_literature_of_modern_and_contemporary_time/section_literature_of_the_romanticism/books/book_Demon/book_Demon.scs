@@ -12,6 +12,14 @@ book_Demon
 => nrel_publication_date:
     year_1839;;
 
+book_Demon
+=> nrel_location:
+    .book_Demon_location
+    (*
+        -> Caucasus;;
+        -> country_Georgia;;
+    *);;
+
 // ПЕРСОНАЖИ
 book_Demon
 <= nrel_characters:

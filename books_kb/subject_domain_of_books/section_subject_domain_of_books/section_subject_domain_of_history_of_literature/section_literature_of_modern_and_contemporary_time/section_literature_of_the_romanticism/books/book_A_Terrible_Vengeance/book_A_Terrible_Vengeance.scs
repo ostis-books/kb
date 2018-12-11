@@ -11,6 +11,16 @@ book_A_Terrible_Vengeance
 => nrel_publication_date:
     year_1831;;
 
+book_A_Terrible_Vengeance
+=> nrel_location:
+    .book_A_Terrible_Vengeance_location
+    (*
+        -> Kiev;;
+        -> country_Ukraine;;
+        -> Gluhovo;;
+    *);;
+
+
 // ПЕРСОНАЖИ
 book_A_Terrible_Vengeance
 <= nrel_characters:

@@ -11,6 +11,13 @@ book_The_Government_Inspector
 => nrel_publication_date:
     year_1835;;
 
+book_The_Government_Inspector
+=> nrel_location:
+    .book_The_Government_Inspector_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
 // ПЕРСОНАЖИ
 book_The_Government_Inspector
 <= nrel_characters:

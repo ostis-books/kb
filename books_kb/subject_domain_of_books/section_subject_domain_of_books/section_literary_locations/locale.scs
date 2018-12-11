@@ -1,0 +1,155 @@
+locale
+=> nrel_main_idtf:
+	[место действий]
+		(* <- lang_ru;; *);;
+
+Moscow
+<- locale;
+    => nrel_main_idtf: [Москва]
+		(* <- lang_ru;; *);;
+Yalta
+<- locale;
+    => nrel_main_idtf: [Ялта]
+		(* <- lang_ru;; *);;
+country_Russia
+<- locale;
+    => nrel_main_idtf: [Россия]
+		(* <- lang_ru;; *);;
+conutry_Ukraine
+<- locale;
+    => nrel_main_idtf: [Украина]
+		(* <- lang_ru;; *);;
+
+Zhukovo_village
+<- locale;
+    => nrel_main_idtf: [деревня Жуково]
+		(* <- lang_ru;; *);;
+Sevastopol
+<- locale;
+    => nrel_main_idtf: [Севастополь]
+		(* <- lang_ru;; *);;
+
+
+Crimea
+<- locale;
+    => nrel_main_idtf: [Крым]
+		(* <- lang_ru;; *);;
+
+estate_Borisovka
+<- locale;
+    => nrel_main_idtf: [имение Борисовка]
+(* <- lang_ru;; *);;
+
+Caucasus
+<- locale;
+    => nrel_main_idtf: [Кавказ]
+		(* <- lang_ru;; *);;
+
+Black_sea
+<- locale;
+    => nrel_main_idtf: [Черное море]
+		(* <- lang_ru;; *);;
+
+Mironositskoe_village
+<- locale;
+    => nrel_main_idtf: [село Мироносицкое]
+		(* <- lang_ru;; *);;
+
+
+country_Georgia
+<- locale;
+    => nrel_main_idtf: [Грузия]
+		(* <- lang_ru;; *);;
+
+Mtskhet
+<- locale;
+    => nrel_main_idtf: [Мцхет]
+		(* <- lang_ru;; *);;
+
+Voskresensk
+<- locale;
+    => nrel_main_idtf: [Воскресенск]
+		(* <- lang_ru;; *);;
+
+country_Russian_empire
+<- locale;
+    => nrel_main_idtf: [Российская империя]
+		(* <- lang_ru;; *);;
+
+Petersburg  
+<- locale;
+    => nrel_main_idtf: [Петербург]
+		(* <- lang_ru;; *);;
+
+country_Poland  
+<- locale;
+    => nrel_main_idtf: [Польша]
+		(* <- lang_ru;; *);;
+
+Warsaw
+<- locale;
+    => nrel_main_idtf: [Варшава]
+		(* <- lang_ru;; *);;
+
+Pyatigorsk
+<- locale;
+    => nrel_main_idtf: [Пятигорск]
+		(* <- lang_ru;; *);;
+
+country_Germany
+<- locale;
+    => nrel_main_idtf: [Германия]
+		(* <- lang_ru;; *);;
+gorod_N
+<- locale;
+    => nrel_main_idtf: [город N.]
+		(* <- lang_ru;; *);;
+
+	
+Gluhovo
+<- locale;
+    => nrel_main_idtf: [Глухово]
+		(* <- lang_ru;; *);;
+Kiev
+<- locale;
+    => nrel_main_idtf: [Киев]
+		(* <- lang_ru;; *);;
+
+Dikanka
+<- locale;
+    => nrel_main_idtf: [Диканька]
+		(* <- lang_ru;; *);;
+Konotop
+<- locale;
+    => nrel_main_idtf: [Конотоп]
+		(* <- lang_ru;; *);;
+
+Sorochinsky_fair
+<- locale;
+    => nrel_main_idtf: [Сорочинская ярмарка]
+		(* <- lang_ru;; *);;
+
+
+Marino
+<- locale;
+    => nrel_main_idtf: [усадьба Марьино]
+		(* <- lang_ru;; *);;
+Nikolskoe
+<- locale;
+    => nrel_main_idtf: [усадьба Никольское]
+		(* <- lang_ru;; *);;
+
+
+Schukin_yard
+<- locale;
+    => nrel_main_idtf: [Щукин двор]
+		(* <- lang_ru;; *);;
+London
+<- locale;
+    => nrel_main_idtf: [Лондон]
+		(* <- lang_ru;; *);;
+country_England
+<- locale;
+    => nrel_main_idtf: [Англия]
+		(* <- lang_ru;; *);;
+	

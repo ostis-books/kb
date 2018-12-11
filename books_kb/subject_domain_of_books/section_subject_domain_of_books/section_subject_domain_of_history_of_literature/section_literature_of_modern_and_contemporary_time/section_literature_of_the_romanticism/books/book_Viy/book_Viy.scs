@@ -24,6 +24,14 @@ book_Viy
            char_Tiberiy_Gorobec;;
     *);;
 
+book_Viy
+=> nrel_location:
+    .book_Viy_location
+    (*
+        -> country_Russian_empire;;
+        -> Kiev;;
+    *);;
+    
 char_Homa_Brut
         => nrel_main_idtf: 
             [Хома Брут] (* <-lang_ru;; *);
