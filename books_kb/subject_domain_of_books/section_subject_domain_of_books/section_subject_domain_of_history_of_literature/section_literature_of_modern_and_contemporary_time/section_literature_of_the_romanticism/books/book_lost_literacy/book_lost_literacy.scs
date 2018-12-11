@@ -29,7 +29,7 @@ char_ded
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;;
+        <- male;;
 
 char_kozak
         => nrel_main_idtf: 
@@ -37,7 +37,7 @@ char_kozak
         <- lit_person;
         <- main_character;
         <- person;
-        <- concept_male_character;;
+        <- male;;
     
 char_zaporozhec
         => nrel_main_idtf: 
@@ -45,7 +45,7 @@ char_zaporozhec
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;;
+        <- male;;
 
 char_shinkar
         => nrel_main_idtf: 
@@ -53,7 +53,7 @@ char_shinkar
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;;
+        <- male;;
 
 book_lost_literacy => nrel_plot:
     .book_lost_literacy_plot
