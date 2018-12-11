@@ -3,7 +3,8 @@ scp_program -> proc_find_similar_books
     -> rrel_params: ...
     (*
         -> rrel_1: rrel_in: _book;;
-        -> rrel_2: rrel_out: _similar_books;;
+        -> rrel_2: rrel_in: _book_author;;
+        -> rrel_3: rrel_in: _similar_books;;
     *);;
 
     -> rrel_operators: ...
@@ -19,36 +20,13 @@ scp_program -> proc_find_similar_books
         *);;
 
 
-        // Поиск автора
-	-> .proc_find_similar_books_operator_generate_similar_books_set
-        (*
-            <- genEl;;
-
-            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _similar_books;;
-
-            => nrel_goto: .proc_find_similar_books_operator_find_book_author0;;
-        *);;
-        -> .proc_find_similar_books_operator_find_book_author0
-        (*
-            <- genEl;;
-
-            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _book_author;;
-
-            => nrel_goto: .proc_find_similar_books_operator_find_book_author;;
-        *);;
-
-
-        // Поиск автора
+        // Проверка наличия автора
 
     	-> .proc_find_similar_books_operator_find_book_author
         (*
-            <- searchElStr5;;
+            <- ifVarAssign;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_var: _book;;
-            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
-            -> rrel_3: rrel_assign: rrel_scp_var: _book_author;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc;;
-            -> rrel_5: rrel_fixed:  rrel_scp_const: nrel_author;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _book_author;;
 
             => nrel_then: .proc_find_similar_books_operator_find_author_all_books;;
             => nrel_else: .proc_find_similar_books_operator_print_end;;
@@ -62,7 +40,7 @@ scp_program -> proc_find_similar_books
 			-> rrel_2: rrel_fixed: rrel_scp_const: ...
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _book_author;;
-					-> rrel_2: rrel_assign: rrel_scp_var: _similar_books;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _similar_books;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_find_author_books_descriptor;;
 
@@ -108,30 +86,60 @@ scp_program -> proc_find_similar_books
 
         -> .proc_find_similar_books_operator_find_genre_all_books
         (*
-           <- searchElStr5;;
+           <- searchSetStr3;;
 
-            -> rrel_1: rrel_fixed: rrel_scp_var: _book;;
-            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
-            -> rrel_3: rrel_assign: rrel_scp_var: _book_genre;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc;;
-            -> rrel_5: rrel_fixed:  rrel_scp_const: nrel_genre_work;;
+            -> rrel_1: rrel_assign: rrel_scp_var: _super_set;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _book;;
 
+            -> rrel_set_1: rrel_assign: rrel_scp_var: _book_super_set;;
 
-            => nrel_then: .proc_find_similar_books_operator_find_genres_1;;
+            => nrel_then: .proc_find_similar_books_operator_find_genres_01;;
             => nrel_else: .proc_find_similar_books_operator_print_end;;
         *);;
 
-	-> .proc_find_similar_books_operator_find_genres_1
+        -> .proc_find_similar_books_operator_find_genres_01
         (*
-            <- searchSetStr5;;
+           <- searchElStr3;;
 
-            -> rrel_1: rrel_assign: rrel_scp_var: _book_similar_genre;;
-            -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _book_super_set;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _temp_elem_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book_genre;;
+
+            => nrel_then: .proc_find_similar_books_operator_find_genres_02;;
+            => nrel_else: .proc_find_similar_books_operator_print_end;;
+        *);;
+
+        -> .proc_find_similar_books_operator_find_genres_02
+        (*
+            <- eraseEl;;
+
+           -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp_elem_arc;;
+
+            => nrel_goto: .proc_find_similar_books_operator_find_genres_03;;
+        *);;
+
+         -> .proc_find_similar_books_operator_find_genres_03
+        (*
+           <- searchElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: genre;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _book_genre;;
-            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc;;
-            -> rrel_5: rrel_fixed:  rrel_scp_const: nrel_genre_work;;
 
-            -> rrel_set_1: rrel_assign: rrel_scp_var: _books_with_similar_genre;;
+            => nrel_then: .proc_find_similar_books_operator_find_genres_1;;
+            => nrel_else: .proc_find_similar_books_operator_find_genres_01;;
+        *);;
+
+	    -> .proc_find_similar_books_operator_find_genres_1
+        (*
+            <- searchSetStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _book_genre;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _book_similar_genre;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: _books_with_similar_genre;;
 
             => nrel_goto: .proc_find_similar_books_operator_loop_to_find_book_in_specific_genre;;
         *);;
@@ -245,6 +253,14 @@ scp_program -> proc_find_similar_books
             <- printNl;;
 
             -> rrel_1: rrel_scp_const: [Конец обработки. Процедура поиска схожих книг];;
+
+            => nrel_goto: .proc_find_similar_books_operator_print_result;;
+        *);;
+         -> .proc_find_similar_books_operator_print_result
+        (*
+            <- printEl;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _similar_books;;
 
             => nrel_goto: .proc_find_similar_books_operator_return;;
         *);;
