@@ -649,7 +649,7 @@ genre_military <- rrel_key_sc_element: Definition_genre_military
 	<= nrel_using_constants:...
 		(*
 		-> genre_of_literature;;
-        -> event;;
+        -> literary_event;;
 		*);;
 	*);;
 
@@ -672,7 +672,7 @@ genre_postapokalipsis <- rrel_key_sc_element: Definition_genre_postapokalipsis
 		*);;
 	<= nrel_using_constants:...
 		(*
-		-> event;;
+		-> literary_event;;
         -> genre_of_literature;;
 		*);;
 	*);;

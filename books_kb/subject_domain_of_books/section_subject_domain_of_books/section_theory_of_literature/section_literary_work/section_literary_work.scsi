@@ -118,12 +118,12 @@ nrel_plot_sequence
 <- antitransitive_relation;;
 
 nrel_plot_sequence
-=> nrel_first_domain: event;
-=>nrel_second_domain: event;
+=> nrel_first_domain: literary_event;
+=>nrel_second_domain: literary_event;
 =>nrel_definitional_domain:...
 (*
     <= nrel_combination:...
-       (* -> event;; *);;
+       (* -> literary_event;; *);;
 *);;
  
 
@@ -142,7 +142,7 @@ nrel_plot_sequence
 	<=nrel_using_constants:...
 	(*
 		->nrel_plot;;
-		->event;;
+		->literary_event;;
 	*);;
 *);;
 
@@ -171,7 +171,7 @@ nrel_plot
 
 nrel_plot
 => nrel_first_domain: literary_work;
-=>nrel_second_domain: ..a(*<=nrel_boolean:event;; *);
+=>nrel_second_domain: ..a(*<=nrel_boolean:literary_event;; *);
 =>nrel_definitional_domain:...
 (*
     <= nrel_combination:...
@@ -209,9 +209,9 @@ sc_common_type_statement
 
 nrel_participants
 => nrel_main_idtf:
-	[Сюжетная последовательность*]
+	[участники действия*]
 	(* <- lang_ru;;	*);
-        [plot sequence*]
+        [participants*]
         (* <- lang_en;;*);;
 
 nrel_participants
@@ -219,12 +219,12 @@ nrel_participants
 <- oriented_relation;;
 
 nrel_participants
-=> nrel_first_domain: event;
+=> nrel_first_domain: literary_event;
 =>nrel_second_domain: ..a(*<=nrel_boolean:lit_person;; *);
 =>nrel_definitional_domain:...
 (*
     <= nrel_combination:...
-       (* -> event;..a;; *);;
+       (* -> literary_event;..a;; *);;
 *);;
  
 
@@ -2336,7 +2336,7 @@ artistic_space
          ->nrel_author;;
          ->composition;;
          ->fiction;;
-         ->event;;
+         ->literary_event;;
                 
         *);;
 *);;
@@ -2453,7 +2453,7 @@ adjourned_element
          ->nrel_author;;
          ->parenthesis;;
          ->digression;;
-         ->event;;
+         ->literary_event;;
                 
         *);;
 *);;
@@ -2499,7 +2499,7 @@ act_fiction
 	<= nrel_using_constants:...
         (*
                 ->literary_work;;
-                ->event;;
+                ->literary_event;;
                 ->lit_person;;
                 ->nrel_author;;
                 ->reader;;
