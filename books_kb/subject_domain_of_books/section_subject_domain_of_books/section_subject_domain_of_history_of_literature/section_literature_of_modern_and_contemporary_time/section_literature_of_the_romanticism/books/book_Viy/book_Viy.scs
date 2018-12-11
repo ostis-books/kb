@@ -38,7 +38,7 @@ char_Homa_Brut
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -57,7 +57,7 @@ char_Pannochka
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -76,7 +76,7 @@ char_Viy
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -95,7 +95,7 @@ char_Viy
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -115,7 +115,7 @@ char_Tiberiy_Gorobec
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*

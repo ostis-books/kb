@@ -44,7 +44,7 @@ char_Lavretskiy
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -63,7 +63,7 @@ char_IPetrovich
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -82,7 +82,7 @@ char_Glafira_Petrovna
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -101,7 +101,7 @@ char_Petr_Andreich
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -120,7 +120,7 @@ char_Sergey_Gedeonovskiy
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -139,7 +139,7 @@ char_VPanshin
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -158,7 +158,7 @@ char_Mariya_Kalitina
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -177,7 +177,7 @@ char_Marfa_Pestova
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -196,7 +196,7 @@ char_Varvara_Korobina
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*

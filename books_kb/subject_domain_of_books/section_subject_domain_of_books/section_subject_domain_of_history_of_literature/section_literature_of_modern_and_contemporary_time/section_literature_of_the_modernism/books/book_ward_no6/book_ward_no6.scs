@@ -47,7 +47,7 @@ char_Andrey_Ragin
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -66,7 +66,7 @@ char_Andrey_Ragin
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -85,7 +85,7 @@ char_Hobotov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -104,7 +104,7 @@ char_Mih_Averiyanich
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -123,7 +123,7 @@ char_Sergeich
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -142,7 +142,7 @@ char_Nikita
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -161,7 +161,7 @@ char_Lazarich
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -180,7 +180,7 @@ char_Moyseyka
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*

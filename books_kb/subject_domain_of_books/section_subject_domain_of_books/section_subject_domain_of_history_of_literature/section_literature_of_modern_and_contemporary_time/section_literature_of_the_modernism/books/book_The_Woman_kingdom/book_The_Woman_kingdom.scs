@@ -37,7 +37,7 @@ char_Akimovna
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -56,7 +56,7 @@ char_Chalikov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -75,7 +75,7 @@ char_Pimenov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -94,7 +94,7 @@ char_Lisevich
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*

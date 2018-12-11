@@ -1,6 +1,6 @@
 person_Arthur_Conan_Doyle
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -46,7 +46,7 @@ person_Arthur_Conan_Doyle
 
 person_Chuck_Palahniuk
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -79,7 +79,7 @@ person_Chuck_Palahniuk
 
 person_Ernest_Hemingway
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -125,7 +125,7 @@ person_Ernest_Hemingway
 
 person_Francis_Scott_Fitzgerald
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -250,7 +250,7 @@ person_Jane_Austen
 
 person_Joan_Rowling
     <- concept_person;
-    <- concept_female;
+    <- female;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -286,7 +286,7 @@ person_Joan_Rowling
 
 person_John_Tolkien 
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -332,7 +332,7 @@ person_John_Tolkien
 
 person_Oscar_Wilde
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -390,7 +390,7 @@ person_Oscar_Wilde
 
 person_Ray_Douglas_Bradbury
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -435,7 +435,7 @@ person_Ray_Douglas_Bradbury
 
 person_Stephen_Edwin_King
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -476,7 +476,7 @@ person_Stephen_Edwin_King
 
 person_Daniel_Kiz
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:
@@ -519,7 +519,7 @@ person_Daniel_Kiz
 
 person_Erich_Maria_Remarque
     <- concept_person;
-    <- concept_male;
+    <- male;
     <- concept_writer;
 
     => nrel_main_idtf:

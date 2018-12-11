@@ -35,7 +35,7 @@ char_Demon
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -53,7 +53,7 @@ char_Tamara
         <- lit_person;
         <- concept_main_character;
         <- person;
-        <- concept_female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*

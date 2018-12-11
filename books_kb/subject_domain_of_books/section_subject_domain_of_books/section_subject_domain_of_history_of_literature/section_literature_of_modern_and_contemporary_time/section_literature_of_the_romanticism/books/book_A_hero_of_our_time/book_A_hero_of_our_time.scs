@@ -44,7 +44,7 @@ char_Pechorin
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -63,7 +63,7 @@ char_Maksimich
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -82,7 +82,7 @@ char_Grushnickiy
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -101,7 +101,7 @@ char_Vera
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -120,7 +120,7 @@ char_Doctor_verner
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -139,7 +139,7 @@ char_Bela
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -158,7 +158,7 @@ char_Azamat
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
          <- rrel_key_sc_element:
             ...
             (*
@@ -177,7 +177,7 @@ char_Meri
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*

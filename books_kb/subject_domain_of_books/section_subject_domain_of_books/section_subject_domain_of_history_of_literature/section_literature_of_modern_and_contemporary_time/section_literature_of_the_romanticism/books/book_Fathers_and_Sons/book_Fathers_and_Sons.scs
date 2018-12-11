@@ -54,7 +54,7 @@ char_Evgeniy_Bazarov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -73,7 +73,7 @@ char_Vasiliy_Bazarov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -92,7 +92,7 @@ char_Nikolay_Kirsanov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -111,7 +111,7 @@ char_Pavel_Kirsanov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -130,7 +130,7 @@ char_Arkadiy_Kirsanov
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -149,7 +149,7 @@ char_Arina_Vlasevna
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -168,7 +168,7 @@ char_Anna_Odintsova
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -187,7 +187,7 @@ char_Katerina_Lokteva
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -206,7 +206,7 @@ char_Viktor_Sitnikov
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -225,7 +225,7 @@ char_Avdotya
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -244,7 +244,7 @@ char_Fenechka
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -263,7 +263,7 @@ char_Dunasha
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -282,7 +282,7 @@ char_Petr
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -301,7 +301,7 @@ char_Knyagina
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -320,7 +320,7 @@ char_Matvey_Kolyazin
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -339,7 +339,7 @@ char_Sergey_Loktev
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -358,7 +358,7 @@ char_Avdotya_Stepanovna
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -377,7 +377,7 @@ char_Timofeiich
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*

@@ -38,7 +38,7 @@ char_Dorian_Gray
             [Дориан Грей] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -56,7 +56,7 @@ char_Basil_Hallward
             [Бэзил Холлуорд] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -74,7 +74,7 @@ char_Lord_Henry
             [Лорд Генри Уоттон] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -92,7 +92,7 @@ char_Sibyl_Vane
             [Сибила Вэйн] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -110,7 +110,7 @@ char_James_Vane
             [Джеймс Вэйн] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
