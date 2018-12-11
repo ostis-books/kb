@@ -34,7 +34,7 @@ char_Guy_Montag
             [Гай Монтэг] (* <-lang_ru;; *);
         <- lit_person;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -53,7 +53,7 @@ char_Clarisse_McClellan
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -72,7 +72,7 @@ char_Mildred_Montag
         <- lit_person;
         <- background_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
@@ -91,7 +91,7 @@ char_Faber
         <- lit_person;
         <- background_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
