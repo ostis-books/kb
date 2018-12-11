@@ -11,10 +11,7 @@ book_fahrenheit_451
     => nrel_author:
         person_Ray_Douglas_Bradbury;
     <= nrel_original_language:
-    	...
-    	(*
-    		-> lang_en;;
-    	*);
+    	lang_en;
     => nrel_publication_date:
         year_1953;;
 
