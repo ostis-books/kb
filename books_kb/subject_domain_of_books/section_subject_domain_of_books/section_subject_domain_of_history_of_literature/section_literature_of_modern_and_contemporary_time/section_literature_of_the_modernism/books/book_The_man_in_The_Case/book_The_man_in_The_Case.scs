@@ -26,6 +26,16 @@ book_The_man_in_The_Case
            char_Varenka;;
     *);;
 
+book_The_man_in_The_Case
+=> nrel_location:
+    .book_The_man_in_The_Case_location
+    (*
+        -> country_Russia;;
+        -> Mironositskoe_village;;
+    *);;
+
+
+
 char_Gimalayski
         => nrel_main_idtf: 
             [Гималайский] (* <-lang_ru;; *);

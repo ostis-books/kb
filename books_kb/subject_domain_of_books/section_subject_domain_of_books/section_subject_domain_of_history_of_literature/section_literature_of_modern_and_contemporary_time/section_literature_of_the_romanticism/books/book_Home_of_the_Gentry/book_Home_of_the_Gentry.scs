@@ -12,6 +12,14 @@ book_Home_of_the_Gentry
 => nrel_publication_date:
     year_1859;;
 
+book_Home_of_the_Gentry
+=> nrel_location:
+    .book_Home_of_the_Gentry_location
+    (*
+        -> Moscow;;
+	-> country_Russian_empire;;
+    *);;
+
 // ПЕРСОНАЖИ
 book_Home_of_the_Gentry
 => nrel_characters:

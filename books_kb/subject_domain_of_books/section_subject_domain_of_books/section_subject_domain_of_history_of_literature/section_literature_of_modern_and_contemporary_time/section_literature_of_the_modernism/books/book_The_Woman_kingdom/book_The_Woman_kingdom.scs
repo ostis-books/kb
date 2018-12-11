@@ -23,6 +23,14 @@ book_The_Woman_kingdom
             char_Lisevich;;
     *);;
 
+book_The_Woman_kingdom
+=> nrel_location:
+    .book_The_Woman_kingdom_location
+    (*
+        -> Voskresensk;;
+        -> country_Russian_empire;;
+    *);;
+
 char_Akimovna
         => nrel_main_idtf: 
             [Анна Акимовна] (* <-lang_ru;; *);

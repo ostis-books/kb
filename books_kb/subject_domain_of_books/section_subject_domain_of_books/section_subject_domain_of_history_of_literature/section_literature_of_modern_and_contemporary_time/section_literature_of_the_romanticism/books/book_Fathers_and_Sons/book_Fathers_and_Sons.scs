@@ -11,6 +11,17 @@ book_Fathers_and_Sons
 => nrel_publication_date:
     year_1860;;
 
+book_Fathers_and_Sons
+=> nrel_location:
+    .book_Fathers_and_Sons_location
+    (*
+        -> country_Russian_empire;;
+        -> Marino;;
+        -> Nikolskoe;;
+    *);;
+
+
+
 // ПЕРСНАЖИ
 book_Fathers_and_Sons
 <= nrel_characters:
