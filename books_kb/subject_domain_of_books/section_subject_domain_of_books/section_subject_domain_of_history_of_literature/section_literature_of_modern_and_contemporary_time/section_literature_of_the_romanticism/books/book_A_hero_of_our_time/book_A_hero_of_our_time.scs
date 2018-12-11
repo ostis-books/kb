@@ -185,7 +185,6 @@ book_A_hero_of_our_time => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Герой нашего времени"] 
                 (* <-lang_ru;; *);;
-        ->  key_sc_element: book_A_hero_of_our_time;;
         -> .book_A_hero_of_our_time_event_1
             (*
                 => nrel_main_idtf: [Событие №1. Бэла] 
@@ -204,7 +203,7 @@ book_A_hero_of_our_time => nrel_plot:
                            char_Azamat;;
                     *);;         
                     => nrel_plot_sequence:
-                            book_A_hero_of_our_time_event_2;;
+                            .book_A_hero_of_our_time_event_2;;
 
             *);;
 
@@ -224,7 +223,7 @@ book_A_hero_of_our_time => nrel_plot:
                            char_Pechorin;;
                     *);;                  
                     => nrel_plot_sequence:
-                            book_A_hero_of_our_time_event_3;;    
+                            .book_A_hero_of_our_time_event_3;;    
             *);;
 
         -> .book_A_hero_of_our_time_event_3
@@ -243,7 +242,7 @@ book_A_hero_of_our_time => nrel_plot:
                         -> char_Pechorin;;
                     *);;        
                     => nrel_plot_sequence:
-                            book_A_hero_of_our_time_event_4;;
+                            .book_A_hero_of_our_time_event_4;;
             *);;
 
         -> .book_A_hero_of_our_time_event_4
@@ -264,7 +263,7 @@ book_A_hero_of_our_time => nrel_plot:
                            char_Doctor_verner;;                        
                     *);;  
                     => nrel_plot_sequence:
-                            book_A_hero_of_our_time_event_5;;                    
+                            .book_A_hero_of_our_time_event_5;;                    
             *);;
 
         -> .book_A_hero_of_our_time_event_5

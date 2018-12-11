@@ -78,7 +78,7 @@ book_lost_literacy => nrel_plot:
                            char_zaporozhec;;
                     *);;  
                     => nrel_plot_sequence:                          
-                          book_lost_literacy_event_2;;                    
+                          .book_lost_literacy_event_2;;                    
             *);;
 
         -> .book_lost_literacy_event_2
@@ -96,7 +96,7 @@ book_lost_literacy => nrel_plot:
                         -> char_ded;;
                     *);;             
                     => nrel_plot_sequence:                          
-                          book_lost_literacy_event_3;;          
+                          .book_lost_literacy_event_3;;          
             *);;
 
         -> .book_lost_literacy_event_3
@@ -116,7 +116,7 @@ book_lost_literacy => nrel_plot:
                            char_kozak;;
                     *);;    
                     => nrel_plot_sequence:                          
-                          book_lost_literacy_event_4;;                   
+                          .book_lost_literacy_event_4;;                   
             *);;
 
         -> .book_lost_literacy_event_4
@@ -136,7 +136,7 @@ book_lost_literacy => nrel_plot:
                             char_kozak;;                 
                     *);;         
                     => nrel_plot_sequence:                          
-                          book_lost_literacy_event_5;;              
+                          .book_lost_literacy_event_5;;              
             *);;
         -> .book_lost_literacy_event_5
             (*
