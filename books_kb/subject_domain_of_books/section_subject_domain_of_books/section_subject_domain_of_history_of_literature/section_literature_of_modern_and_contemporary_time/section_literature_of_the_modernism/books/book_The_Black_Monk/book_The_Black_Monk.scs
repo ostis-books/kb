@@ -29,7 +29,7 @@ char_Kovrigin
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -48,7 +48,7 @@ char_Egor_Pesotckiy
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -67,7 +67,7 @@ char_Monah
         <- lit_person;
         <- main_character;
         <- person;
-        <- male_character;
+        <- male;
         <- rrel_key_sc_element:
             ...
             (*
@@ -86,7 +86,7 @@ char_Tanya_Pesotckaya
         <- lit_person;
         <- main_character;
         <- person;
-        <- female_character;
+        <- female;
         <- rrel_key_sc_element:
             ...
             (*
