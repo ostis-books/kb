@@ -23,6 +23,13 @@ book_lost_literacy
             char_shinkar;;
     *);;
 
+book_lost_literacy
+=> nrel_location:
+    .book_lost_literacy_location
+    (*
+        -> country_Russian_empire;;
+    *);;
+
 char_ded
          => nrel_main_idtf: 
             [Дед] (* <-lang_ru;; *);

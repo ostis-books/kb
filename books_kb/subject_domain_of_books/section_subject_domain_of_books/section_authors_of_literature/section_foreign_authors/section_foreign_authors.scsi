@@ -282,7 +282,7 @@ person_Joan_Rowling
             -> concept_tragicomedy;;
         *);;
 
-// 
+ 
 
 person_John_Tolkien 
     <- concept_person;
@@ -655,6 +655,41 @@ person_Paulo_Coelho
         ->lang_por;;
     *);;
 
+person_Tolkien_John_Ronald_Reuel
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- poet;
+    <- translator;
+
+    => nrel_main_idtf:
+            [Толкин Джон Рональд Руэл] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_3_01_1982
+            (*
+                => nrel_main_idtf:
+                [3 января 1892](* <- lang_ru;;*);;
+            *);
+
+    => nrel_date_of_death:
+            date_2_09_1973
+            (*
+                => nrel_main_idtf:
+                [2 сентября 1973](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> literary_criticism;;
+        -> poetry;;
+    *);
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
 
 person_Agatha_Christie
     <- person;
@@ -1159,7 +1194,7 @@ person_Albert_Camus
     <- essayist;
     
     => nrel_main_idtf:
-            [Теодор Драйзер] (* <- lang_ru;;*);
+            [Альберт Камус] (* <- lang_ru;;*);
     
     => nrel_date_of_birth:
             date_7_11_1913
@@ -1376,7 +1411,7 @@ person_Honore_de_Balzac
     (*
         -> genre_novel;;
         -> genre_tale;;
-        -> narration;;        
+        -> genre_narrative;;        
     *);
 
     <= nrel_languages_of_work:...

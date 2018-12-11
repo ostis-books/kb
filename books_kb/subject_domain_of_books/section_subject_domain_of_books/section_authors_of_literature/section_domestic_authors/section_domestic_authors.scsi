@@ -1396,8 +1396,11 @@ person_Kuzmin_Mikhail_Sergeyevich
         -> genre_prose;;
         -> genre_narrative;;
         -> genre_novel;;
-
-
+    *);
+  <= nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;
 person_Herzen_Aleksandr_Ivanovich
     <- person;
     <- male;

@@ -12,6 +12,16 @@
     => nrel_publication_date:
         year_1891;;
 
+book_The_Duel
+=> nrel_location:
+    .book_The_Duel_location
+    (*
+        -> Black_sea;;
+        -> country_Russia;;
+        -> Caucasus;;
+    *);;
+
+
 // ПЕРСОНАЖИ
 book_The_Duel
 <= nrel_characters:

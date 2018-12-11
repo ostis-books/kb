@@ -11,6 +11,16 @@ book_The_Portrait
 => nrel_publication_date:
     year_1835;;
 
+book_The_Portrait
+=> nrel_location:
+    .book_The_Portrait_location
+    (*
+        -> country_Russian_empire;;
+        -> Petersburg;;
+        -> Schukin_yard;;
+    *);;
+
+
 // ПЕРСОНАЖИ
 book_The_Portrait
 <= nrel_characters:

@@ -12,6 +12,17 @@ book_Lady_with_a_dog
 => nrel_publication_date:
     year_1898;;
 
+book_Lady_with_a_dog
+=> nrel_location:
+    .book_Lady_with_a_dog_location
+    (*
+        -> Moscow;;
+        -> Yalta;;
+        -> contry_Russia;;
+        -> contry_Ukraine;;
+    *);;
+
+
 // ПЕРСОНАЖИ
 book_Lady_with_a_dog
 <= nrel_characters:

@@ -23,6 +23,17 @@ book_The_Black_Monk
             char_Monah;;
     *);;
 
+book_The_Black_Monk
+=> nrel_location:
+    .book_The_Black_Monk_location
+    (*
+        -> estate_Borisovka;;
+        -> Crimea;;
+        -> country_Ukraine;;
+        -> Sevastopol;;
+    *);;
+    
+
 char_Kovrigin
         => nrel_main_idtf: 
             [Андрей Ковригин] (* <-lang_ru;; *);

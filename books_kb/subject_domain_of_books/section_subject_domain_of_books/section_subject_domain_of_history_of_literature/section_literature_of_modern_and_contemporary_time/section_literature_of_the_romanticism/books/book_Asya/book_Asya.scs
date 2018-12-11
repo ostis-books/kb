@@ -12,6 +12,17 @@ book_Asya
 => nrel_publication_date:
     year_1857;;
 
+book_Asya
+=> nrel_location:
+    .book_Asya_location
+    (*
+        -> gorod_N;;
+        -> country_Germany;;
+    *);;
+
+
+
+
 // ПЕРСОНАЖИ
 book_Asya
 => nrel_characters:
