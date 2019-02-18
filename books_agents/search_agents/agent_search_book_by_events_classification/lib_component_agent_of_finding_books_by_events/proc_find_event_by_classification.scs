@@ -20,7 +20,7 @@ scp_program -> proc_find_event_by_classification
 				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_plot;;
 
 				=> nrel_then: ..proc_find_all_events_from_plot;; 
-				=> nrel_else: ..proc_find_events_in_book_return;;
+				=> nrel_else: ..proc_false;;
 			*);;
 
 
@@ -36,7 +36,7 @@ scp_program -> proc_find_event_by_classification
 				-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_set: _unchecked_events;;
 
 				=> nrel_then: ..proc_get_event_class;; 
-				=> nrel_else: ..proc_find_events_in_book_return;;
+				=> nrel_else: ..proc_false;;
 			*);;
 				
 
