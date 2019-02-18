@@ -5,7 +5,7 @@ agent_find_set_of_books_by_author
 	<- agent_scp_program;;
 
 scp_program -> agent_find_set_of_books_by_author (*
-	-> rrel_params: .agent_find_annular_sum_of_graphs_params (*
+	-> rrel_params: .agent_find_set_of_books_by_author_params (*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
 	*);;
