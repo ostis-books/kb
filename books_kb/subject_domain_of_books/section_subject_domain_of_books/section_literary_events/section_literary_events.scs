@@ -51,4 +51,31 @@ section_literary_events
 		event_investigation;
 		event_theft;
 		event_intelligence_service;
-		event_pregnancy;;
+		event_pregnancy;
+
+		event_expose;
+		event_curse;
+		event_matchmaking;
+		event_retreat;
+		event_struggle;
+		event_elect;
+		event_coronation;
+		event_mission;
+		event_imprisonment;
+		event_failure;
+
+		event_burning;
+		event_concealment;
+		event_poisoning;
+		event_hunting;
+		event_divorce;
+		event_recognition;
+		event_blackmail;
+		event_trial;
+		event_storm;
+		event_military_campaign;
+		event_pilgrimage;
+		event_caution;
+		event_order;
+		event_childbirth;;
+		

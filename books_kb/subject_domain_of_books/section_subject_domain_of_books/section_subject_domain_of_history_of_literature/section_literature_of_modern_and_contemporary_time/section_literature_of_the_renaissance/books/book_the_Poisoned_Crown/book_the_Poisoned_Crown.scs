@@ -1,0 +1,208 @@
+book_the_Poisoned_Crown 
+    => nrel_main_idtf:
+        ["Яд и корона"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_historical_novel;
+    => nrel_author:
+        person_Maurice_Druon;
+    <= nrel_original_language:
+        lang_french;
+    => nrel_publication_date:
+        year_1956;;
+
+
+book_the_Poisoned_Crown
+    <= nrel_characters:
+        .book_the_Poisoned_Crown_characters
+        (*
+            -> rrel_main_character:
+                    char_Robert_of_Artois;
+                    char_Guccio_Baglioni;
+                    char_Louis_X;
+                    char_Clemence_of_Hungary;
+                    char_Mahaut_of_Artois;;
+            -> char_Philip_the_Fair;
+               char_Philippe;
+               char_Jeanne_of_Burgundy;
+               char_Marguerite_of_Burgundy;
+               char_Hugues_de_Bouville;
+               char_Mari;
+               char_Edeline;;                   
+
+        *);;
+
+book_the_Poisoned_Crown
+=> nrel_location:
+    .book_the_Poisoned_Crown_location
+    (*
+        -> country_England;;
+        -> country_France;;
+    *);;
+
+
+
+char_Mahaut_of_Artois
+        => nrel_main_idtf: 
+            [Маго, графиня Артуа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Маго, графиня Артуа)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mahaut_of_Artois.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mari
+        => nrel_main_idtf: 
+            [Мари де Крессэ] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мари де Крессэ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mari.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Edeline
+        => nrel_main_idtf: 
+            [Эделина] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Эделина)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Edeline.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;            
+
+
+
+book_the_Poisoned_Crown => nrel_plot: 
+    .book_the_Poisoned_Crown_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Яд и корона"] (* <-lang_ru;; *);;
+        -> .book_the_Poisoned_Crown_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. В пути] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Poisoned_Crown_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_mission;;
+                    <- event_arrival_of_guests;;
+                    <- event_matchmaking;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Philip_the_Fair;
+                           char_Clemence_of_Hungary;
+                           char_Hugues_de_Bouville;
+                           char_Guccio_Baglioni;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Poisoned_Crown_event_2;;      
+            *);;
+
+        -> .book_the_Poisoned_Crown_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Неудачный поход] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Poisoned_Crown_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_battle;;
+                    <- event_failure;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Clemence_of_Hungary;
+                           char_Louis_X;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Poisoned_Crown_event_3;;      
+            *);;
+
+        -> .book_the_Poisoned_Crown_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Свобода и дом] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Poisoned_Crown_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Edeline;
+                           char_Jeanne_of_Burgundy;
+                           char_Marguerite_of_Burgundy;
+                           char_Louis_X;
+                           char_Clemence_of_Hungary;
+                           char_Philippe;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Poisoned_Crown_event_4;;      
+            *);;    
+
+        -> .book_the_Poisoned_Crown_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Тайное венчание] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Poisoned_Crown_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <- event_retreat;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Mari;
+                           char_Guccio_Baglioni;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Poisoned_Crown_event_5;;      
+            *);;      
+
+            -> .book_the_Poisoned_Crown_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Отравленный король] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Poisoned_Crown_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_wedding;;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Louis_X;
+                           char_Mahaut_of_Artois;
+                           char_Robert_of_Artois;
+                           char_Clemence_of_Hungary;;
+
+                    *);;              
+            *);;      
+    *);;

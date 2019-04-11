@@ -43,6 +43,7 @@ section_foreign_authors
 	person_Walter_Scott;
 	person_George_Gordon_Byron;
 	person_Victor_Hugo;
-	person_Jerome_David_Salinger;;
+	person_Jerome_David_Salinger;
+	person_Maurice_Druon;;
 
 section_foreign_authors = [*^"file://section_foreign_authors.scsi"*];;

@@ -1,0 +1,210 @@
+book_the_Royal_Succession 
+    => nrel_main_idtf:
+        ["Негоже лилиям прясть"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_historical_novel;
+    => nrel_author:
+        person_Maurice_Druon;
+    <= nrel_original_language:
+        lang_french;
+    => nrel_publication_date:
+        year_1957;;
+
+
+book_the_Royal_Succession
+    <= nrel_characters:
+        .book_the_Royal_Succession_characters
+        (*
+            -> rrel_main_character:
+                    char_Robert_of_Artois;
+                    char_Charles_Valois;
+                    char_Guccio_Baglioni;
+                    char_Philippe;
+                    char_Clemence_of_Hungary;
+                    char_Mahaut_of_Artois;
+                    char_Hugues_de_Bouville;
+                    char_Mari;;
+            -> char_Louis_X;
+               char_Jacques_Dueze;
+               char_Charles;
+               char_Louis;;                   
+
+        *);;
+
+book_the_Royal_Succession
+=> nrel_location:
+    .book_the_Royal_Succession_location
+    (*
+        -> country_England;;
+        -> country_France;;
+    *);;
+
+
+char_Jacques_Dueze
+        => nrel_main_idtf: 
+            [Жак Дюэз] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жак Дюэз)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jacques_Dueze.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;     
+
+char_Louis
+        => nrel_main_idtf: 
+            [ Людовик д’Эврё] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Людовик д’Эврё)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Louis.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;                      
+
+
+
+book_the_Royal_Succession => nrel_plot: 
+    .book_the_Royal_Succession_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Негоже лилиям прясть"] (* <-lang_ru;; *);;
+        -> .book_the_Royal_Succession_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Борьба за Регенство] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <- event_struggle;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Philippe;
+                           char_Louis_X;
+                           char_Charles_Valois;
+                           char_Clemence_of_Hungary;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Royal_Succession_event_2;;      
+            *);;
+
+        -> .book_the_Royal_Succession_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Новый Папа] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_truce;;
+                    <- event_elect;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Philippe;
+                           char_Guccio_Baglioni;
+                           char_Louis_X;
+                           char_Jacques_Dueze;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Royal_Succession_event_3;;      
+            *);;
+
+        -> .book_the_Royal_Succession_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Новый Регент] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <- event_elect;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Charles_Valois;
+                           char_Charles;
+                           char_Louis;
+                           char_Louis_X;
+                           char_Philippe;;
+
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Royal_Succession_event_4;;      
+            *);;    
+
+        -> .book_the_Royal_Succession_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Позорный договор] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_defeat;;
+                    <- event_truce;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_of_Artois;
+                           char_Mahaut_of_Artois;
+                           char_Louis_X;
+                           char_Philippe;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Royal_Succession_event_5;;      
+            *);;      
+
+            -> .book_the_Royal_Succession_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Маленький король] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Guccio_Baglioni;
+                           char_Mahaut_of_Artois;
+                           char_Hugues_de_Bouville;
+                           char_Clemence_of_Hungary;
+                           char_Mari;;
+
+                    *);;  
+                    => nrel_plot_sequence: 
+                        .book_the_Royal_Succession_event_6;;                  
+            *);; 
+
+            -> .book_the_Royal_Succession_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Коронование] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Royal_Succession_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_coronation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Philippe;;
+
+                    *);;           
+            *);;       
+    *);;

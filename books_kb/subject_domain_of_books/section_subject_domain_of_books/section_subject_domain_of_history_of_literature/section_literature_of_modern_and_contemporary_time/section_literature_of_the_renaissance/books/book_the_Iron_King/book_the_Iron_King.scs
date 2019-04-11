@@ -1,0 +1,367 @@
+book_the_Iron_King 
+    => nrel_main_idtf:
+        ["Железный король"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_historical_novel;
+    => nrel_author:
+        person_Maurice_Druon;
+    <= nrel_original_language:
+        lang_french;
+    => nrel_publication_date:
+        year_1955;;
+
+
+book_the_Iron_King
+    <= nrel_characters:
+        .book_the_Iron_King_characters
+        (*
+            -> rrel_main_character:
+                    char_Philip_the_Fair;                   
+                    char_Robert_of_Artois;
+                    char_Isabella;
+                    char_Marguerite_of_Burgundy;
+                    char_Blanche_of_Burgundy;
+                    char_Jeanne_of_Burgundy;;
+            -> char_Climent_V;
+               char_Philippe;
+               char_Louis_X;
+               char_Charles;
+               char_Jacques_de_Molay;
+               char_Guillaume_de_Nogaret;
+               char_de_One;;
+        *);;
+
+book_the_Iron_King
+=> nrel_location:
+    .book_the_Iron_King_location
+    (*
+        -> country_England;;
+        -> country_France;;
+    *);;
+
+
+char_Philip_the_Fair
+        => nrel_main_idtf: 
+            [Филипп Красивый] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Филипп Красивый)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Philip_the_Fair.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Louis_X
+        => nrel_main_idtf: 
+            [Людовик, король Наварры] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Людовик, король Наварры)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Louis_X.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Robert_of_Artois
+        => nrel_main_idtf: 
+            [Робер Артуа] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Робер Артуа)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Robert_of_Artois.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Isabella
+        => nrel_main_idtf: 
+            [Изабелла] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Изабелла)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Isabella.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Jacques_de_Molay
+        => nrel_main_idtf: 
+            [Жак де Моле] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жак де Моле)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jacques_de_Molay.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Marguerite_of_Burgundy
+        => nrel_main_idtf: 
+            [Маргарита Бургундская] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Маргарита Бургундская)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Marguerite_of_Burgundy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Blanche_of_Burgundy
+        => nrel_main_idtf: 
+            [Бланка Бургундская] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Бланка Бургундская)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Blanche_of_Burgundy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Charles
+        => nrel_main_idtf: 
+            [Карл, граф де Ла-Марш] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Карл, граф де Ла-Марш)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Charles.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Jeanne_of_Burgundy
+        => nrel_main_idtf: 
+            [Жанна Бургундская] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Жанна Бургундская)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jeanne_of_Burgundy.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;                        
+
+char_Climent_V
+        => nrel_main_idtf: 
+            [Папа Климент V] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Папа Климент V)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Climent_V.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Philippe
+        => nrel_main_idtf: 
+            [Филипп, граф Пуатье] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Филипп, граф Пуатье)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Philippe.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;            
+
+char_de_One
+        => nrel_main_idtf: 
+            [Братья д’Онэ] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Братья д’Онэ)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_de_One.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;          
+
+char_Guillaume_de_Nogaret
+        => nrel_main_idtf: 
+            [Гийом де Ногаре] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Гийом де Ногаре)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Guillaume_de_Nogaret.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;                                    
+
+book_the_Iron_King => nrel_plot: 
+    .book_the_Iron_King_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Железный король"] (* <-lang_ru;; *);;
+        -> .book_the_Iron_King_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Знакомство с королевой Изабеллой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Iron_King_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Robert_of_Artois;
+                           char_Isabella;
+                           char_Philip_the_Fair;
+                           char_Louis_X;
+                           char_Charles;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Iron_King_event_2;;      
+            *);;
+
+        -> .book_the_Iron_King_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Казнь] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Iron_King_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jacques_de_Molay;
+                           char_Philip_the_Fair;
+                           char_Climent_V;
+                           char_Guillaume_de_Nogaret;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Iron_King_event_3;;      
+            *);;
+
+        -> .book_the_Iron_King_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Разоблачение] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Iron_King_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_treachery;;
+                    <- event_expose;;
+                    <- event_imprisonment;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Isabella;
+                           char_Marguerite_of_Burgundy;
+                           char_Blanche_of_Burgundy;
+                           char_de_One;
+                           char_Charles;
+                           char_Jeanne_of_Burgundy;
+                           char_Louis_X;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_the_Iron_King_event_4;;      
+            *);;    
+
+        -> .book_the_Iron_King_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Проклятие] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Iron_King_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <- event_curse;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jacques_de_Molay;
+                           char_Climent_V;
+                           char_Philip_the_Fair;
+                           char_Sibyl_Vane;
+                           char_Guillaume_de_Nogaret;;
+                    *);;            
+            *);;      
+    *);;
