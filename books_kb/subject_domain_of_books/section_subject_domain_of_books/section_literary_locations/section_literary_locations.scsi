@@ -824,6 +824,7 @@ country_Scotland
 						country_Great_Britain;;
 				*);;
 		*);;
+
 country_Wales
 	<- literary_location;
 	<- continent_Europe;
@@ -850,3 +851,39 @@ country_Wales
 				*);;
 		*);;
 
+country_Cuba
+	<- literary_location;
+	<- continent_North_America;
+	=> nrel_main_idtf: 
+		[Куба] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Куба)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/country_Cuba.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+country_Spain
+	<- literary_location;
+	<- continent_Europe;
+	=> nrel_main_idtf: 
+		[Испания] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Испания)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/country_Spain.html" (* <-lang_ru;; *);;
+				*);;
+		*);;

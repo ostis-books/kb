@@ -152,4 +152,13 @@ country_England
 <- locale;
     => nrel_main_idtf: [Англия]
 		(* <- lang_ru;; *);;
+
+country_Cuba
+<- locale;
+    => nrel_main_idtf: [Куба]
+		(* <- lang_ru;; *);;
+country_Spain
+<- locale;
+    => nrel_main_idtf: [Испания]
+		(* <- lang_ru;; *);;
 	

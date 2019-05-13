@@ -32,6 +32,7 @@ section_literary_events
 		event_battle;
 		event_arrival_of_guests;
 		event_discomfort;
+
 		event_amputation;
 		event_funeral;
 		event_military_service;
@@ -51,4 +52,56 @@ section_literary_events
 		event_investigation;
 		event_theft;
 		event_intelligence_service;
-		event_pregnancy;;
+		event_pregnancy;
+
+		event_interview;
+		event_meeting_with_a_ghost;
+		event_telepathy;
+		event_give_a_gift;
+		event_scare;
+		event_help;
+		event_social_help;
+		event_failure;
+		event_party;
+		event_military_help;
+
+		event_first_aid;
+		event_humanitarian_aid;
+		event_nightmare;
+		event_apology;
+		event_be_late;
+		event_suffocation;
+		event_explosion;
+		event_disturbance;
+		event_fishing;
+		event_return;
+
+		event_scramble;
+		event_exam;
+		event_journey;
+		event_go_to_sea;
+		event_coronation;
+		event_baptism;
+		event_disaster;
+		event_earthquake;
+		event_tsunami;
+		event_avalanche;
+
+		event_flood;
+		event_tornado;
+		event_abortion;
+		event_terrorist_attack;
+		event_the_death_penalty;
+		event_quartering;
+		event_drowning;
+		event_passion;
+		event_quarrel;
+		event_bullfight;
+
+		event_corrida;
+		event_telegram;
+		event_hanging;
+		event_animal_training;
+		event_concert;
+		event_attachment;
+		event_hike;;

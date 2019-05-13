@@ -1,0 +1,229 @@
+book_Fiesta
+    => nrel_main_idtf:
+        ["И восходит солнце, или Фиеста"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    => nrel_author:
+        person_Ernest_Hemingway;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1926;;
+
+book_Fiesta
+    <= nrel_characters:
+        .book_Fiesta_characters
+        (*
+            -> rrel_main_character:
+                    char_Jake_Barnes;
+                    char_Lady_Brett_Ashley;
+                    char_Robert_Cohn;
+                    char_Mike_Campbell;
+                    char_Bill_Gorton;
+                    char_Pedro_Romero;;
+        *);;
+
+book_Fiesta
+=> nrel_location:
+    .book_a_Farewell_to_Arms_location
+    (*
+        -> country_Spain;;
+    *);;
+
+char_Jake_Barnes
+        => nrel_main_idtf: 
+            [Джейк Барнс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джейк Барнс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jake_Barnes.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Lady_Brett_Ashley
+        => nrel_main_idtf: 
+            [Леди Бретт Эшли] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Леди Бретт Эшли)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Lady_Brett_Ashley.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Robert_Cohn
+        => nrel_main_idtf: 
+            [Роберт Кон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Роберт Кон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Robert_Cohn.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mike_Campbell
+        => nrel_main_idtf: 
+            [Майк Кэмпбелл] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Майк Кэмпбелл)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mike_Campbell.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Bill_Gorton
+        => nrel_main_idtf: 
+            [Билл Гортон] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Билл Гортон)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Bill_Gorton.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Pedro_Romero
+        => nrel_main_idtf: 
+            [Педро Ромеро] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Педро Ромеро)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Pedro_Romero.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Fiesta => nrel_plot: 
+    .book_Fiesta_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "И восходит солнце, или Фиеста"] (* <-lang_ru;; *);;
+        -> .book_Fiesta_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Барнс и Брет] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Fiesta_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_love;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Jake_Barnes;
+                            char_Lady_Brett_Ashley;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Fiesta_event_2;;      
+            *);;
+
+        -> .book_Fiesta_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Бой быков] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Fiesta_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_bullfight;;
+                    <- event_love;;
+                    <- event_quarrel;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Jake_Barnes;
+                            char_Lady_Brett_Ashley;
+                            char_Robert_Cohn;
+                            char_Mike_Campbell;
+                            char_Bill_Gorton;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Fiesta_event_3;;      
+            *);;
+
+        -> .book_Fiesta_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Страсть] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Fiesta_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <- event_acquaintance;;
+                    <- event_love;;
+                    <- event_passion;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Jake_Barnes;
+                            char_Lady_Brett_Ashley;
+                            char_Robert_Cohn;
+                            char_Mike_Campbell;
+                            char_Bill_Gorton;
+                            char_Pedro_Romero;;
+                    *);;             
+                    => nrel_plot_sequence: 
+                        .book_Fiesta_event_4;;  
+            *);; 
+        -> .book_Fiesta_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Брет решает вернуться к Майку ] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Fiesta_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_help;;
+                    <- event_telegram;;
+                    <= nrel_participants:... 
+                    (*
+                        ->  char_Jake_Barnes;
+                            char_Lady_Brett_Ashley;;
+                    *);;               
+            *);; 
+    *);;   
+
