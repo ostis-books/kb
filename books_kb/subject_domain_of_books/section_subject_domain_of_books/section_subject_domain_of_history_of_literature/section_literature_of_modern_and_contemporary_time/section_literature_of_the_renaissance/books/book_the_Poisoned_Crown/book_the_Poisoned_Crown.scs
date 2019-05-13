@@ -13,7 +13,7 @@ book_the_Poisoned_Crown
 
 
 book_the_Poisoned_Crown
-    <= nrel_characters:
+    => nrel_characters:
         .book_the_Poisoned_Crown_characters
         (*
             -> rrel_main_character:

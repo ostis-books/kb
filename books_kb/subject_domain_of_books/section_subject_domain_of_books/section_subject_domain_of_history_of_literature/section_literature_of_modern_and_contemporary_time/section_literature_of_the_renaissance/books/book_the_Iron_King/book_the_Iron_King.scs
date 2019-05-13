@@ -6,14 +6,14 @@ book_the_Iron_King
     <- genre_historical_novel;
     => nrel_author:
         person_Maurice_Druon;
-    <= nrel_original_language:
+    => nrel_original_language:
         lang_french;
     => nrel_publication_date:
         year_1955;;
 
 
 book_the_Iron_King
-    <= nrel_characters:
+    => nrel_characters:
         .book_the_Iron_King_characters
         (*
             -> rrel_main_character:
@@ -287,8 +287,8 @@ book_the_Iron_King => nrel_plot:
                     (* 
                         -> "file://content/content_htmls/events/book_the_Iron_King_event_1.html" (* <-lang_ru;; *);;
                     *);;
-                    <- event_acquaintance;;
-                    <= nrel_participants:... 
+                    -> event_acquaintance;;
+                    => nrel_participants:... 
                     (*
                         -> char_Robert_of_Artois;
                            char_Isabella;

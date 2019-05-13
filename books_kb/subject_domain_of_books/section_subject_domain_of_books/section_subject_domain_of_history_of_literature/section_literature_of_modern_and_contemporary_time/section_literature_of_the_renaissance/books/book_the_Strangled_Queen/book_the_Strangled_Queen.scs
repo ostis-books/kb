@@ -13,7 +13,7 @@ book_the_Strangled_Queen
 
 
 book_the_Strangled_Queen
-    <= nrel_characters:
+    => nrel_characters:
         .book_the_Strangled_Queen_characters
         (*
             -> rrel_main_character:
@@ -42,7 +42,6 @@ book_the_Strangled_Queen
     .book_the_Strangled_Queen_location
     (*
         -> country_England;;
-        -> country_France;;
 
     *);;
 

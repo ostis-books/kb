@@ -13,7 +13,7 @@ book_the_Royal_Succession
 
 
 book_the_Royal_Succession
-    <= nrel_characters:
+    => nrel_characters:
         .book_the_Royal_Succession_characters
         (*
             -> rrel_main_character:

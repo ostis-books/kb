@@ -1,0 +1,4 @@
+book
+    => nrel_main_idtf:
+        [книга]
+            (* <- lang_ru;; *);;

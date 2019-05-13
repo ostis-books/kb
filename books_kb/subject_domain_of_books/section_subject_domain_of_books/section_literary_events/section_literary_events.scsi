@@ -1643,11 +1643,6 @@ event_military_campaign
 				(* 
 		            -> rrel_example: "file://content/content_htmls/event_military_campaign.html" (* <-lang_ru;; *);;
 				*);;
-			<= nrel_using_constants:
-				...
-				(*
-					-> event_moving;;
-				*);;
 		*);;
 
 event_pilgrimage
