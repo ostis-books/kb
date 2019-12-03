@@ -37,7 +37,7 @@ person_Chehov_Anton_Pavlovich
         -> genre_tale;;
         -> genre_play;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -85,7 +85,7 @@ person_Gogol_Nikolai_Vasilievich
         -> genre_prose;;
         -> genre_drama;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -129,7 +129,7 @@ person_Lermontov_Mikhail_Yuryevich
         <- genre_poem;;
         <- poetry;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -176,7 +176,7 @@ person_Pushkin_Aleksandr_Sergeevich
         -> literary_criticism;;
         -> journalism;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
         ->lang_fr;;
@@ -220,7 +220,7 @@ person_Tolstoy_Lev_Nikolaevich
         -> genre_novel;;
         -> genre_drama;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -264,7 +264,7 @@ person_Turgenev_Ivan_Sergeevich
         -> genre_drama;;
         -> elegy;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -307,7 +307,7 @@ person_Maxim_Gorky
         -> genre_tale;;
         -> genre_novel;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -355,7 +355,7 @@ person_Krylov_Ivan_Andreyevich
         -> poetry;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -393,7 +393,7 @@ person_Aleksandr_Ivanovich_Kuprin
         -> genre_feuilleton;;
         -> speculative_fiction;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -432,7 +432,7 @@ person_Nekrasov_Nikolay_Alexeyevich
         -> journalism;;
         -> poetry;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -469,7 +469,7 @@ person_Bulgakov_Mikhail_Afanasyevich
         -> genre_tale;;
         -> genre_play;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -510,7 +510,7 @@ person_Pasternak_Boris_Leonidovich
         -> genre_novel;;
         -> futurism;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
         ->lang_de;;
@@ -550,7 +550,7 @@ person_Bunin_Ivan_Alekseevich
         -> genre_narrative;;
         -> genre_tale;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -605,7 +605,7 @@ person_Platonov_Andrey
         -> genre_play;;
         -> journalism;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -657,7 +657,7 @@ person_Nabokov_Vladimir_Vladimirovich
         -> genre_prose;;
         -> genre_biography;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
         ->lang_fr;;
@@ -697,7 +697,7 @@ person_Sholokhov_Mikhail_Aleksandrovich
         -> genre_feature_article;;
         -> genre_feuilleton;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -740,7 +740,7 @@ person_Solzhenitsyn_Aleksandr_Isayevich
         -> genre_essay;;
         -> genre_miniature;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -780,7 +780,7 @@ person_Saltykov_Shchedrin_Mikhail_Yevgrafovich
         -> genre_narrative;;
         -> genre_fairy_tale;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -821,7 +821,7 @@ person_Karamzin_Nikolay_Mikhailovich
         -> poetry;;
         -> genre_ballad;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -860,7 +860,7 @@ person_Mayakovsky_Vladimir_Vladimirovich
         -> genre_play;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -901,7 +901,7 @@ person_Goncharov_Ivan_Aleksandrovich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -946,7 +946,7 @@ person_Akhmatova_Anna
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -986,7 +986,7 @@ person_Astafyev_Viktor_Petrovich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1023,7 +1023,7 @@ person_Yesenin_Sergei_Alexandrovich
         -> genre_poem;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1060,7 +1060,7 @@ person_Ostrovsky_Alexander_Nikolayevich
         -> genre_comedy;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1105,7 +1105,7 @@ person_Chukovsky_Korney_Ivanovich
         -> poetry;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1145,7 +1145,7 @@ person_Paustovsky_Konstantin_Georgiyevich
         -> genre_feature_article;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1184,7 +1184,7 @@ person_Korolenko_Vladimir_Galaktionovich
         -> genre_essay;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1227,7 +1227,7 @@ person_Leskov_Nikolai
         -> feature_article;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -1275,7 +1275,7 @@ person_Bryusov_Valery
         -> genre_tale;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
         -> lang_fr;;
@@ -1318,7 +1318,7 @@ person_Fet_Afanasy
         -> genre_elegy;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1358,7 +1358,7 @@ person_Tyutchev_Fyodor_Ivanovich
         
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1397,7 +1397,7 @@ person_Kuzmin_Mikhail_Sergeyevich
         -> genre_narrative;;
         -> genre_novel;;
     *);
-  <= nrel_languages_of_work:...
+  => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1437,7 +1437,7 @@ person_Herzen_Aleksandr_Ivanovich
         -> genre_novel;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1486,7 +1486,7 @@ person_Dostoevsky_Fyodor_Mikhailovich
         -> genre_novel;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1529,7 +1529,7 @@ person_Blok_Alexander_Alexandrovich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1569,7 +1569,7 @@ person_Tsvetaeva_Marina_Ivanovna
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1612,7 +1612,7 @@ person_Gippius_Zinaida_Nikolayevna
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1657,7 +1657,7 @@ person_Griboyedov_Alexander_Sergeyevich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1702,7 +1702,7 @@ person_Mandelstam_Osip_Emilyevich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
@@ -1746,7 +1746,7 @@ person_Mamin_Sibiryak_Dmitry_Narkisovich
 
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         -> lang_ru;;
     *);;
