@@ -1,19 +1,19 @@
-sc_agent_of_finding_similar_books
+sc_agent_for_finding_similar_books
 => nrel_main_idtf:
-	[sc-агент нахождения схожих книг] 
-		(* <- lang_ru;; *);
+	[sc-агент поиска похожих книг] 
+	(* <- lang_ru;; *);
 	[sc-agent of finding similar books] 
-		(* <- lang_en;; *);
+	(* <- lang_en;; *);
 
 <- abstract_sc_agent;
 
 => nrel_primary_initiation_condition: 
-		(sc_event_add_output_arc => question_initiated);
+	(sc_event_add_output_arc => question_initiated);
 
 => nrel_initiation_condition_and_result: 
-		(..sc_agent_of_finding_similar_books_initiation => ..sc_agent_of_finding_similar_books_result);
+	(..sc_agent_for_finding_similar_books_condition => ..sc_agent_for_finding_similar_books_result);
 
-<= nrel_sc_agent_key_sc_elements:
+<= nrel_sc_agent_key_sc_elements: 
 	{
 	question_initiated;
 	question;
@@ -21,17 +21,18 @@ sc_agent_of_finding_similar_books
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_finding_similar_books
+	.platform_independent_realization_of_sc_agent_for_finding_similar_books
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
 		{
-		agent_of_finding_similar_books
+		agent_for_finding_similar_books	
 		};;
-	-> sc_agent_of_finding_similar_books_scp (* <- active_sc_agent;; *);;
+	-> sc_agent_for_finding_similar_books_scp   
+		(* <- active_sc_agent;; *);;
 	*);;
 
-..sc_agent_of_finding_similar_books_initiation
+..sc_agent_for_finding_similar_books_condition
 = [*
 	question_finding_similar_books _-> .._question;;
 	question_initiated _-> .._question;;
@@ -39,7 +40,7 @@ sc_agent_of_finding_similar_books
 	.._question _-> .._parameter;;
 *];;
 
-..sc_agent_of_finding_similar_books_result
+..sc_agent_for_finding_similar_books_result
 = [*
 	question_finding_similar_books _-> .._question;;
 	question_finished _-> .._question;;
