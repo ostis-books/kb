@@ -43,6 +43,22 @@ section_foreign_authors
 	person_Walter_Scott;
 	person_George_Gordon_Byron;
 	person_Victor_Hugo;
-	person_Jerome_David_Salinger;;
+	person_Jerome_David_Salinger;
+
+	person_Irvine_Welsh;
+	person_James_Joyce;
+	person_Jack_London;
+	person_Stanislaw_Lem;
+	person_Lewis_Carroll;
+	person_Astrid_Lindgren;
+	person_William_Shakespeare;
+	person_Howard_Phillips_Lovecraft;
+	person_Miguel_de_Cervantes_Saavedra;
+	person_Edgar_Allan_Poe;
+	person_Herbert_George_Wells;
+	person_Voltaire;
+	person_Virginia_Woolf;
+	person_Hans_Christian_Andersen;
+	person_Joseph_Rudyard_Kipling;;
 
 section_foreign_authors = [*^"file://section_foreign_authors.scsi"*];;
