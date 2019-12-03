@@ -850,43 +850,6 @@ country_Wales
 				*);;
 		*);;
 
-
-
-
-
-
-
-
-
-
-
-country_Belarus
-	<- literary_location;
-	<- continent_Europe;
-	=> nrel_main_idtf: 
-		[Беларусь] 
-			(* <-lang_ru;; *);
-
-	<- rrel_key_sc_element:
-		...
-		(*
-			<- definition;;
-			=> nrel_main_idtf: [Пояс.(Беларусь)] (* <-lang_ru;; *);;
-		    <= nrel_sc_text_translation:
-				...
-				(* 
-		            -> rrel_example: "file://content/content_htmls/country_Belarus.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_using_constants:
-				...
-				(*
-					-> country;
-					continent_Europe;;
-				*);;
-		*);;
-
-
-
 country_Czechia
 	<- literary_location;
 	<- continent_Europe;
@@ -1411,11 +1374,6 @@ Siberia
 		*);;
 
 
-
-
-
-
-
 Rome
 	<- literary_location;
 	<- continent_Europe;
@@ -1443,8 +1401,6 @@ Rome
 		*);;
 
 
-
-
 country_Iran
 	<- literary_location;
 	<- continent_Asia;
@@ -1469,8 +1425,6 @@ country_Iran
 					continent_Asia;;
 				*);;
 		*);;
-
-
 
 
 country_India
@@ -1834,9 +1788,6 @@ Kazan
 		*);;
 
 
-
-
-
 Grodno
 	<- literary_location;
 	<- continent_Europe;
@@ -2057,10 +2008,6 @@ Caracas
 		*);;
 
 
-
-
-
-
 Zagreb
 	<- literary_location;
 	<- continent_Europe;
@@ -2086,8 +2033,6 @@ Zagreb
 						rrel_capital;;
 				*);;
 		*);;
-
-
 
 Oslo
 	<- literary_location;
@@ -2230,9 +2175,6 @@ Omaha
 		*);;
 
 
-
-
-
 country_Netherlands
 	<- literary_location;
 	<- continent_Europe;
@@ -2341,6 +2283,3 @@ country_Denmark
 					continent_Europe;;
 				*);;
 		*);;
-
-
-

@@ -32,7 +32,7 @@ scenario
         *);;
          <= nrel_using_constants:...
         (*
-            -> play;;
+            -> genre_play;;
         *);;
     *);;
 
