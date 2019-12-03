@@ -303,7 +303,7 @@ book_Three_comrades => nrel_plot:
                     (*
                         -> char_Robert_Locamp;
                            char_Patricia_Holman;
-                           char_Otto_Kester;
+                           char_Otto_Kester;;
                     *);;
             *);;
     *);;
