@@ -61,6 +61,26 @@ genre_epistle
 => nrel_main_idtf: [эпистол](*<-lang_ru;;*);;
 
 
+lang_by
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Белорусский язык](*<-lang_ru;;*);;
+
+lang_pl
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Польский язык](*<-lang_ru;;*);;
+
+lang_sw
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Шведский язык](*<-lang_ru;;*);;
+
+lang_dn
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Датский язык](*<-lang_ru;;*);;
+
+lang_fr
+<- sc_node_not_relation;
+=> nrel_main_idtf: [Французский язык](*<-lang_ru;;*);;
+
 lang_de
 <- sc_node_not_relation;
 => nrel_main_idtf: [Немецкий язык](*<-lang_ru;;*);;

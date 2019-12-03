@@ -13,6 +13,11 @@ subject_domain_of_authors_of_literature
 			section_foreign_authors;;
 		*);
 		section_foreign_authors
+		(*
+		=> nrel_section_base_order: 
+			section_russian_authors;;
+		*);
+		section_russian_authors
 	};;
 
 subject_domain_of_authors_of_literature =  [*^"file://section_authors_of_literature.scsi"*];;
