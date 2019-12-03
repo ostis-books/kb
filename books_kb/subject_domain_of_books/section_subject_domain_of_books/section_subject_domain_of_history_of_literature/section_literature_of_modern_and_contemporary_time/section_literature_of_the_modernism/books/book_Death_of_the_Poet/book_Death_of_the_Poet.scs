@@ -12,6 +12,15 @@ book_Death_of_the_Poet
 => nrel_publication_date:
     year_1837;;
 
+
+book_Death_of_the_Poet
+=> nrel_location:
+.book_Death_of_the_Poet
+(*
+-> Petesburg;;
+-> country_Russian_empire;;
+*);;
+
 book_Death_of_the_Poet
 <= nrel_characters:
     .book_Death_of_the_Poet_characters

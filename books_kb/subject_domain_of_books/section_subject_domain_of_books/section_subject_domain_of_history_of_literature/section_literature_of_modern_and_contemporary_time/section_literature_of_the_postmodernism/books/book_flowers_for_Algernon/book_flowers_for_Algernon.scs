@@ -13,6 +13,13 @@ book_flowers_for_Algernon
         year_1966;;
 
 book_flowers_for_Algernon
+=> nrel_location:
+.book_flowers_for_Algernon
+(*
+-> country_USA;;
+*);;
+
+book_flowers_for_Algernon
     <= nrel_characters:
         .book_flowers_for_Algernon_characters
         (*

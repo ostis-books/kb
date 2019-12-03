@@ -33,7 +33,7 @@ person_Yanka_Kupala
         -> poetry;;
         -> play;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -75,7 +75,7 @@ person_Yakub_Kolas
         -> poetry;;
         -> play;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -118,7 +118,7 @@ person_Maksim_Tank
         -> poetry;;
         -> genre_poem;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -157,7 +157,7 @@ person_Maksim_Bogdanovich
         -> poetry;;
         -> genre_poem;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -197,7 +197,7 @@ person_Ryhor_Baradulin
         -> genre_poem;;
 	-> genre_essay;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -236,7 +236,7 @@ person_Vincent_Dunin_Marcinkievich
         -> play;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -274,7 +274,7 @@ person_Uladzimir_Karatkievich
         -> genre_historical_novel;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -315,7 +315,7 @@ person_Vasil_Bykov
 	-> journalism;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -354,7 +354,7 @@ person_Maksim_Harecki
 	-> genre_prose;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -365,6 +365,46 @@ person_Ivan_Melezh
     <- writer;
     <- prosaist;
     <- publicist;
+<<<<<<< 3dee66a8bee508c8c64a13ac0335cbf8e7b93403
+=======
+    
+    => nrel_main_idtf:
+            [Некрасов Николай Алексеевич] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_28_11_1821
+            (*
+                => nrel_main_idtf:
+                [28 ноября(10 декабря) 1821](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_27_12_1877
+            (*
+                => nrel_main_idtf:
+                [27 декабря 1877 (8 января 1878) ](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_narrative;;
+        -> genre_poem;;
+        -> genre_tale;;
+        -> journalism;;
+        -> poetry;;
+    *);
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Bulgakov_Mikhail_Afanasyevich
+<- person;
+    <- male;
+    <- cocncept_writer;
+>>>>>>> SearchByLanguages && authors, locations
     <- playwright;
     <- specialist_in_literature;
 
@@ -395,7 +435,7 @@ person_Ivan_Melezh
 	-> genre_prose;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -435,7 +475,7 @@ person_Tetka
 	-> genre_prose;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -477,7 +517,7 @@ person_Ales_Adamovich
 	-> journalism;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -512,7 +552,7 @@ person_Svetlana_Alexievich
 	-> genre_docudrama;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_ru;;
     *);;
@@ -556,7 +596,7 @@ person_Janka_Maur
         -> genre_autobiography;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -598,7 +638,7 @@ person_Ivan_Shamiakin
 	-> play;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -641,7 +681,7 @@ person_Kandrat_Krapiva
 	-> play;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
     *);;
@@ -686,7 +726,7 @@ person_Francishak_Bahushevich
 	-> scientific_work;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_by;;
         ->lang_pl;;
@@ -724,9 +764,627 @@ person_Francisk_Skorina
 	-> genre_novel;;
 	-> poetry;;
 	-> religious_text;;
+     -> genre_ballad;;
+    *);
+    
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Mayakovsky_Vladimir_Vladimirovich
+    <- person;
+    <- male;
+    <- writer;
+    <- publicist;
+    <- playwright;
+
+     => nrel_main_idtf:
+            [Маяковский Владимир Владимирович]  (* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+          date_07_07_1893
+            (*
+                => nrel_main_idtf:
+                [7(19) июля 1893](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_14_04_1930
+            (*
+                => nrel_main_idtf:
+                [14 апреля 1930](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> poetry;;
+        -> genre_poem;;
+        -> genre_play;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Goncharov_Ivan_Aleksandrovich
+    <- person;
+    <- male;
+    <- writer;
+    <- publicist;
+    <- prosaist;
+    <- literary_critic;
+
+     => nrel_main_idtf:
+            [Гончаров Иван Александрович]  (* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+          date_06_06_1812
+            (*
+                => nrel_main_idtf:
+                [6(18) июня 1812](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_14_04_1930
+            (*
+                => nrel_main_idtf:
+                [14 апреля 1930](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_novel;;
+        -> genre_feature_article;;
+        -> genre_article;;
 
     *);
-    <= nrel_languages_of_work:...
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Akhmatova_Anna
+    <- person;
+    <- female;
+    <- writer;
+    <- poet;
+    <- translator;
+    <- specialist_in_literature;
+    <- literary_critic;
+
+     => nrel_main_idtf:
+            [Ахматова Анна]  (* <- lang_ru;;*);
+     
+     =>nrel_idtf:
+            [Горенко Анна Андреевна](* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+          date_11_06_1889
+            (*
+                => nrel_main_idtf:
+                [11(23) июня 1889](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_05_03_1966
+            (*
+                => nrel_main_idtf:
+                [5 марта 1966](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> poetry;;
+        -> genre_poem;;
+        -> genre_prose;;
+
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Astafyev_Viktor_Petrovich
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- essayist;
+    <- playwright;
+
+     => nrel_main_idtf:
+            [Астафьев Виктор Петрович]  (* <- lang_ru;;*);
+     
+    => nrel_date_of_birth:
+          date_01_05_1924
+            (*
+                => nrel_main_idtf:
+                [1 мая 1924 ](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_29_11_2001
+            (*
+                => nrel_main_idtf:
+                [29 ноября 2001](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_novel;;
+        -> genre_tale;;
+
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Yesenin_Sergei_Alexandrovich
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+
+     => nrel_main_idtf:
+            [Есенин Сергей Александрович]  (* <- lang_ru;;*);
+     
+    => nrel_date_of_birth:
+          date_21_09_1895
+            (*
+                => nrel_main_idtf:
+                [21 сентября (3 октября) 1895 ](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_28_12_1925
+            (*
+                => nrel_main_idtf:
+                [28 декабря 1925](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> poetry;;
+        -> genre_poem;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Ostrovsky_Alexander_Nikolayevich
+    <- person;
+    <- male;
+    <- writer;
+    <- playwright;
+
+     => nrel_main_idtf:
+            [Островский Александр Николаевич]  (* <- lang_ru;;*);
+     
+    => nrel_date_of_birth:
+          date_31_03_1823
+            (*
+                => nrel_main_idtf:
+                [31 марта(12 апреля) 1823](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_02_06_1886
+            (*
+                => nrel_main_idtf:
+                [2(14) июня 1886](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_play;;
+        -> genre_comedy;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Chukovsky_Korney_Ivanovich
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- prosaist;
+    <- publicist;
+    <- translator;
+    <- journalist;
+    <- literary_critic;
+
+     => nrel_main_idtf:
+            [Чуковский Корней Иванович]  (* <- lang_ru;;*);
+
+     => nrel_idtf:
+            [Корнейчуков Николай]  (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+          date_19_03_1882
+            (*
+                => nrel_main_idtf:
+                [19(31) марта 1882](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_28_10_1969
+            (*
+                => nrel_main_idtf:
+                [28 октября 1969](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_fairy_tale;;
+        -> genre_tale;;
+        -> poetry;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Paustovsky_Konstantin_Georgiyevich
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+
+     => nrel_main_idtf:
+            [Паустовский Константин Георгиевич]  (* <- lang_ru;;*);
+
+    => nrel_date_of_birth:
+          date_31_05_1892
+            (*
+                => nrel_main_idtf:
+                [31 мая 1892](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+    => nrel_place_of_death:
+            country_Russia;
+    => nrel_date_of_death:
+            date_14_07_1968
+            (*
+                => nrel_main_idtf:
+                [14 июля 1968](* <- lang_ru;;*);;
+            *);
+    <= nrel_genre_work:...
+    (*
+        //TODO: уточнить жанры
+        -> genre_novel;;
+        -> genre_tale;;
+        -> genre_narrative;;
+        -> genre_fairy_tale;;
+        -> genre_feature_article;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Korolenko_Vladimir_Galaktionovich
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- journalist;
+    <- publicist;
+
+   => nrel_main_idtf:
+            [Короленко Владимир Галактионович]  (* <- lang_ru;;*);
+        
+   => nrel_date_of_birth:
+          date_15_07_1853
+            (*
+                => nrel_main_idtf:
+                [15 июля 1853](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_25_12_1921
+            (*
+                => nrel_main_idtf:
+                [25 декабря 1921](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Ukraine;
+    <= nrel_genre_work:...
+    (*
+        -> genre_tale;;
+        -> genre_essay;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Leskov_Nikolai
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- publicist;
+
+   => nrel_main_idtf:
+            [Лесков Николай Семёнович]  (* <- lang_ru;;*);
+   => nrel_idtf:
+            [М. Стебницкий]  (* <- lang_ru;;*);
+             
+   => nrel_date_of_birth:
+          date_16_02_1831
+            (*
+                => nrel_main_idtf:
+                [16 февраля 1831](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_5_03_1895
+            (*
+                => nrel_main_idtf:
+                [5 марта 1895](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_narrative;;
+        -> genre_novel;;
+        -> genre_tale;;
+        -> feature_article;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        ->lang_ru;;
+    *);;
+
+person_Bryusov_Valery
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- publicist;
+    <- translator;
+    <- literary_critic;
+    <- playwright;
+    <- specialist_in_literature;
+
+
+   => nrel_main_idtf:
+            [Брюсов Валерий Яковлевич]  (* <- lang_ru;;*);
+   => nrel_idtf:
+            [Валерий Маслов]  (* <- lang_ru;;*);
+   => nrel_idtf:
+            [Аврелий, Бакулин, Нелли]  (* <- lang_ru;;*);
+             
+   => nrel_date_of_birth:
+          date_1_12_1873
+            (*
+                => nrel_main_idtf:
+                [1 декабря 1873](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_9_10_1924
+            (*
+                => nrel_main_idtf:
+                [9 октября 1924](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_prose;;
+        -> genre_tale;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+        -> lang_fr;;
+    *);;
+
+person_Fet_Afanasy
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- translator;
+    
+   => nrel_main_idtf:
+            [Фет Афанасий]  (* <- lang_ru;;*);
+   => nrel_idtf:
+            [Афанасий Афанасьевич Шеншин]  (* <- lang_ru;;*);
+       
+   => nrel_date_of_birth:
+          date_23_11_1820
+            (*
+                => nrel_main_idtf:
+                [23 ноября 1820](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_21_11_1892
+            (*
+                => nrel_main_idtf:
+                [21 ноября  1892](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (* 
+        -> genre_poetry;;
+        -> genre_epigram;;
+        -> genre_elegy;;
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;
+
+person_Tyutchev_Fyodor_Ivanovich
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- translator;
+    <- publicist;
+    
+   => nrel_main_idtf:
+            [Тютчев Федор Иванович]  (* <- lang_ru;;*);
+   
+   => nrel_date_of_birth:
+          date_23_11_1803
+            (*
+                => nrel_main_idtf:
+                [23 ноября 1803](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_15_07_1873
+            (*
+                => nrel_main_idtf:
+                [15 июля 1873](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (* 
+        -> genre_poetry;;
+        
+    *);
+
+    => nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;
+
+person_Kuzmin_Mikhail_Sergeyevich
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- translator;
+    
+   => nrel_main_idtf:
+            [Кузмин Михаил Алексеевич]  (* <- lang_ru;;*);
+   
+   => nrel_date_of_birth:
+          date_6_10_1872
+            (*
+                => nrel_main_idtf:
+                [6 октября 1872](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_1_03_1936
+            (*
+                => nrel_main_idtf:
+                [1 марта 1936](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (* 
+        -> genre_prose;;
+        -> genre_narrative;;
+        -> genre_novel;;
+    *);
+  => nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;
+person_Herzen_Aleksandr_Ivanovich
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- publicist;
+    <- philosopher;
+    
+   => nrel_main_idtf:
+            [Герцен Александр Иванович]  (* <- lang_ru;;*);
+   
+   => nrel_date_of_birth:
+          date_25_03_1806
+            (*
+                => nrel_main_idtf:
+                [25 марта 1806](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_9_01_1870
+            (*
+                => nrel_main_idtf:
+                [9 января 1870](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_France;
+
+    <= nrel_genre_work:...
+    (* 
+        -> genre_tale;;
+        -> genre_narrative;;
+        -> genre_novel;;
+    *);
+
+    => nrel_languages_of_work:...
+>>>>>>> SearchByLanguages && authors, locations
     (*
         ->lang_by;;
     *);;

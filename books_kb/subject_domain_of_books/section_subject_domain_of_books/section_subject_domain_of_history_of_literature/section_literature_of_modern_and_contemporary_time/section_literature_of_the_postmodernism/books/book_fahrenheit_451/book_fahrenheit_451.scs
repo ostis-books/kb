@@ -15,6 +15,14 @@ book_fahrenheit_451
     => nrel_publication_date:
         year_1953;;
 
+
+book_fahrenheit_451
+=> nrel_location:
+.book_fahrenheit_451
+(*
+-> country_USA;;
+*);;
+
 book_fahrenheit_451
     <= nrel_characters:
         .book_fahrenheit_451_characters

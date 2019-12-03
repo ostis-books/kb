@@ -3,6 +3,12 @@ locale
 	[место действий]
 		(* <- lang_ru;; *);;
 
+Baskerville_Hall
+<- locale;
+=> nrel_main_idtf: 
+		[Баскервиль-холл] 
+			(* <-lang_ru;; *);;
+
 Moscow
 <- locale;
     => nrel_main_idtf: [Москва]
