@@ -20,6 +20,11 @@ section_domestic_authors
 	person_Ivan_Shamiakin;
 	person_Kandrat_Krapiva;
 	person_Francishak_Bahushevich;
-	person_Francisk_Skorina;;
+	person_Francisk_Skorina;
+	person_Yan_Chechot;
+	person_Adam_Mitskevich;
+	person_Ales_Garun;
+	person_Yanka_Zhurba;
+	person_Andrei_Zazulya;;
 
 section_domestic_authors = [*^"file://section_domestic_authors.scsi"*];;
