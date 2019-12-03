@@ -179,7 +179,7 @@ Grodno
     => nrel_main_idtf: [Гродно]
 		(* <- lang_ru;; *);;
 
-Berlin;
+Berlin
 <- locale;
     => nrel_main_idtf: [Берлин]
 		(* <- lang_ru;; *);;
@@ -234,7 +234,7 @@ Sofia
 		(* <- lang_ru;; *);;
 
 
-Ryazan;
+Ryazan
 <- locale;
     => nrel_main_idtf: [Рязань]
 		(* <- lang_ru;; *);;
