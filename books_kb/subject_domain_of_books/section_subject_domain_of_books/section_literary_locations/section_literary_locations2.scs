@@ -1,0 +1,64 @@
+section_literary_locations =  [*^"file://section_literary_locations.scsi"*];;
+section_literary_locations
+	-> rrel_key_sc_element:	
+		Rome;
+		Minsk;
+		Mogilev;
+		Gomel;
+		Brest;
+		Vitebsk;
+		Grodno;
+		Beijing;
+		Havana;
+		Amsterdam;
+
+		Paris;
+		Yekaterinburg;
+		Nizhny_Novgorod;
+		Kazan;
+		Berlin;
+		Sofia;
+		Ryazan;
+		Tokyo;
+		Caracas;
+		Oslo;
+
+		Zagreb;
+		Venice;
+		Rio_de_Janeiro;
+		Vienna;
+		country_Austria;
+		Siberia;
+		Omaha;
+		country_Netherlands;
+		country_Denmark;
+		country_India;
+		country_USSR;
+		country_GDL;
+		country_Czechia;
+
+
+		country_Panama;
+		country_Syria;
+		country_Afghanistan;
+		country_Monaco;
+		country_Iran;
+		country_Vatican;
+		country_Venezuela;
+		country_Salvador;
+		country_Estonia;
+		country_Jamaica;
+
+
+		country_Sweden;
+		country_Turkey;
+		country_Croatia;
+		country_Norway;
+		country_Cuba;
+		country_China;
+		country_Spain;
+		country_Italy;
+		country_Bulgaria;
+		country_Belarus;;
+		
+		
