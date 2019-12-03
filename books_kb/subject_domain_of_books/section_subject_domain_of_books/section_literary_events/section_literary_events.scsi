@@ -1167,3 +1167,815 @@ event_theft
 					->  lit_person;;
 				*);;
 		*);;
+
+event_date
+	<- literary_event;
+	=> nrel_main_idtf:
+		[свидание] 
+			(* <-lang_ru;; *);	
+	=> nrel_idtf:
+		[встреча] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(свидание)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_date.html" (* <-lang_ru;; *);;
+				*);;
+
+		*);;
+
+event_labour
+	<- literary_event;
+	=> nrel_main_idtf:
+		[роды] 
+			(* <-lang_ru;; *);	
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(роды)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_labour.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_pregnancy;
+					  lit_person;;
+				*);;
+		*);;
+
+event_divorce
+	<- literary_event;
+	=> nrel_main_idtf:
+		[развод] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[расторжение брака] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(развод)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_divorce.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_pregnancy;
+					    	lit_person;;
+				*);;
+		*);;
+
+event_disease
+	<- literary_event;
+	=> nrel_main_idtf:
+		[болезнь] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[недуг] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[заболевание] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(болезнь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_disease.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_ball
+	<- literary_event;
+	=> nrel_main_idtf:
+		[бал] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[маскарад] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[банкет] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[пир] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(бал)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_ball.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_dispute
+	<- literary_event;
+	=> nrel_main_idtf:
+		[спор] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[дискуссия] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[диспут] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[препирательство] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(спор)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_dispute.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_witchcraft
+	<- literary_event;
+	=> nrel_main_idtf:
+		[колдовство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[магия] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[чародейство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[волшебство] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(колдовство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_witchcraft.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_court
+	<- literary_event;
+	=> nrel_main_idtf:
+		[суд] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[разбирательство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[слушание] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[рассмотрение] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(суд)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_court.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_fight
+	<- literary_event;
+	=> nrel_main_idtf:
+		[драка] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[потасовка] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[мордобой] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[разборка] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(драка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_fight.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_chase
+	<- literary_event;
+	=> nrel_main_idtf:
+		[погоня] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[преследование] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(погоня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_chase.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_go_nut
+	<- literary_event;
+	=> nrel_main_idtf:
+		[сойти с ума] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[свихнуться] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[потерять рассудок] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сойти с ума)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_go_nut.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  rrel_patient;;
+				*);;
+		*);;
+
+event_bribe
+	<- literary_event;
+	=> nrel_main_idtf:
+		[взятка] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[подкуп] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(погоня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_bribe.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_arrest
+	<- literary_event;
+	=> nrel_main_idtf:
+		[арест] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[взятие под стражу] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[задержание] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(арест)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_arrest.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_investigation;;
+				*);;
+		*);;
+
+event_wanted
+	<- literary_event;
+	=> nrel_main_idtf:
+		[розыск] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[разыскивание] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[поиск] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(розыск)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_wanted.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_attack
+	<- literary_event;
+	=> nrel_main_idtf:
+		[нападение] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[наступление] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[штурм] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(нападение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_attack.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_violence;;
+				*);;
+		*);;
+
+event_performance
+	<- literary_event;
+	=> nrel_main_idtf:
+		[публичное выступление ] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[выступление] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(публичное выступление )] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_performance.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_concert
+	<- literary_event;
+	=> nrel_main_idtf:
+		[концерт] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[представление] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[выступление] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(концерт)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_concert.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_performance;;
+				*);;
+		*);;
+
+event_exposure
+	<- literary_event;
+	=> nrel_main_idtf:
+		[разоблачение] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[обличение] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(погоня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_exposure.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+
+event_scandal
+	<- literary_event;
+	=> nrel_main_idtf:
+		[скандал] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[дебош] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(скандал)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_scandal.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_sleep
+	<- literary_event;
+	=> nrel_main_idtf:
+		[сон] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[отдых] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сон)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_sleep.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_execution
+	<- literary_event;
+	=> nrel_main_idtf:
+		[казнь] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[наказание] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(казнь)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_execution.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_fire
+	<- literary_event;
+	=> nrel_main_idtf:
+		[пожар] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(пожар)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_fire.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_escape
+	<- literary_event;
+	=> nrel_main_idtf:
+		[побег] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[бегство] 
+			(* <-lang_ru;; *);
+
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(побег)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_escape.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_journey
+	<- literary_event;
+	=> nrel_main_idtf:
+		[путешествие] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[поездка] 
+			(* <-lang_ru;; *);
+		=> nrel_idtf:
+		[странствие] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(путешествие)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_journey.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_rescue
+	<- literary_event;
+	=> nrel_main_idtf:
+		[спасение] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(спасение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_rescue.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_danger;;
+				*);;
+		*);;
+
+event_danger
+	<- literary_event;
+	=> nrel_main_idtf:
+		[опасность] 
+			(* <-lang_ru;; *);
+		=> nrel_idtf:
+		[угроза] 
+			(* <-lang_ru;; *);
+		=> nrel_idtf:
+		[риск] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(опасность)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_danger.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_unexpected
+	<- literary_event;
+	=> nrel_main_idtf:
+		[неожиданность] 
+			(* <-lang_ru;; *);
+		=> nrel_idtf:
+		[сюрприз] 
+			(* <-lang_ru;; *);
+		=> nrel_idtf:
+		[внезапность] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(неожиданность)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_unexpected.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+event_match
+	<- literary_event;
+	=> nrel_main_idtf:
+		[матч] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[игра] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[спортивное соревнование] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(матч)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_match.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+event_mobilization
+	<- literary_event;
+	=> nrel_main_idtf:
+		[мобилизация] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[призыв] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(мобилизация)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_mobilization.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  event_military_service;
+						event_war;
+					        lit_person;;
+				*);;
+		*);;
+
+
+event_revenge
+	<- literary_event;
+	=> nrel_main_idtf:
+		[месть] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[вендетта] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[возмездие] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(месть)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_revenge.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  lit_person;;
+				*);;
+		*);;
+
+
