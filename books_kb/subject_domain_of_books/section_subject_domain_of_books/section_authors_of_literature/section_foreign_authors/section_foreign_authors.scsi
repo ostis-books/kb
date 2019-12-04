@@ -2226,5 +2226,41 @@ person_Joseph_Rudyard_Kipling
         ->lang_en;;
     *);;
 
+person_Emily_Jane_Bronte
+    <- person;
+    <- female;
+    <- writer;
+    <- prosaist;
+    <- poet;
+
+    => nrel_main_idtf:
+            [Эмили Джейн Бронте] (* <- lang_ru;;*);
+    => nrel_date_of_birth:
+            date_30_07_1818
+            (*
+                => nrel_main_idtf:
+                [30 июля 1818](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Great_Britain;
+    => nrel_date_of_death:
+            date_19_12_1848
+            (*
+                => nrel_main_idtf:
+                [19 декабря 1848](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_Great_Britain;
+
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+    *);
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
 
 
