@@ -134,4 +134,16 @@ section_literary_events
 		event_animal_training;
 		event_concert;
 		event_attachment;
-		event_hike;;
+		event_hike;
+
+		event_deal;
+		event_marriage_proposal;
+		event_doubt;
+		event_revelation;
+		event_joke;
+		event_meeting;
+		event_swap;
+		event_epileptic_seizure;
+		event_walk;
+		event_present;
+		event_request;;

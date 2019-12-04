@@ -3172,3 +3172,283 @@ event_revenge
 					->  lit_person;;
 				*);;
 		*);;
+
+event_deal
+	<- literary_event;
+	=> nrel_age_limit: [12];
+	=> nrel_main_idtf: 
+		[сделка] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[соглашение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сделка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_deal.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_marriage_proposal
+	<- literary_event;
+	=> nrel_age_limit: [12];
+	=> nrel_main_idtf: 
+		[сватовство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[предложение руки и сердца] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сватовство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_marriage_proposal.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_doubt
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[сомнение] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[подозрение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сомнение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_doubt.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_revelation
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[признание] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[откровение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(признание)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_revelation.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_joke
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[издевательство] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[шутка] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(издевательство)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_joke.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_meeting
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[встреча] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(встреча)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_meeting.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+
+event_swap
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[обмен] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(обмен)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_swap.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_epileptic_seizure
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[эпилептический припадок] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(эпилептический припадок)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_epileptic_seizure.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_walk
+	<- literary_event;
+	=> nrel_age_limit: [10];
+	=> nrel_main_idtf: 
+		[прогулка] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(прогулка)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_walk.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_present
+<- literary_event;
+	=> nrel_age_limit: [3];
+	=> nrel_main_idtf: 
+		[подарок] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(подарок)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_present.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
+
+event_request
+<- literary_event;
+	=> nrel_age_limit: [3];
+	=> nrel_main_idtf: 
+		[просьба] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(просьба)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/event_request.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> lit_person;;
+				*);;
+		*);;
