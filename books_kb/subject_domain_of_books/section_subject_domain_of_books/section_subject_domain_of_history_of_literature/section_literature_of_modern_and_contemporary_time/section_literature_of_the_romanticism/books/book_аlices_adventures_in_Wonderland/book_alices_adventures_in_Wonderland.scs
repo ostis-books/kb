@@ -1,0 +1,417 @@
+book_alices_adventures_in_Wonderland
+	=> nrel_main_idtf:
+        ["Алиса в Стране Чудес"]
+            (* <- lang_ru;; *); 
+    <- book;
+    <- genre_fairy_tale;
+    => nrel_author:
+        person_Lewis_Carroll;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1867;;
+
+book_alices_adventures_in_Wonderland
+	=> nrel_characters:
+        .book_alices_adventures_in_Wonderland_characters
+        (*
+            -> rrel_main_character:
+                    char_Alice;;
+            -> char_March_Hare;
+            		char_Blue_Caterpillar;
+                    char_Cheshire_Cat;
+                    char_Hatter;
+                    char_Red_Queen;
+                    char_Duchess;
+            		char_Sonya;
+            		char_Red_Jack;
+            		char_White_Rabbit;
+            		char_Mouse;;
+        *);;
+
+book_alices_adventures_in_Wonderland
+	=> nrel_location:
+        .book_alices_adventures_in_Wonderland_location
+        (*
+            -> country_England;;
+            -> Wonderland;;
+        *);;
+
+char_Alice 
+	=> nrel_main_idtf: 
+            [Алиса] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- girl;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Алиса)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alice.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Blue_Caterpillar
+	=> nrel_main_idtf: 
+            [Синяя Гусеница] (* <-lang_ru;; *);
+        <- lit_person;
+        <- caterpillar;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Синяя Гусеница)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Blue_Caterpillar.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Cheshire_Cat
+	=> nrel_main_idtf: 
+            [Чеширский кот] (* <-lang_ru;; *);
+        <- lit_person;
+        <- cat;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Чеширский кот)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Cheshire_Cat.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Hatter
+	=> nrel_main_idtf: 
+            [Шляпник] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Шляпник)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Hatter.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Red_Queen
+	=> nrel_main_idtf: 
+            [Красная королева] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Красная королева)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Red_Queen.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Duchess
+	=> nrel_main_idtf: 
+            [Герцогиня] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Герцогиня)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Duchess.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_White_Rabbit
+	=> nrel_main_idtf: 
+            [Белый кролик] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- rabbit;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Белый кролик)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_White_Rabbit.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Mouse
+	=> nrel_main_idtf: 
+            [Мышь] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- mouse;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мышь)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Mouse.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Red_Jack
+	=> nrel_main_idtf: 
+            [Червовый валет] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- mouse;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Червовый валет)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Red_Jack.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_March_Hare 
+	=> nrel_main_idtf: 
+            [Мартовский заяц] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- hare;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Мартовский заяц)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_March_Hare.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Sonya
+	=> nrel_main_idtf: 
+            [Соня] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- mouse;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Соня)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sonya.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_alices_adventures_in_Wonderland => nrel_plot: 
+    .book_alices_adventures_in_Wonderland_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Алиса в Стране Чудес"] (* <-lang_ru;; *);;
+        -> rrel_event:.book_alices_adventures_in_Wonderland_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Приследование Белого кролика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_snooping;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_White_Rabbit;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_alices_adventures_in_Wonderland_event_2;;      
+            *);;
+
+        -> .book_alices_adventures_in_Wonderland_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Преображение Алисы в зале] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_change_in_appearance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_alices_adventures_in_Wonderland_event_3;;      
+            *);;
+
+        -> .book_alices_adventures_in_Wonderland_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Знакомство Алисы с Мышью] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_Mouse;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_alices_adventures_in_Wonderland_event_4;;      
+            *);;    
+
+        -> .book_alices_adventures_in_Wonderland_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Преображение Алисы в доме Белого Кролика] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (*  
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_change_in_appearance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_White_Rabbit;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_alices_adventures_in_Wonderland_event_5;;      
+            *);;  
+
+        -> .book_alices_adventures_in_Wonderland_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Знакомство Алисы с Синей Гусеницей] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_change_in_appearance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                        	char_Blue_Caterpillar;;
+                    *);;         
+                => nrel_plot_sequence: 
+                    .book_alices_adventures_in_Wonderland_event_6;;      
+            *);; 
+
+        -> .book_alices_adventures_in_Wonderland_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Знакомство Алисы с Герцогиней] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_Duchess;
+                           char_Cheshire_Cat;;
+                    *);; 
+                => nrel_plot_sequence: 
+                    .book_alices_adventures_in_Wonderland_event_7;;                  
+            *);;
+            -> .book_alices_adventures_in_Wonderland_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Разговор Алисы с Чеширским котом] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_Cheshire_Cat;;
+                    *);; 
+                => nrel_plot_sequence: 
+                    .book_alices_adventures_in_Wonderland_event_8;;                  
+            *);;
+
+            -> .book_alices_adventures_in_Wonderland_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Чаепитие] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <- event_acquaintance;;
+                    <- event_holiday;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Alice;
+                           char_Hatter;
+                           char_Sonya;
+                           char_March_Hare;
+                           char_White_Rabbit;;
+                    *);; 
+                => nrel_plot_sequence: 
+                    .book_alices_adventures_in_Wonderland_event_9;;                  
+            *);;
+
+            -> rrel_event:.book_alices_adventures_in_Wonderland_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Суд] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_alices_adventures_in_Wonderland_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <- event_finality;;
+                    <- event_tribunal;;
+                    <= nrel_participants:... 
+                    (*
+                        -> rrel_judge: char_Red_Queen;;
+                        -> rrel_defendant: char_Red_Jack;;
+                        -> rrel_audience: char_Alice;
+                        	char_March_Hare;
+            				char_Blue_Caterpillar;
+                    		char_Cheshire_Cat;
+                    		char_Hatter;
+                    		char_Red_Queen;
+                    		char_Duchess;
+            				char_Sonya;
+            				char_White_Rabbit;
+            				char_Mouse;;
+
+                    *);;                   
+            *);;  
+    *);;

@@ -11,4 +11,17 @@ section_role_of_lit_person	-> rrel_key_sc_element:
 		rrel_victim;
 		rrel_doctor;
 		rrel_patient;
+
+
+		rrel_student;
+		rrel_nobleman;
+		rrel_bailiff;
+		rrel_governess;
+		rrel_slave;
+		rrel_pet;
+		rrel_journalist;
+		rrel_sailor;
+		rrel_cabin_boy;
+		
+
 		nrel_characters;;

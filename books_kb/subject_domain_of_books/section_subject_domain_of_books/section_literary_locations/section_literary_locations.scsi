@@ -254,6 +254,9 @@ St._Petersburg
 	=> nrel_idtf:
 		[Петроград] 
 			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		[Петербург] 
+			(* <-lang_ru;; *);
 
 	<- rrel_key_sc_element:
 		...
@@ -850,3 +853,120 @@ country_Wales
 				*);;
 		*);;
 
+Wonderland
+	<- literary_location;
+	=> nrel_main_idtf: 
+		[Страна Чудес] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf: 
+		[Зазеркалье] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Страна Чудес)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Wonderland.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> book_alices_adventures_in_Wonderland;
+						 person_Lewis_Carroll;
+						 literary_location;;
+				*);;
+		*);;
+
+Mysterious_island
+	<- literary_location;
+	=> nrel_main_idtf: 
+		[Таинственный остров] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Таинственный остров)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/Mysterious_island.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Jules_Verne;
+						 book_Mysterious_island;
+						 literary_location;;
+				*);;
+		*);;
+
+
+island_Tabor
+	<- literary_location;
+	=> nrel_main_idtf: 
+		[Остров Табор] 
+			(* <-lang_ru;; *);
+	
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Остров Табор)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/island_Tabor.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> person_Jules_Verne;
+						 book_Mysterious_island;
+						 literary_location;;
+				*);;
+		*);;
+
+
+
+country_Cuba
+	<- literary_location;
+	<- continent_North_America;
+	=> nrel_main_idtf: 
+		[Куба] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Куба)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/country_Cuba.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+country_Spain
+	<- literary_location;
+	<- continent_Europe;
+	=> nrel_main_idtf: 
+		[Испания] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Пояс.(Испания)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/content_htmls/country_Spain.html" (* <-lang_ru;; *);;
+				*);;
+		*);;

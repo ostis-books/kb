@@ -168,46 +168,7 @@ futurism
             -> poet;;
         *);;
     *);;
-genre_article
-<- genre;
-<- sc_node_not_relation;
-
-=> nrel_main_idtf:
-            [статья] (* <- lang_ru;; *);;
-
-genre_article
-    <- rrel_key_sc_element:...
-    (*
-        => nrel_main_idtf:[Опр.(статья)] (* <- lang_ru;;*);;
-        <- definition;;
-        
-        <= nrel_sc_text_translation:...
-        (*
-            -> rrel_example: "file://htmls/genre_article1.html";;
-        *);;
-         <= nrel_using_constants:...
-        (*
-            -> genre;;
-            -> nrel_author;;
-        *);;
-    *);;
-genre_article
-    <- rrel_key_sc_element:...
-    (*
-        => nrel_main_idtf:[Утв.(статья, газета, журнал)] (* <- lang_ru;;*);;
-        <- statement;;
-        <- statement_of_common_type;;
-        <= nrel_sc_text_translation:...
-        (*
-            -> rrel_example: "file://htmls/genre_article2.html";;
-        *);;
-         <= nrel_using_constants:...
-        (*
-            -> newspaper;;
-            -> magazine;;
-        *);;
-        
-    *);;
+ 
 
 genre_dystopia
 <- genre;

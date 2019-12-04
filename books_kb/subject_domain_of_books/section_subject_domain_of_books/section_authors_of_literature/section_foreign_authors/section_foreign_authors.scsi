@@ -1574,3 +1574,126 @@ person_Victor_Hugo
     (*
         ->lang_fr;;
     *);;
+
+
+person_Lewis_Carroll
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    <- playwright;
+    <- essayist;
+    
+    => nrel_main_idtf:
+            [Льюис Кэрролл] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_27_01_1832
+            (*
+                => nrel_main_idtf:
+                [27 января 1832](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_14_01_1898
+            (*
+                => nrel_main_idtf:
+                [14 января 1898](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+        -> play;;
+                          
+    *);
+
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+
+person_Jane_Austen
+    <- person;
+    <- female;
+    <- writer;
+    <- poet;
+    <- playwright;
+    <- essayist;
+    
+    => nrel_main_idtf:
+            [Джейн Остин] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_16_12_1775
+            (*
+                => nrel_main_idtf:
+                [16 декабря 1775](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_England;
+    => nrel_date_of_death:
+            date_18_07_1817
+            (*
+                => nrel_main_idtf:
+                [18 июля 1817](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_England;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+        -> play;;
+                          
+    *);
+
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_en;;
+    *);;
+
+person_Maurice_Druon
+    <- person;
+    <- male;
+    <- writer;
+    <- poet;
+    
+    => nrel_main_idtf:
+            [Морис Дрюон] (* <- lang_ru;;*);
+    
+    => nrel_date_of_birth:
+            date_23_04_1918
+            (*
+                => nrel_main_idtf:
+                [23 апреля 1918 года](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_France;
+    => nrel_date_of_death:
+            date_14_04_2009
+            (*
+                => nrel_main_idtf:
+                [14 апреля 2009 года](* <- lang_ru;;*);;
+            *);
+     => nrel_place_of_death:
+            country_France;
+        
+    <= nrel_genre_work:...
+    (*
+        -> genre_novel;;
+        -> poetry;;
+        -> genre_historical_novel;;
+                          
+    *);
+
+    <= nrel_languages_of_work:...
+    (*
+        ->lang_fr;;
+    *);;

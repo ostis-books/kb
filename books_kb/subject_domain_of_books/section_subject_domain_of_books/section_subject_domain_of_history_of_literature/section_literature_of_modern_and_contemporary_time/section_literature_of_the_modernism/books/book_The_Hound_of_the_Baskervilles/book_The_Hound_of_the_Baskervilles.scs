@@ -11,6 +11,14 @@ book_The_Hound_of_the_Baskervilles
     => nrel_publication_date:
         year_1902;;
 
+book_The_Hound_of_the_Baskervilles
+=> nrel_location:
+    .book_The_Hound_of_the_Baskervilles
+    (*
+        -> country_England;;
+        -> Baskerville_Hall;;
+    *);;
+
 
 book_The_Hound_of_the_Baskervilles
     <= nrel_characters:

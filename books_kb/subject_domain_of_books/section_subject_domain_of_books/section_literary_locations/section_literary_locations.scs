@@ -26,6 +26,9 @@ section_literary_locations
 		country_Canada;
 		Ottawa;
 		Toronto;
+		Wonderland;
+		Mysterious_island;
+		island_Tabor;
 		country_Germany;
 		country_Brazil;
 		country_Ireland;
@@ -39,6 +42,8 @@ section_literary_locations
 		country_Japan;
 		country_England;
 		country_Scotland;
-		country_Wales;;
+		country_Wales;
 		
+		country_Cuba;
+		country_Spain;;
 		

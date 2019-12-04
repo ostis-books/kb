@@ -1,0 +1,415 @@
+book_the_Shining
+    => nrel_main_idtf:
+        ["Сияние"]
+            (* <- lang_ru;; *);
+    <- book;
+    <- genre_novel;
+    => nrel_author:
+        person_Stephen_Edwin_King;
+    <= nrel_original_language:
+        lang_en;
+    => nrel_publication_date:
+        year_1977;;
+
+book_the_Shining
+    => nrel_characters:
+        .book_the_Shining_characters
+        (*
+            -> rrel_main_character:
+                    char_Jack_Torrans;
+                    char_Danny;
+                    char_Wendi_Torrans;;
+            -> char_Dick_Holloran;;
+            -> char_Delbert_Graydi;;
+        *);;
+
+book_the_Shining
+=> nrel_location:
+    .book_the_Shining_location
+    (*
+        -> country_USA;;
+    *);;
+
+char_Jack_Torrans
+        => nrel_main_idtf: 
+            [Джек Торранс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Джек Торранс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Jack_Torrans.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Danny
+        => nrel_main_idtf: 
+            [Денни] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Денни)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Danny.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Wendi_Torrans
+        => nrel_main_idtf: 
+            [Венди Торранс] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Венди Торранс)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Wendi_Torrans.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Dick_Holloran
+        => nrel_main_idtf: 
+            [Дик Холлоран] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дик Холлоран)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dick_Holloran.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Delbert_Graydi
+        => nrel_main_idtf: 
+            [Делберт Грейди] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Делберт Грейди)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Delbert_Graydi.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+book_the_Shining => nrel_plot: 
+    .book_the_Shining_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Сияние"] (* <-lang_ru;; *);;
+        -> .book_the_Shining_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Предварительные вопросы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_interview;;
+                    <- event_meeting_with_a_ghost;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_2;;      
+            *);;
+
+        -> .book_the_Shining_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. День закрытия] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_moving;;
+                    <- event_telepathy;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Dick_Holloran;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_3;;      
+            *);;
+
+        -> .book_the_Shining_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. Осиное гнездо] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_give_a_gift;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_4;;      
+            *);;
+
+        -> .book_the_Shining_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Дэнни запирается в ванной] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_scare;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_5;;      
+            *);;
+
+        -> .book_the_Shining_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Невидимый друг Дэнни] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_6;;      
+            *);;
+
+        -> .book_the_Shining_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Живые осы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_nightmare;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_7;;      
+            *);;
+
+        -> .book_the_Shining_event_7
+            (*
+                => nrel_main_idtf: [Событие №7.  Прошлое отеля] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_disturbance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_8;;      
+            *);;
+
+        -> .book_the_Shining_event_8
+            (*
+                => nrel_main_idtf: [Событие №8.  Живые статуи] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_9;;      
+            *);;
+
+        -> .book_the_Shining_event_9
+            (*
+                => nrel_main_idtf: [Событие №9.  Женщина в номере 217] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Danny;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_10;;      
+            *);;
+
+        -> .book_the_Shining_event_10
+            (*
+                => nrel_main_idtf: [Событие №10.  Джек проверил галлюцинации сына] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_11;;      
+            *);;
+
+        -> .book_the_Shining_event_11
+            (*
+                => nrel_main_idtf: [Событие №11.  Галлюцинации в саду] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_11.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hallucination;;
+                    <- event_apology;;
+                    <= nrel_participants:... 
+                    (*
+                         -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_12;;      
+            *);;
+
+        -> .book_the_Shining_event_12
+            (*
+                => nrel_main_idtf: [Событие №12.  Денни связывается с Диком] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_12.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_help;;
+                    <- event_be_late;;
+                    <= nrel_participants:... 
+                    (*
+                         -> char_Dick_Holloran;
+                            char_Danny;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_13;;      
+            *);;
+
+        -> .book_the_Shining_event_13
+            (*
+                => nrel_main_idtf: [Событие №13.  Вечеринка в отеле] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_13.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_party;;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                         -> char_Jack_Torrans;
+                            char_Delbert_Graydi;
+                            char_Danny;
+                            char_Wendi_Torrans;;
+
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_14;;      
+            *);;
+
+        -> .book_the_Shining_event_14
+            (*
+                => nrel_main_idtf: [Событие №14.  Джек покушается на свою семью] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_14.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_suffocation;;
+                    <- event_hallucination;;
+                    <= nrel_participants:... 
+                    (*
+                         -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Delbert_Graydi;
+                            char_Wendi_Torrans;;
+
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_the_Shining_event_15;;      
+            *);;
+
+        -> .book_the_Shining_event_15
+            (*
+                => nrel_main_idtf: [Событие №15.  Дик приехал спасать Дэнни] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_the_Shining_event_15.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_explosion;;
+                    <= nrel_participants:... 
+                    (*
+                         -> char_Jack_Torrans;
+                            char_Danny;
+                            char_Dick_Holloran;
+                            char_Wendi_Torrans;;
+                    *);;      
+            *);;
+    *);;

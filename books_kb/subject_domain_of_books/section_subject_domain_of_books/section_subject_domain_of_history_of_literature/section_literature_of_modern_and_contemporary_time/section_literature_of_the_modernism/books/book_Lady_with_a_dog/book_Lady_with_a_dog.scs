@@ -18,8 +18,8 @@ book_Lady_with_a_dog
     (*
         -> Moscow;;
         -> Yalta;;
-        -> contry_Russia;;
-        -> contry_Ukraine;;
+        -> country_Russia;;
+        -> country_Ukraine;;
     *);;
 
 
@@ -75,9 +75,10 @@ book_Lady_with_a_dog => nrel_plot:
     (*
       => nrel_main_idtf: [Сюжет. "Дама с собачкой"] 
                 (* <-lang_ru;; *);;
+        -> key_sc_element: book_Lady_with_a_dog ;;
         -> .book_Lady_with_a_dog_event_1
             (*
-                => nrel_main_idtf: [Событие №1. Знакомство Гурова и Анны] 
+                => nrel_main_idtf: [Событие №1. Глава 1] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -96,7 +97,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_2
             (*
-                => nrel_main_idtf: [Событие №2. Расставание Гурова и Анны] 
+                => nrel_main_idtf: [Событие №2. Глава 2] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -114,7 +115,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_3
             (*
-                => nrel_main_idtf: [Событие №3. Гуров ищет Анну] 
+                => nrel_main_idtf: [Событие №3. Глава 3] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...
@@ -133,7 +134,7 @@ book_Lady_with_a_dog => nrel_plot:
 
         -> .book_Lady_with_a_dog_event_4
             (*
-                => nrel_main_idtf: [Событие №4. Тайные встречи] 
+                => nrel_main_idtf: [Событие №4. Глава 4] 
                                     (* <-lang_ru;; *);;
                 <= nrel_sc_text_translation:
                     ...

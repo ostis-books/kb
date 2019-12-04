@@ -1,0 +1,938 @@
+book_Crime_and_Punishment
+	=> nrel_main_idtf:
+        ["Преступление и Наказание"]
+            (* <- lang_ru;; *); 
+    <- book;
+    <- genre_novel;
+    => nrel_author:
+        person_Fedor_Dostoevsky;
+    <= nrel_original_language:
+        lang_ru;
+    => nrel_publication_date:
+        year_1866;;
+
+book_Crime_and_Punishment
+	=> nrel_characters:
+        .book_Crime_and_Punishment_characters
+        (*
+            -> rrel_main_character:
+                    char_Rodion_Raskolnikov;;
+            -> rrel_victim: char_Alena_Ivanovna;;
+            -> rrel_victim: char_Semyon_Marmeladov;;
+            -> rrel_victim: char_Katerina_Marmeladova;;
+            -> rrel_victim: char_Sonya_Marmeladova;;
+            -> rrel_nobleman: char_Arkady_Svidrigailov;;
+            -> rrel_nobleman: char_Peter_Luzhin;;
+            -> rrel_governess: char_Dunya_Raskolnikov;;
+            -> rrel_bailiff: char_Porfiry_Petrovich;;
+            -> rrel_student: char_Razumikhin;;
+        *);;
+
+book_Crime_and_Punishment
+	=> nrel_location:
+        .book_Crime_and_Punishment_location
+        (*
+            -> St._Petersburg;;
+        *);;
+
+char_Rodion_Raskolnikov 
+	=> nrel_main_idtf: 
+            [Родион Раскольников] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Родион Раскольников)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Rodion_Raskolnikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Alena_Ivanovna
+	=> nrel_main_idtf: 
+            [Алена Ивановна] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Алена Ивановна)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Alena_Ivanovna.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Semyon_Marmeladov
+	=> nrel_main_idtf: 
+            [Семен Мармеладов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Семен Мармеладов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Semyon_Marmeladov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Katerina_Marmeladova
+	=> nrel_main_idtf: 
+            [Екатерина Мармеладова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Екатерина Мармеладова)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Katerina_Marmeladova.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Sonya_Marmeladova
+	=> nrel_main_idtf: 
+            [Соня Мармеладова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Соня Мармеладова)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Sonya_Marmeladova.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;	
+
+char_Arkady_Svidrigailov
+	=> nrel_main_idtf: 
+            [Аркадий Свидригайлов] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Аркадий Свидригайлов)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Arkady_Svidrigailov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Peter_Luzhin
+	=> nrel_main_idtf: 
+            [Петр Лужин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Петр Лужин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Peter_Luzhin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Dunya_Raskolnikov
+	=> nrel_main_idtf: 
+            [Дуня Раскольникова] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Дуня Раскольникова)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Dunya_Raskolnikov.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Porfiry_Petrovich
+	=> nrel_main_idtf: 
+            [Порфирий Петрович] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Порфирий Петрович)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Porfiry_Petrovich.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+char_Razumikhin 
+	=> nrel_main_idtf: 
+            [Разумихин] (* <-lang_ru;; *);
+        <- lit_person;
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(МРазумихин)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://content/content_htmls/characters/char_Razumikhin.html" (* <-lang_ru;; *);;
+                    *);;
+            *);;
+
+
+book_Crime_and_Punishment => nrel_plot: 
+    .book_Crime_and_Punishment_plot
+    (*
+        => nrel_main_idtf: [Сюжет. "Преступление и Наказание"] (* <-lang_ru;; *);;
+        -> rrel_event:.book_Crime_and_Punishment_event_1
+            (*
+                => nrel_main_idtf: [Событие №1. Залог у процентщицы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_1.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_pledge;; 
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Alena_Ivanovna;;
+                    *);;
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_2;;      
+            *);;
+
+        -> .book_Crime_and_Punishment_event_2
+            (*
+                => nrel_main_idtf: [Событие №2. Знакомство с Мармеладовым] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_2.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_acquaintance;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Semyon_Marmeladov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_3;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_3
+            (*
+                => nrel_main_idtf: [Событие №3. В гостях у Мармеладовых] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_3.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Semyon_Marmeladov;
+                            char_Katerina_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_4;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_4
+            (*
+                => nrel_main_idtf: [Событие №4. Получение письма] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_4.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_receiving_letter;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_5;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_5
+            (*
+                => nrel_main_idtf: [Событие №5. Рефлексия Раскольникова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_5.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_reflection;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_6;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_6
+            (*
+                => nrel_main_idtf: [Событие №6. Сон Раскольникова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_6.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dream;; 
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_7;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_7
+            (*
+                => nrel_main_idtf: [Событие №7. Подслушивание] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_7.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_intelligence_service;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_8;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_8
+            (*
+                => nrel_main_idtf: [Событие №8. Убийство Алены Ивановны] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_8.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Alena_Ivanovna;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_9;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_9
+            (*
+                => nrel_main_idtf: [Событие №9. Ограбление] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_9.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_theft;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_10;;      
+            *);;
+
+
+            -> .book_Crime_and_Punishment_event_10
+            (*
+                => nrel_main_idtf: [Событие №10. Убийство сестры процентщицы] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_10.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_11;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_11
+            (*
+                => nrel_main_idtf: [Событие №11. Поход в полицейскую контору] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_11.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_police;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_12;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_12
+            (*
+                => nrel_main_idtf: [Событие №12. Скрытие украденного] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_12.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_hide;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_13;;      
+            *);;
+
+
+            -> .book_Crime_and_Punishment_event_13
+            (*
+                => nrel_main_idtf: [Событие №13. Прибытие Разумихина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_13.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Razumikhin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_14;;      
+            *);;
+
+
+            -> .book_Crime_and_Punishment_event_14
+            (*
+                => nrel_main_idtf: [Событие №14. Прибытие Лужина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_14.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Razumikhin;
+                            char_Peter_Luzhin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_15;;      
+            *);;
+
+
+            -> .book_Crime_and_Punishment_event_15
+            (*
+                => nrel_main_idtf: [Событие №15. Смерть Мармеладова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_15.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                                char_Semyon_Marmeladov;
+                                char_Sonya_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_16;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_16
+            (*
+                => nrel_main_idtf: [Событие №16. Прибытие сестры с матерью] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_16.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Razumikhin;
+                            char_Dunya_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_17;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_17
+            (*
+                => nrel_main_idtf: [Событие №17. Беседа Раскольникова с сестрой и матерью] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_17.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                            char_Razumikhin;
+                            char_Dunya_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_18;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_18
+            (*
+                => nrel_main_idtf: [Событие №18. Письмо Лужина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_18.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_receiving_letter;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Peter_Luzhin;
+                             char_Razumikhin;
+                             char_Dunya_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_19;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_19
+            (*
+                => nrel_main_idtf: [Событие №19. Визит Сони] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_19.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Dunya_Raskolnikov;
+                             char_Sonya_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_20;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_20
+            (*
+                => nrel_main_idtf: [Событие №20. Визит к следователю] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_20.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_interrogation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Razumikhin;
+                             char_Porfiry_Petrovich;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_21;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_21
+            (*
+                => nrel_main_idtf: [Событие №21. Сон Раскольникова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_21.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_dream;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_22;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_22
+            (*
+                => nrel_main_idtf: [Событие №22. Приход Свидригайлова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_22.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_arrival_of_guests;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_23;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_23
+            (*
+                => nrel_main_idtf: [Событие №23. Разговор Лужина с Дуней] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_23.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dunya_Raskolnikov;
+                             char_Peter_Luzhin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_24;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_24
+            (*
+                => nrel_main_idtf: [Событие №24. Разговор Раскольникова с Соней] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_24.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Sonya_Marmeladova;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_25;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_25
+            (*
+                => nrel_main_idtf: [Событие №25. Проверки следователя] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_25.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_interrogation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Porfiry_Petrovich;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_26;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_26
+            (*
+                => nrel_main_idtf: [Событие №26. Поминки Мармеладова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_26.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_funeral;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sonya_Marmeladova;
+                             char_Katerina_Marmeladova;
+                             char_Rodion_Raskolnikov;
+                             char_Peter_Luzhin;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_27;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_27
+            (*
+                => nrel_main_idtf: [Событие №27. Месть Лужина] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_27.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_deceit;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Peter_Luzhin;
+                             char_Sonya_Marmeladova;
+                             char_Katerina_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_28;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_28
+            (*
+                => nrel_main_idtf: [Событие №28. Откровение Роскольникова Соне] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_28.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Sonya_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_29;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_29
+            (*
+                => nrel_main_idtf: [Событие №29. Смерть Екатерины Мармеладовой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_29.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_death;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Katerina_Marmeladova;
+                             char_Sonya_Marmeladova;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_30;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_30
+            (*
+                => nrel_main_idtf: [Событие №30. Помощь Соне Мармеладовой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_30.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_help;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sonya_Marmeladova;
+                             char_Rodion_Raskolnikov;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_31;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_31
+            (*
+                => nrel_main_idtf: [Событие №31. Похороны Екатерины Мармеладовой] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_31.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_funeral;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sonya_Marmeladova;
+                             char_Rodion_Raskolnikov;
+                             char_Razumikhin;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_32;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_32
+            (*
+                => nrel_main_idtf: [Событие №32. Заявление следователя] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_32.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_investigation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Porfiry_Petrovich;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_33;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_33
+            (*
+                => nrel_main_idtf: [Событие №33. Разговор Раскольникова с Свидригайловым] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_33.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Arkady_Svidrigailov;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_34;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_34
+            (*
+                => nrel_main_idtf: [Событие №34. Покушения на Свидригайлова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_34.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_attempted_murder;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Dunya_Raskolnikov;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_35;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_35
+            (*
+                => nrel_main_idtf: [Событие №35. Прощание Свидригайлова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_35.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Sonya_Marmeladova;
+                             char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_36;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_36
+            (*
+                => nrel_main_idtf: [Событие №.36 Смерть Свидригайлова] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_36.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_suicide;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Arkady_Svidrigailov;;
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_37;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_37
+            (*
+                => nrel_main_idtf: [Событие №37. Прощание Раскольникова с сестрой и матерью] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_37.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_conversation;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Dunya_Raskolnikov;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_38;;      
+            *);;
+
+            -> .book_Crime_and_Punishment_event_38
+            (*
+                => nrel_main_idtf: [Событие №38. Признание Раскольникова в убийстве] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_38.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_confession;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Sonya_Marmeladova;
+                             char_Porfiry_Petrovich;; 
+                    *);;         
+                    => nrel_plot_sequence: 
+                        .book_Crime_and_Punishment_event_39;;      
+            *);;
+
+            -> rrel_event:.book_Crime_and_Punishment_event_39
+            (*
+                => nrel_main_idtf: [Событие №39. Приговор Радиона] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation:
+                    ...
+                    (* 
+                        -> "file://content/content_htmls/events/book_Crime_and_Punishment_event_39.html" (* <-lang_ru;; *);;
+                    *);;
+                    <- event_sentence;;
+                    <- event_finality;;
+                    <= nrel_participants:... 
+                    (*
+                        -> char_Rodion_Raskolnikov;
+                             char_Sonya_Marmeladova;;
+                    *);;            
+                        
+            *);;
+
+    *);;

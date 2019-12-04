@@ -1441,3 +1441,47 @@ person_Herzen_Aleksandr_Ivanovich
     (*
         -> lang_ru;;
     *);;
+
+
+person_Fedor_Dostoevsky
+    <- person;
+    <- male;
+    <- writer;
+    <- prosaist;
+    <- publicist;
+    <- philosopher;
+    
+   => nrel_main_idtf:
+            [Федор Михайлович Достоевский]  (* <- lang_ru;;*);
+   
+   => nrel_date_of_birth:
+          date_30_10_1821
+            (*
+                => nrel_main_idtf:
+                [30 октября 1821](* <- lang_ru;;*);;
+            *);
+    => nrel_place_of_birth:
+            country_Russia;
+   
+    => nrel_date_of_death:
+            date_28_01_1881
+            (*
+                => nrel_main_idtf:
+                [28 января 1881](* <- lang_ru;;*);;
+            *);
+   => nrel_place_of_death:
+            country_Russia;
+
+    <= nrel_genre_work:...
+    (* 
+        -> genre_tale;;
+        -> genre_narrative;;
+        -> genre_novel;;
+    *);
+
+    <= nrel_languages_of_work:...
+    (*
+        -> lang_ru;;
+    *);;
+
+

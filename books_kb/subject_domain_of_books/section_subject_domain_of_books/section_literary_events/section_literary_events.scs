@@ -51,4 +51,109 @@ section_literary_events
 		event_investigation;
 		event_theft;
 		event_intelligence_service;
-		event_pregnancy;;
+
+
+		event_sentence;
+		event_pledge;
+		event_receiving_letter;
+		event_reflection;
+		event_dream;
+		event_police;
+		event_hide;
+		event_conversation;
+		event_interrogation;
+		event_help;
+		event_confession;
+		event_change_in_appearance;
+		event_escape;
+		event_fall;
+		event_search;
+		event_find;
+		event_swimming;
+		event_bang;
+		event_ship_construction;
+		event_present;
+		event_ball;
+		event_disease;
+		event_offer;
+		event_travel;
+		event_go_home;
+
+
+
+		event_pregnancy;
+		event_interview;
+		event_meeting_with_a_ghost;
+		event_telepathy;
+		event_give_a_gift;
+		event_scare;
+		event_help;
+		event_social_help;
+		event_failure;
+		event_party;
+		event_military_help;
+
+		event_first_aid;
+		event_humanitarian_aid;
+		event_nightmare;
+		event_apology;
+		event_be_late;
+		event_suffocation;
+		event_explosion;
+		event_disturbance;
+		event_fishing;
+		event_return;
+
+		event_scramble;
+		event_exam;
+		event_journey;
+		event_go_to_sea;
+		event_baptism;
+		event_disaster;
+		event_earthquake;
+		event_tsunami;
+		event_avalanche;
+
+		event_flood;
+		event_tornado;
+		event_abortion;
+		event_terrorist_attack;
+		event_the_death_penalty;
+		event_quartering;
+		event_drowning;
+		event_passion;
+		event_quarrel;
+		event_bullfight;
+
+		event_corrida;
+		event_telegram;
+		event_hanging;
+		event_animal_training;
+		event_concert;
+		event_attachment;
+		event_hike;
+		event_expose;
+		event_curse;
+		event_matchmaking;
+		
+		event_struggle;
+		event_elect;
+		event_coronation;
+		event_mission;
+		event_imprisonment;
+		event_failure;
+
+		event_burning;
+		event_concealment;
+		event_poisoning;
+		event_hunting;
+		event_divorce;
+		event_recognition;
+		event_blackmail;
+		event_trial;
+		event_storm;
+		event_military_campaign;
+		event_pilgrimage;
+		event_caution;
+		event_order;
+		event_childbirth;;
