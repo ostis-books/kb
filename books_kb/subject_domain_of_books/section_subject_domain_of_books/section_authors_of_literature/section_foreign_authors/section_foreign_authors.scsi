@@ -590,7 +590,7 @@ person_Antoine_de_Saint_Exupery
         -> genre_novel;;
         -> genre_fairy_tale;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -623,7 +623,7 @@ person_Jerome_David_Salinger
     (*
         -> genre_prose;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -650,7 +650,7 @@ person_Paulo_Coelho
     (*
         -> genre_novel;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_por;;
     *);;
@@ -686,7 +686,7 @@ person_Tolkien_John_Ronald_Reuel
         -> literary_criticism;;
         -> poetry;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -726,7 +726,7 @@ person_Agatha_Christie
         -> detective;;
         -> genre_novel;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -761,7 +761,7 @@ person_Harper_Lee
         -> genre_prose;;
         -> genre_novel;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -789,7 +789,7 @@ person_Harper_Lee
         -> genre_novel;;
         -> genre_fantasy;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -826,7 +826,7 @@ person_Harper_Lee
         -> genre_prose;;
         -> genre_novel;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_sp;;
     *);;
@@ -855,7 +855,7 @@ person_Harper_Lee
         -> genre_novel;;
         -> genre_prose;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_jp;;
     *);;
@@ -884,7 +884,7 @@ person_Dan_Brown
         -> genre_thriller;;
         -> genre_speculative_fiction;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -913,9 +913,9 @@ person_Patrick_Suskind
         -> short_story;;
         -> play;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
-        ->lang_de;;
+        ->lang_german;;
     *);;
 
 person_John_Robert_Fowles
@@ -947,7 +947,7 @@ person_John_Robert_Fowles
     (*
         -> genre_prose;;
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -984,7 +984,7 @@ person_Aldous_Huxley
         -> genre_essay;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1022,7 +1022,7 @@ person_Margaret_Mitchell
         -> genre_novel;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1057,7 +1057,7 @@ person_Jules_Verne
         -> genre_science_fiction;;
 
     *);
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -1101,7 +1101,7 @@ person_Mark_Twain
         -> journalism;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;    
@@ -1139,9 +1139,9 @@ person_Franz_Kafka
         -> journalism;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
-        ->lang_de;;
+        ->lang_german;;
         ->lang_tr;;
     *);;    
 
@@ -1180,7 +1180,7 @@ person_Theodore_Dreiser
         -> journalism;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;    
@@ -1219,7 +1219,7 @@ person_Albert_Camus
         -> genre_essay;;
      *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);; 
@@ -1258,7 +1258,7 @@ person_O_Henry
         -> genre_novella;;
      *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1298,7 +1298,7 @@ person_Charles_Bukowski
         -> genre_narrative;;
      *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1336,7 +1336,7 @@ person_Jean_Paul_Sartre
         -> genre_novella;;
      *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -1374,7 +1374,7 @@ person_Alexandre_Dumas
         -> genre_novel;;
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -1414,7 +1414,7 @@ person_Honore_de_Balzac
         -> genre_narrative;;        
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -1451,7 +1451,7 @@ person_Charles_Dickens
        
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1492,7 +1492,7 @@ person_Walter_Scott
                
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1529,7 +1529,7 @@ person_George_Gordon_Byron
                       
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1570,7 +1570,7 @@ person_Victor_Hugo
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -1602,7 +1602,7 @@ person_Irvine_Welsh
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1649,7 +1649,7 @@ person_James_Joyce
          
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1692,7 +1692,7 @@ person_Jack_London
                       
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1733,7 +1733,7 @@ person_Stanislaw_Lem
                       
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_pl;;
     *);;
@@ -1778,7 +1778,7 @@ person_Lewis_Carroll
                       
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1821,7 +1821,7 @@ person_Astrid_Lindgren
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_sw;;
     *);;
@@ -1860,7 +1860,7 @@ person_William_Shakespeare
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1903,7 +1903,7 @@ person_Howard_Phillips_Lovecraft
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -1944,7 +1944,7 @@ person_Miguel_de_Cervantes_Saavedra
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_sp;;
     *);;
@@ -1990,7 +1990,7 @@ person_Edgar_Allan_Poe
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -2031,7 +2031,7 @@ person_Herbert_George_Wells
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -2078,7 +2078,7 @@ person_Voltaire
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_fr;;
     *);;
@@ -2128,7 +2128,7 @@ person_Virginia_Woolf
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
@@ -2175,7 +2175,7 @@ person_Hans_Christian_Andersen
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_dn;;
     *);;
@@ -2221,7 +2221,7 @@ person_Joseph_Rudyard_Kipling
                           
     *);
 
-    <= nrel_languages_of_work:...
+    => nrel_languages_of_work:...
     (*
         ->lang_en;;
     *);;
