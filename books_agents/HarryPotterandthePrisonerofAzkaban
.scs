@@ -3,20 +3,12 @@ book_Harry_Potter_and_the_Prisoner_of_Azkaban
         ["Гарри Поттер и Узник Азкабана"]
             (* <- lang_ru;; *);
     <- concept_book;
-	=> nrel_genre:
-        fantasy;
-	=> nrel_genre:
-        child;
-	=> nrel_genre:
-        roman;
     => nrel_author:
         person_Joan_Rowling;
     <= nrel_original_language:
         lang_en;
     => nrel_publication_date:
         year_1999;;
-
-
 book_Harry_Potter_and_the_Prisoner_of_Azkaban
     <= nrel_characters:
         .book_Harry_Potter_and_the_Prisoner_of_Azkaban_characters
