@@ -263,7 +263,7 @@ char_Varvara_Ptitsyna
 
 char_Nikolai_Ivolgin
         => nrel_main_idtf: 
-            [ЛНиколай Ардалионыч Иволгин (Коля)] (* <-lang_ru;; *);
+            [Николай Ардалионыч Иволгин (Коля)] (* <-lang_ru;; *);
         <- lit_person;
         <- background_character;
         <- person;
