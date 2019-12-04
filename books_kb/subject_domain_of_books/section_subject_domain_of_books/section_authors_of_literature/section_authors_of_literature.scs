@@ -10,11 +10,6 @@ subject_domain_of_authors_of_literature
 		section_domestic_authors
 		(*
 		=> nrel_section_base_order: 
-			section_belarussian_authors;;
-		*);
-		section_belarussian_authors
-		(*
-		=> nrel_section_base_order: 
 			section_foreign_authors;;
 		*);
 		section_foreign_authors
